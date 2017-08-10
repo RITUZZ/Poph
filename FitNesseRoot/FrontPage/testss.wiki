@@ -1,0 +1,22 @@
+---
+Test
+---
+!define TEST_SYSTEM {slim}
+!path C:\Users\Graduate\workspace\ProjectApophis\target\classes
+| DatabaseTier.DatabaseConnector |
+| connectDatabase? |
+| true |
+| true |
+| true |
+
+| dt.DC |
+| connectDatabase? |
+| true |
+| true |
+| true |
+
+| model.User |
+| username | getUsername? |
+| tt | tt |
+| tt"4$% | tt"4$% |
+| tt12 | tt12 |
