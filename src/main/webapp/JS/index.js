@@ -34,5 +34,5 @@ app.controller('SubmitController',function($scope,$http,$rootScope){
 	});
 
 app.controller("main-controller",function($scope){
-	$scope.url="HTML/dashboard.html ";
+	$scope.url="HTML/login.html ";
 });
