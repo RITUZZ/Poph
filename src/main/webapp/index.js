@@ -12,7 +12,9 @@ app.controller('SubmitController',function($scope,$http){
 			var root = '';
 			$http({
 			  url: root + 'Login',
-			  method: 'GET'
+			  data: loginDetails,
+			  dataType: 'json',
+			  method: 'POST'
 			})
 			.then(function success(data){
 				
