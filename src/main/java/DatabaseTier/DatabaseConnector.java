@@ -7,6 +7,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.Properties;
 
 import BusinessTier.HashMaster;
@@ -18,14 +20,17 @@ public class DatabaseConnector {
 	static Properties configProps;
 
 	public static void main(String[] args) {
-		new DatabaseConnector();
+		DatabaseConnector d = new DatabaseConnector();
+		ArrayList<String> s = d.getTables();
+		for (String sd : s) {
+			System.out.println(sd);
+		}
 	}
 
 	public DatabaseConnector() {
 
 		try {
 
-			Class.forName( "com.mysql.jdbc.Driver" );
 			loadConfigFile();
 			connectDatabase();
 
@@ -38,9 +43,6 @@ public class DatabaseConnector {
 		try {
 			configProps = new Properties();
 			configProps.load(DatabaseConnector.class.getClassLoader().getResourceAsStream("config.properties"));
-			//FileInputStream in = new FileInputStream("src/main/resources/config.properties");
-			//configProps.load(in);
-			//in.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -48,22 +50,23 @@ public class DatabaseConnector {
 	}
 
 	public boolean connectDatabase() {
-		
+
 		try {
 			System.out.println("CONNECTING");
-			
+
+			Class.forName("com.mysql.jdbc.Driver");
 			connection = DriverManager.getConnection(new StringBuilder().append(configProps.getProperty("jdbcHost")).append(configProps.getProperty("jdbcName")).toString(), configProps.getProperty("jdbcUsername"), configProps.getProperty("jdbcPassword"));
 			System.out.println("CONNECTED");
-			
+
 			System.out.println(checklogin("test") != null ? "Database Test: Success" : "Database Test: Fail");
-			
+
 			return true;
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return false;
-		
+
 	}
 
 	public User checklogin(String username) {
@@ -83,7 +86,7 @@ public class DatabaseConnector {
 		}
 		return null;
 	}
-	
+
 
 	public boolean registerUser(String user, String password) {
 		try {
@@ -103,6 +106,25 @@ public class DatabaseConnector {
 			e.printStackTrace();
 		}
 		return false;
+	}
+
+	public ArrayList<String> getTables() {
+		
+		try {
+			Statement statement = connection.createStatement();
+			ResultSet rs = statement.executeQuery("SHOW TABLES");
+			ArrayList<String> tables = new ArrayList<String>();
+			
+			while (rs.next()) {
+				rs.getString(1);
+			}
+			
+			return tables;
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 }
