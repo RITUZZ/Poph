@@ -2,7 +2,7 @@
 Test
 ---
 !define TEST_SYSTEM {slim}
-!path C:\Users\Graduate\workspace\ProjectApophis\target\classes
+!path C:\Users\Graduate\workspace\Poph\target\classes
 | DatabaseTier.DatabaseConnector |
 | connectDatabase? |
 | true |

@@ -9,7 +9,7 @@ public class DatabaseConnectorTest {
 	
 	@Test
 	public void loadConfigFile() {
-		DatabaseConnector connector = new DatabaseConnector();
+		DatabaseManagerSecure connector = new DatabaseManagerSecure();
 		//Properties configProps = connector.loadConfigFile();
 		//assertNotNull(configProps);
 		//assertEquals("test-user", configProps.getProperty("jdbcUsername"));
