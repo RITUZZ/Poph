@@ -55,10 +55,13 @@ public class Login extends HttpServlet {
 		//TODO: Verify username and password
 		DatabaseConnector connector = new DatabaseConnector();
 		User user = connector.checklogin(username);
-		if (HashMaster.hash(password, user.getSalt()).equals(user.getPassword())) {
-			System.out.println("LOGIN SUCCESSFUL");
-		} else {
-			System.out.println("LOGIN FAILED - INVALID USER");
+		if (user != null) {
+			if (verifyLogin(user, password)) {
+				System.out.println("LOGIN SUCCESSFUL");
+			} else {
+				System.out.println("LOGIN FAILED - INVALID USER");
+			}
+			System.out.println("LOGIN FAILED - USER NOT FOUND");
 		}
 		//boolean isValid = connector.checklogin(username, password);
 		//System.out.println("is valid: "+isValid);
