@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import DatabaseTier.DatabaseConnector;
+import DatabaseTier.DatabaseManagerSecure;
 import model.User;
 
 public class LoginTest {
@@ -24,7 +24,7 @@ public class LoginTest {
 	
 	@Test
 	public void testVerifyLogin(){
-		DatabaseConnector connector = new DatabaseConnector();
+		DatabaseManagerSecure connector = new DatabaseManagerSecure();
 		User validUser = connector.checklogin("test");
 		//login success
 		assertTrue(login.verifyLogin(validUser,"test"));
