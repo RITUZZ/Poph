@@ -2,17 +2,12 @@
 Test
 ---
 !define TEST_SYSTEM {slim}
-!path C:\Users\Graduate\workspace\ProjectApophis\target\classes
-| DatabaseTier.DatabaseConnector |
-| connectDatabase? |
-| true |
-| true |
-| true |
+!path C:\Users\Graduate\workspace\Poph\target\classes;C:\Users\Graduate\workspace\Poph\target\test-classes
 
-| dt.DC |
-| connectDatabase? |
-| true |
-| true |
+
+| databaseTier.DatabaseConnectorTest |
+| testConnectionUser? |
+| test-user |
 | true |
 
 | model.User |
