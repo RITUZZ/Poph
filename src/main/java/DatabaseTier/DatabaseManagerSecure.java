@@ -12,9 +12,10 @@ import java.util.ArrayList;
 import java.util.Properties;
 
 import BusinessTier.HashMaster;
+import fit.ColumnFixture;
 import model.User;
 
-public class DatabaseManagerSecure {
+public class DatabaseManagerSecure extends ColumnFixture {
 
 	private Connection connection;
 	static Properties configProps;
