@@ -5,14 +5,14 @@ import java.util.Date;
 public class Counterparty {
 	private int id;
 	private String name;
-	private char status;
+	private String status;
 	private Date dateRegistered;
 	 
-	public Counterparty(int id, String name, char status, Date dateRegistered) {
+	public Counterparty(int id, String name, String string, Date dateRegistered) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.status = status;
+		this.status = string;
 		this.dateRegistered = dateRegistered;
 	}
 
@@ -24,7 +24,7 @@ public class Counterparty {
 		return name;
 	}
 
-	public char getStatus() {
+	public String getStatus() {
 		return status;
 	}
 

@@ -14,7 +14,8 @@ import javax.servlet.http.HttpServletResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import DatabaseTier.DatabaseConnector;
+import DatabaseTier.DatabaseManagerSecure;
+
 import model.User;
 
 /**
@@ -64,7 +65,7 @@ public class Login extends HttpServlet {
 		String password = (String) map.get("password");
 		
 		//TODO: Verify username and password
-		DatabaseConnector connector = new DatabaseConnector();
+		DatabaseManagerSecure connector = new DatabaseManagerSecure();
 		User user = connector.checklogin(username);
 		//initialize as false
 		boolean status = false;
