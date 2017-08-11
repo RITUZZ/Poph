@@ -21,18 +21,19 @@ app.controller('SubmitController',function($scope,$http,$rootScope){
 				
 				console.log("Success");
 				console.log(data);
-				data=true;
-				$scope.url="dashboard.html";
-				console.log($scope.url);
-				if(data==true)
-					{
-						var myEl = angular.element( document.querySelector( '#loginform' ) );
-						myEl.remove();
-					}
+				$scope.View.url="HTML/dashboard.html";
+				console.log($scope.View.url);
+				$scope.$applyAsync(function(){
+					app.setIncludeValue("HTML/dashboard.html");
+				});
+						
+			},function error(data){
+				console.log("error");
 			});
 		}
 	});
 
 app.controller("main-controller",function($scope){
-	$scope.url="HTML/dashboard.html ";
+	$scope.View={};
+	$scope.View.url="HTML/login.html ";
 });
