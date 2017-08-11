@@ -1,8 +1,12 @@
 package model;
+import fit.ColumnFixture;
 
-public class User {
+public class User extends ColumnFixture {
 	
 	String username, password, salt;
+	
+	public User() {
+	}
 	
 	public User(String username, String password, String salt) {
 		this.username = username;

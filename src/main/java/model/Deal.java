@@ -7,12 +7,12 @@ public class Deal {
 	private Date time;
 	private int counterpartyId;
 	private int instrumentId;
-	private char type;
+	private String type;
 	private float amount;
 	private int quantity;
 	
 	
-	public Deal(int id, Date time, int counterpartyId, int instrumentId, char type, float amount, int quantity) {
+	public Deal(int id, Date time, int counterpartyId, int instrumentId, String type, float amount, int quantity) {
 		super();
 		this.id = id;
 		this.time = time;
@@ -35,7 +35,7 @@ public class Deal {
 	public int getInstrumentId() {
 		return instrumentId;
 	}
-	public char getType() {
+	public String getType() {
 		return type;
 	}
 	public float getAmount() {
