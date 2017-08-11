@@ -1,6 +1,7 @@
 var app = angular.module('db', []);
 
-app.controller('SubmitController',function($scope,$http){
+app.controller('SubmitController',function($scope,$http,$rootScope){
+	$scope.username="USERNAME";
 		$scope.submit=function(){
 			
 			console.log("submit");
@@ -12,13 +13,17 @@ app.controller('SubmitController',function($scope,$http){
 			var root = '';
 			$http({
 			  url: root + 'Login',
-			  method: 'GET'
+			  method: 'POST',
+			  data:loginDetails,
+			  datatype:'JSON'
 			})
 			.then(function success(data){
 				
 				console.log("Success");
+				console.log(data);
 				data=true;
-				
+				$scope.url="dashboard.html";
+				console.log($scope.url);
 				if(data==true)
 					{
 						var myEl = angular.element( document.querySelector( '#loginform' ) );
@@ -27,3 +32,7 @@ app.controller('SubmitController',function($scope,$http){
 			});
 		}
 	});
+
+app.controller("main-controller",function($scope){
+	$scope.url="HTML/login.html ";
+});
