@@ -23,9 +23,6 @@ app.controller('SubmitController',function($scope,$http,$rootScope){
 				console.log(data);
 				$scope.View.url="HTML/dashboard.html";
 				console.log($scope.View.url);
-				$scope.$applyAsync(function(){
-					app.setIncludeValue("HTML/dashboard.html");
-				});
 						
 			},function error(data){
 				console.log("error");
