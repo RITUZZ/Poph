@@ -6,10 +6,10 @@ import java.io.PrintWriter;
 import java.util.Map;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet; 	
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
@@ -74,6 +74,9 @@ public class Login extends HttpServlet {
 			if (verifyLogin(user, password)) {
 				System.out.println("LOGIN SUCCESSFUL");
 				status = true;
+				//set session
+//				HttpSession session=request.getSession();  
+//		        session.setAttribute(username,username);  
 			} else {
 				
 				System.out.println("LOGIN FAILED - INVALID USER");

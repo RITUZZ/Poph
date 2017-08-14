@@ -19,6 +19,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 
 import DatabaseTier.DatabaseManagerOriginal;
 import model.Counterparty;
+import model.Deal;
 import model.Instrument;
 
 /**
@@ -32,6 +33,40 @@ public class Tables extends HttpServlet {
      */
     public Tables() {
         super();
+    }
+    
+    public void getDealTable(DatabaseManagerOriginal db, ObjectMapper mapper, PrintWriter out) throws JsonGenerationException, JsonMappingException, IOException{
+    	ArrayList<Deal> dealList = new ArrayList<Deal>();
+		List<ObjectNode> answerList = new ArrayList<ObjectNode>();
+		dealList = db.getDealTable();
+		Deal deal;
+		
+		for(int i=0; i<dealList.size();i++){
+			deal = dealList.get(i);
+			if (!dealList.contains(deal.getId())){
+				ObjectNode node = JsonNodeFactory.instance.objectNode();
+				node.put("id",deal.getId());
+				node.put("time", deal.getTime().toString());
+				node.put("counterpartyid",deal.getCounterpartyId());
+				node.put("instrumentid", deal.getInstrumentId());
+				node.put("type", deal.getType());
+				node.put("amount", deal.getAmount());
+				node.put("quantity", deal.getQuantity());
+				answerList.add(node);
+			}
+		}
+		mapper.writeValueAsString(answerList);
+		ObjectNode responseNode = JsonNodeFactory.instance.objectNode();
+		
+		//hardcoded true for now
+		responseNode.put("status", true);
+		
+		responseNode.put("tabletype", "deal");
+		
+		ArrayNode array = mapper.valueToTree(answerList);
+		responseNode.put("answer", array);
+		String jsonInString = mapper.writeValueAsString(responseNode);
+		out.write(jsonInString);
     }
     
     public void getInstrumentTable(DatabaseManagerOriginal db, ObjectMapper mapper, PrintWriter out) throws JsonGenerationException, JsonMappingException, IOException{
@@ -118,6 +153,9 @@ public class Tables extends HttpServlet {
 		
 		//calling method to get Counterparty table
 		getCounterpartyTable(db,mapper,out);
+		
+		//calling method to get Deal table
+		//getDealTable(db,mapper,out);
 		
 		
 	}
