@@ -91,7 +91,8 @@ public class Login extends HttpServlet {
 		String jsonInString = mapper.writeValueAsString(node);
 		System.out.println(jsonInString);
 		//send JSON in response
-		out.write(jsonInString);
+		out.println(jsonInString);
+		out.close();
 
 
 	}
