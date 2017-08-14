@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -35,10 +36,10 @@ public class Tables extends HttpServlet {
         super();
     }
     
-    public void getDealTable(DatabaseManagerOriginal db, ObjectMapper mapper, PrintWriter out) throws JsonGenerationException, JsonMappingException, IOException{
+    public void getDealTable(int limit, int offset, DatabaseManagerOriginal db, ObjectMapper mapper, PrintWriter out) throws JsonGenerationException, JsonMappingException, IOException{
     	ArrayList<Deal> dealList = new ArrayList<Deal>();
 		List<ObjectNode> answerList = new ArrayList<ObjectNode>();
-		dealList = db.getDealTable();
+		dealList = db.getDealTable(dealList,limit,offset);
 		Deal deal;
 		
 		for(int i=0; i<dealList.size();i++){
@@ -142,20 +143,29 @@ public class Tables extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//TODO: move this to doPost once connected with front-end and change status to be based on whether user is logged in
+		//TODO: change status to be based on whether user is logged in
 		
 		DatabaseManagerOriginal db = new DatabaseManagerOriginal();
 		ObjectMapper mapper = new ObjectMapper();
 		PrintWriter out = response.getWriter();
 		
 		//calling method to get Instrument table
-		getInstrumentTable(db, mapper, out);
+		//getInstrumentTable(db, mapper, out);
 		
 		//calling method to get Counterparty table
-		getCounterpartyTable(db,mapper,out);
+		//getCounterpartyTable(db,mapper,out);
 		
 		//calling method to get Deal table
-		//getDealTable(db,mapper,out);
+//		HttpHelper helper = new HttpHelper();
+//		String responseString = helper.getResponseString(request);
+//		System.out.println("response is "+responseString);
+//		Map<String,Object> map = mapper.readValue(responseString, Map.class);
+//		int limit = (Integer) map.get("limit");
+//		int offset = (Integer) map.get("offset");
+		
+//		int limit = 10;
+//		int offset = 0;
+//		getDealTable(limit, offset, db,mapper,out);
 		
 		
 	}

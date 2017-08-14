@@ -32,38 +32,37 @@ public class Login extends HttpServlet {
 		// TODO Auto-generated constructor stub
 	}
 	
-	protected String getResponseString(HttpServletRequest request) throws ServletException, IOException{
-		StringBuilder sb = new StringBuilder();
-		BufferedReader br = request.getReader();
-		try {
-			String line;
-			while ((line = br.readLine()) != null) {
-				sb.append(line).append('\n');
-			}
-		} finally {
-			br.close();
-		}
-		String responseString = sb.toString();
-		return responseString;
-	}
+//	protected String getResponseString(HttpServletRequest request) throws ServletException, IOException{
+//		StringBuilder sb = new StringBuilder();
+//		BufferedReader br = request.getReader();
+//		try {
+//			String line;
+//			while ((line = br.readLine()) != null) {
+//				sb.append(line).append('\n');
+//			}
+//		} finally {
+//			br.close();
+//		}
+//		String responseString = sb.toString();
+//		return responseString;
+//	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		System.out.println("hello from post");
 		response.setContentType("application/json");
 		PrintWriter out = response.getWriter();
 		ObjectMapper mapper = new ObjectMapper();
+		HttpHelper helper = new HttpHelper();
 		
-		String responseString = getResponseString(request);
+		String responseString = helper.getResponseString(request);
 		System.out.println("response is "+responseString);
 		Map<String,Object> map = mapper.readValue(responseString, Map.class);
 		String username = (String) map.get("username");
 		String password = (String) map.get("password");
 		
-		//TODO: Verify username and password
 		DatabaseManagerSecure connector = new DatabaseManagerSecure();
 		User user = connector.checklogin(username);
 		//initialize as false
