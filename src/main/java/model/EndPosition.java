@@ -10,21 +10,28 @@ public class EndPosition {
 	private BigDecimal sold;
 	private BigDecimal total;
 	
-	public EndPosition(int dealCounterpart, String instrumentName) {
+	public EndPosition(int dealCounterpart, String instrumentName, BigDecimal bought, BigDecimal sold, BigDecimal total) {
 		this.dealCounterpart = dealCounterpart;
 		this.instrumentName = instrumentName;
+		this.bought = bought;
+		this.sold = sold;
+		this.total = total;
 	}
 
 	public int getDealCounterpart() {
 		return dealCounterpart;
 	}
 
+	public void setDealCounterpart(int dealCounterpart) {
+		this.dealCounterpart = dealCounterpart;
+	}
+
 	public String getInstrumentName() {
 		return instrumentName;
 	}
 
-	public BigDecimal getTotal() {
-		return total;
+	public void setInstrumentName(String instrumentName) {
+		this.instrumentName = instrumentName;
 	}
 
 	public BigDecimal getBought() {
@@ -43,11 +50,13 @@ public class EndPosition {
 		this.sold = sold;
 	}
 
+	public BigDecimal getTotal() {
+		return total;
+	}
+
 	public void setTotal(BigDecimal total) {
 		this.total = total;
 	}
-	
-	
 	
 	
 
