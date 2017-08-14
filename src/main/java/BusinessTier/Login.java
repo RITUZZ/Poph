@@ -83,7 +83,7 @@ public class Login extends HttpServlet {
 			System.out.println("LOGIN FAILED - USER NOT FOUND");
 		}
 		
-		node.put("status", status); // building
+		node.put("status", status); // building JSON object
 		node.put("username", username);
 		
 		String jsonInString = mapper.writeValueAsString(node);
