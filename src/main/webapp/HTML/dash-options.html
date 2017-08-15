@@ -1,1 +1,59 @@
-<h1>OPtions</h1>
+<div class="tableview dash-block">
+<h1>Ending Position</h1>
+	<div class="tablemargin">
+		<table id="myTableOptions" class="table-striped">  
+	        <thead>  
+	          <tr>  
+	            <td>Instrument_Name</td>  
+	            <td>Counterparty_Name</td>  
+	            <td>Total Bought</td>  
+	            <td>Total selling</td>
+	            <td>Total</td> 
+	          </tr>  
+	        </thead>  
+	        <tbody>  
+	          
+	        </tbody>  
+	      </table> 
+      </div>
+<h1>Average Prices</h1>
+	<div class="tablemargin">
+		<table id="myTableAverage" class="table-striped">  
+	        <thead>  
+	          <tr>  
+	            <td>Name</td>  
+	            <td>Average Buy</td>  
+	            <td>Average Sell</td> 
+	          </tr>  
+	        </thead>  
+	        <tbody>  
+	          
+	        </tbody>  
+	      </table> 
+      </div>
+</div>
+
+<script>
+	jQuery(function($){
+		
+		endingPosition = {"status":true,"answer":[{"dealCounterpart":"John","instrumentName":"Borealis","bought":457136216.19,"sold":395858487.32,"total":61277728.87},{"dealCounterpart":"John","instrumentName":"Jupiter","bought":4626397355.59,"sold":3698388931.13,"total":928008424.46},{"dealCounterpart":"John","instrumentName":"Astronomica","bought":430341538.47,"sold":409523349.87,"total":20818188.60}]}
+		average = {"status":true,"answer":[{"name":"Astronomica","averageBuy":4308.718347,"averageSell":4261.796364},{"name":"Borealis","averageBuy":4371.779779,"averageSell":4332.297497},{"name":"Celestial","averageBuy":522.123860,"averageSell":519.126852},{"name":"Deuteronic","averageBuy":3951.190683,"averageSell":3900.890494},{"name":"Eclipse","averageBuy":6706.010767,"averageSell":6619.382787},{"name":"Floral","averageBuy":3834.752619,"averageSell":3803.981164},{"name":"Galactia","averageBuy":6771.487763,"averageSell":6724.890373},{"name":"Heliosphere","averageBuy":9815.254057,"averageSell":9678.696054},{"name":"Interstella","averageBuy":840.636152,"averageSell":840.321252},{"name":"Jupiter","averageBuy":42844.530398,"averageSell":42736.944201},{"name":"Koronis","averageBuy":2354.492048,"averageSell":2324.695406},{"name":"Lunatic","averageBuy":532.959151,"averageSell":528.889194}]}
+		var data=endingPosition.answer;
+		console.log(data);
+		
+		for(i in data)
+		{
+			$('#myTableOptions>tbody').append('<tr><td>'+data[i].instrumentName+'</td><td>'+data[i].dealCounterpart+'</td><td>'+data[i].bought+'</td><td>'+data[i].sold+'</td><td>'+data[i].total+'</td></tr>');
+		}
+		$('#myTableOptions').dataTable();
+		var data=average.answer;
+		console.log(data);
+		
+		for(i in data)
+		{
+			$('#myTableAverage>tbody').append('<tr><td>'+data[i].name+'</td><td>'+data[i].averageBuy+'</td><td>'+data[i].averageSell+'</td></tr>');
+		}
+		$('#myTableAverage').dataTable();
+		
+	});
+</script>
