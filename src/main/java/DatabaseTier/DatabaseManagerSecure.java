@@ -22,6 +22,7 @@ public class DatabaseManagerSecure extends ColumnFixture {
 
 	public static void main(String[] args) {
 		DatabaseManagerSecure d = new DatabaseManagerSecure();
+		System.out.println(d.checklogin("test").getSalt());
 	}
 
 	public DatabaseManagerSecure() {
