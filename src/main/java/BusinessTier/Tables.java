@@ -235,7 +235,7 @@ public class Tables extends HttpServlet {
 //		getDealTable(limit, offset, db,mapper,out);
 		
 		//calling method to get Ending Positions
-		//getEndingPositions(db,mapper,out);
+//		getEndingPositions(db,mapper,out);
 		
 		//calling method to get Average Prices
 		//getAveragePrices(db,mapper,out);
