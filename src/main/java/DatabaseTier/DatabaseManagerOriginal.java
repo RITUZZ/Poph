@@ -107,6 +107,7 @@ public class DatabaseManagerOriginal {
 		}
 		return null;
 	}
+	
 
 	public ArrayList<Deal> getDealTable(ArrayList<Deal> deals, int offset, int limit) {
 

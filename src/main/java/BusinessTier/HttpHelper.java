@@ -13,7 +13,9 @@ public class HttpHelper {
 		BufferedReader br = request.getReader();
 		try {
 			String line;
+		
 			while ((line = br.readLine()) != null) {
+				System.out.println(line);
 				sb.append(line).append('\n');
 			}
 		} finally {

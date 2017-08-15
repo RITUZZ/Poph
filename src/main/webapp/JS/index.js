@@ -62,15 +62,11 @@ app.controller("main-controller",function($scope,$http){
 		}
 		 $(obj.target.parentNode).addClass('active');
 	};
-	var handleDeal={
-			offset:0,
-			limit:10
-	};
 	
 	$http({
-		  url: 'Tables/Deal',
+		  url: 'Tables/Deal?offset=0&limit=1500',
 		  method: 'GET',
-		  data:handleDeal,
+		  
 		  datatype:'JSON'
 		})
 		.then(function success(data){
@@ -78,7 +74,6 @@ app.controller("main-controller",function($scope,$http){
 		},function error(data){
 			console.log("error");
 		});
-	
 	
 	$http({
 		  url: 'Tables/Counterparty',
