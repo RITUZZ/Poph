@@ -1,12 +1,33 @@
 <div class="tableview dash-block">
-	<table>
-		<tr>
-			<td>row 1 col 1</td>
-			<td>row 1 col 2</td>
-		</tr>
-		<tr>
-			<td>row 2 col 1</td>
-			<td>row 2 col 2</td>
-		</tr>
-	</table>
+	<table id="myTableDeal" class="table-striped">  
+        <thead>  
+          <tr>  
+            <td>Instrument_id</td>  
+            <td>Counterparty_id</td>  
+            <td>Type</td>  
+            <td>Amount</td>
+            <td>Quantity</td>
+            <td>Time</td>  
+          </tr>  
+        </thead>  
+        <tbody>  
+          
+        </tbody>  
+      </table>  
 </div>
+<script>
+	$(document).ready(function(){
+	    $('#myTableDeal').dataTable();
+	});
+	jQuery(function($){
+		console.log(deal)
+		console.log(counterParty)
+		console.log(instruments)
+		var data=deal.answer;
+		for(i in data)
+		{
+			$('#myTableDeal>tbody').append('<tr><td>'+data[i].instrumentname+'</td><td>'+data[i].counterpartyname+'</td><td>'+data[i].type+'</td><td>'+data[i].amount+'</td><td>'+data[i].quantity+'</td><td>'+data[i].time+'</td></tr>');
+		}
+		$('#myTableDeal').dataTable();
+	});
+</script>
