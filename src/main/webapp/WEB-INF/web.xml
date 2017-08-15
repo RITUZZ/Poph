@@ -16,6 +16,12 @@
   	<description></description>
   	<servlet-class>BusinessTier.Login</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>InstrumentTable</servlet-name>
+  	<display-name>InstrumentTable</display-name>
+  	<description></description>
+  	<servlet-class>BusinessTier.InstrumentTable</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>Tables</servlet-name>
   	<url-pattern>/Tables</url-pattern>
@@ -23,5 +29,9 @@
   <servlet-mapping>
   	<servlet-name>Login</servlet-name>
   	<url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>InstrumentTable</servlet-name>
+  	<url-pattern>/Tables/Instruments</url-pattern>
   </servlet-mapping>
 </web-app>
