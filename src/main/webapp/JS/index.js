@@ -38,6 +38,7 @@ app.controller('SubmitController',function($scope,$http,$rootScope){
 var deal,instruments,counterParty;
 
 app.controller("main-controller",function($scope,$http){
+
 	$scope.View={};
 	$scope.View.subUrl="HTML/dash-tradeoverview.html";
 	$scope.View.url="HTML/dashboard.html ";
@@ -73,7 +74,7 @@ app.controller("main-controller",function($scope,$http){
 		  datatype:'JSON'
 		})
 		.then(function success(data){
-			deal=data;
+			deal=data.data;
 		},function error(data){
 			console.log("error");
 		});
@@ -85,7 +86,7 @@ app.controller("main-controller",function($scope,$http){
 		  datatype:'JSON'
 		})
 		.then(function success(data){
-			counterParty=data;
+			counterParty=data.data;
 		},function error(data){
 			console.log("error");
 		});
@@ -97,7 +98,7 @@ app.controller("main-controller",function($scope,$http){
 		  datatype:'JSON'
 		})
 		.then(function success(data){
-			instruments=data;
+			instruments=data.data;
 		},function error(data){
 			console.log("error");
 		});

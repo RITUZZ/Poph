@@ -52,7 +52,7 @@ public class InstrumentTable extends HttpServlet {
 		for(int i=0; i<instrumentList.size();i++){
 			instrument = instrumentList.get(i);
 				ObjectNode node = JsonNodeFactory.instance.objectNode();
-				node.put("id",instrument.getId());
+//				node.put("id",instrument.getId());
 				node.put("name", instrument.getName());
 				answerList.add(node);
 			

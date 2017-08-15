@@ -31,21 +31,6 @@ public class Login extends HttpServlet {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
-//	protected String getResponseString(HttpServletRequest request) throws ServletException, IOException{
-//		StringBuilder sb = new StringBuilder();
-//		BufferedReader br = request.getReader();
-//		try {
-//			String line;
-//			while ((line = br.readLine()) != null) {
-//				sb.append(line).append('\n');
-//			}
-//		} finally {
-//			br.close();
-//		}
-//		String responseString = sb.toString();
-//		return responseString;
-//	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)

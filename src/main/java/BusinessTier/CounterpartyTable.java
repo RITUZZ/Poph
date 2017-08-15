@@ -47,14 +47,14 @@ public class CounterpartyTable extends HttpServlet {
 		
 		for(int i=0; i<counterpartyList.size();i++){
 			counterparty = counterpartyList.get(i);
-			if (!answerList.contains(counterparty.getId())){
+			
 				ObjectNode node = JsonNodeFactory.instance.objectNode();
-				node.put("id", counterparty.getId());
+				//node.put("id", counterparty.getId());
 				node.put("name", counterparty.getName());
-				node.put("status", counterparty.getStatus());
-				node.put("date", counterparty.getDateRegistered().toString());
+				//node.put("status", counterparty.getStatus());
+				//node.put("date", counterparty.getDateRegistered().toString());
 				answerList.add(node);
-			}
+			
 		}
 		mapper.writeValueAsString(answerList);
 		ObjectNode responseNode = JsonNodeFactory.instance.objectNode();

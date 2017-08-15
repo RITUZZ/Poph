@@ -28,8 +28,8 @@
 		data =data.answer
 		for(i in data)
 		{
-			$('#myTableDeal>tbody').append('<tr><td>'+data[i].instrumentid+'</td><td>'+data[i].counterpartyid+'</td><td>'+data[i].type+'</td><td>'+data[i].amount+'</td><td>'+data[i].quantity+'</td><td>'+data[i].time+'</td></tr>');
+			$('#myTableDeal>tbody').append('<tr><td>'+data[i].instrumentname+'</td><td>'+data[i].counterpartyname+'</td><td>'+data[i].type+'</td><td>'+data[i].amount+'</td><td>'+data[i].quantity+'</td><td>'+data[i].time+'</td></tr>');
 		}
-		 $('#myTableDeal').dataTable();
+		$('#myTableDeal').dataTable();
 	});
 </script>
