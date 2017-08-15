@@ -51,6 +51,10 @@ app.controller("main-controller",function($scope){
 			{
 				$scope.View.subUrl="HTML/dash-tableview.html";
 			}
+		else if(type=='3')
+		{
+			$scope.View.subUrl="HTML/dash-options.html";
+		}
 		 $(obj.target.parentNode).addClass('active');
 	};
 	
