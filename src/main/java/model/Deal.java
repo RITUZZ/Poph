@@ -1,5 +1,6 @@
 	package model;
 
+import java.math.BigDecimal;
 import java.sql.Time;
 import java.sql.Timestamp;
 import java.util.Date;
@@ -11,11 +12,11 @@ public class Deal {
 	private int counterpartyId;
 	private int instrumentId;
 	private String type;
-	private float amount;
+	private BigDecimal amount;
 	private int quantity;
 	
 	
-	public Deal(String instrumentName, int id, Timestamp time, int counterpartyId, int instrumentId, String type, float amount, int quantity) {
+	public Deal(String instrumentName, int id, Timestamp time, int counterpartyId, int instrumentId, String type, BigDecimal amount, int quantity) {
 		super();
 		this.instrumentName = instrumentName;
 		this.id = id;
@@ -42,7 +43,7 @@ public class Deal {
 	public String getType() {
 		return type;
 	}
-	public float getAmount() {
+	public BigDecimal getAmount() {
 		return amount;
 	}
 	public int getQuantity() {
