@@ -4,17 +4,17 @@ import java.math.BigDecimal;
 
 public class AverageInstrumentPrice {
 	
-	private int id;
+	private String name;
 	private BigDecimal averageBuy, averageSell;
 	
-	public AverageInstrumentPrice(int id, BigDecimal averageBuy, BigDecimal averageSell) {
-		this.id = id;
+	public AverageInstrumentPrice(String name, BigDecimal averageBuy, BigDecimal averageSell) {
+		this.name = name;
 		this.averageBuy = averageBuy;
 		this.averageSell = averageSell;
 	}
 
-	public int getId() {
-		return id;
+	public String getId() {
+		return name;
 	}
 
 	public BigDecimal getAverageBuy() {
@@ -25,8 +25,8 @@ public class AverageInstrumentPrice {
 		return averageSell;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setId(String id) {
+		this.name = id;
 	}
 
 	public void setAverageBuy(BigDecimal averageBuy) {

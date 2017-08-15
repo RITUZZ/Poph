@@ -181,19 +181,20 @@ public class DatabaseManagerOriginal {
 	public ArrayList<EndPosition> getEndingPositions() {
 		try {
 			Statement statement = connection.createStatement();
-			ResultSet rs = statement.executeQuery("select deal.deal_counterparty_id, "+
+			ResultSet rs = statement.executeQuery("select counterparty.counterparty_name, "+
 					"instrument.instrument_name, "+
 					"deal.deal_type, " +
 					"sum(deal.deal_quantity*deal.deal_amount) AS Total "+
 					"from deal "+
 					"inner join instrument on deal.deal_instrument_id = instrument.instrument_id "+
-					"group by deal.deal_counterparty_id, instrument.instrument_id, deal.deal_type, instrument.instrument_name "+
-					"order by deal.deal_type, deal.deal_counterparty_id;");
+					"inner join counterparty on deal.deal_counterparty_id = counterparty.counterparty_id "+
+					"group by counterparty.counterparty_name, instrument.instrument_id, deal.deal_type, instrument.instrument_name "+
+					"order by deal.deal_type, counterparty.counterparty_name;");
 			ArrayList<EndPosition> results = new ArrayList<EndPosition>();
 
 			while (rs.next()) {
 
-				int dealer = rs.getInt(1);
+				String dealer = rs.getString(1);
 				String instrument = rs.getString(2);
 				String dealType = rs.getString(3);
 
@@ -262,17 +263,18 @@ public class DatabaseManagerOriginal {
 	public ArrayList<AverageInstrumentPrice> getAveragePrices() {
 		try {
 			Statement statement = connection.createStatement();
-			ResultSet rs = statement.executeQuery("select deal_instrument_id, "+
+			ResultSet rs = statement.executeQuery("select instrument.instrument_name, "+
 					"deal_type, "+
 					"avg(deal_amount) "+
 					"from deal "+
+					"inner join instrument on instrument.instrument_id = deal.deal_instrument_id "+
 					"group by deal_instrument_id, deal_type " +
 					"order by deal_type, deal_instrument_id;");
 			ArrayList<AverageInstrumentPrice> results = new ArrayList<AverageInstrumentPrice>();
 
 			while (rs.next()) {
 
-				int id = rs.getInt(1);
+				String id = rs.getString(1);
 				String dealType = rs.getString(2);
 
 				if (dealType.equalsIgnoreCase("b")) {

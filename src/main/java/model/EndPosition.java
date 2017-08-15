@@ -4,26 +4,26 @@ import java.math.BigDecimal;
 
 public class EndPosition {
 	
-	private int dealCounterpart;
+	private String counterpartName;
 	private String instrumentName;
 	private BigDecimal bought;
 	private BigDecimal sold;
 	private BigDecimal total;
 	
-	public EndPosition(int dealCounterpart, String instrumentName, BigDecimal bought, BigDecimal sold, BigDecimal total) {
-		this.dealCounterpart = dealCounterpart;
+	public EndPosition(String counterpartName, String instrumentName, BigDecimal bought, BigDecimal sold, BigDecimal total) {
+		this.counterpartName = counterpartName;
 		this.instrumentName = instrumentName;
 		this.bought = bought;
 		this.sold = sold;
 		this.total = total;
 	}
 
-	public int getDealCounterpart() {
-		return dealCounterpart;
+	public String getDealCounterpart() {
+		return counterpartName;
 	}
 
-	public void setDealCounterpart(int dealCounterpart) {
-		this.dealCounterpart = dealCounterpart;
+	public void setDealCounterpart(String counterpartName) {
+		this.counterpartName = counterpartName;
 	}
 
 	public String getInstrumentName() {
