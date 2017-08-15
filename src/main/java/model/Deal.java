@@ -7,38 +7,25 @@ import java.util.Date;
 
 public class Deal {
 	private String instrumentName;
-	private int id;
 	private Timestamp time;
-	private int counterpartyId;
-	private int instrumentId;
 	private String type;
 	private BigDecimal amount;
 	private int quantity;
+	private String coutnerpartyName;
 	
 	
-	public Deal(String instrumentName, int id, Timestamp time, int counterpartyId, int instrumentId, String type, BigDecimal amount, int quantity) {
+	public Deal(String instrumentName, String coutnerpartyName, Timestamp time, String type, BigDecimal amount, int quantity) {
 		super();
 		this.instrumentName = instrumentName;
-		this.id = id;
+		this.coutnerpartyName = coutnerpartyName;
 		this.time = time;
-		this.counterpartyId = counterpartyId;
-		this.instrumentId = instrumentId;
 		this.type = type;
 		this.amount = amount;
 		this.quantity = quantity;
 	}
 	
-	public int getId() {
-		return id;
-	}
 	public Timestamp getTime() {
 		return time;
-	}
-	public int getCounterpartyId() {
-		return counterpartyId;
-	}
-	public int getInstrumentId() {
-		return instrumentId;
 	}
 	public String getType() {
 		return type;
@@ -52,11 +39,13 @@ public class Deal {
 	public String getInstrumentName() {
 		return instrumentName;
 	}
+	public String getCoutnerpartyName() {
+		return coutnerpartyName;
+	}
 
 	@Override
 	public String toString() {
-		return "Deal [id=" + id + ", time=" + time + ", counterpartyId=" + counterpartyId + ", instrumentId="
-				+ instrumentId + ", type=" + type + ", amount=" + amount + ", quantity=" + quantity + "]";
+		return "Deal [time=" + time + ", type=" + type + ", amount=" + amount + ", quantity=" + quantity + "]";
 	}
 	
 	
