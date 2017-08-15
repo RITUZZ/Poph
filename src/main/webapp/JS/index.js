@@ -1,5 +1,4 @@
 var app = angular.module('db', []);
-
 app.controller('SubmitController',function($scope,$http,$rootScope){
 	$scope.username="USERNAME";
 		$scope.submit=function(){
@@ -11,6 +10,8 @@ app.controller('SubmitController',function($scope,$http,$rootScope){
 					password:$scope.password
 				};
 			var root = '';
+			$scope.View.url="HTML/dashboard.html";
+			/*
 			$http({
 			  url: root + 'Login',
 			  method: 'POST',
@@ -21,18 +22,17 @@ app.controller('SubmitController',function($scope,$http,$rootScope){
 				
 				console.log("Success");
 				console.log(data);
-				$scope.View.url="HTML/dashboard.html";
+				if(data.status==true)
+					$scope.View.url="HTML/dashboard.html";
+				else
+					alert("Wrong Username or Password");
 				console.log($scope.View.url);
-				$scope.$applyAsync(function(){
-					app.setIncludeValue("HTML/dashboard.html");
-				});
-						
 			},function error(data){
 				console.log("error");
 			});
+			*/
 		}
 	});
-
 app.controller("main-controller",function($scope){
 	$scope.View={};
 	$scope.View.url="HTML/login.html ";
