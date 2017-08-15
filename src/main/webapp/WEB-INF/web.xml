@@ -40,6 +40,18 @@
 		<description></description>
 		<servlet-class>BusinessTier.Scylla</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>EndingPositionTable</servlet-name>
+		<display-name>EndingPositionTable</display-name>
+		<description></description>
+		<servlet-class>BusinessTier.EndingPositionTable</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AveragePrice</servlet-name>
+		<display-name>AveragePrice</display-name>
+		<description></description>
+		<servlet-class>BusinessTier.AveragePrice</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>Tables</servlet-name>
 		<url-pattern>/Tables</url-pattern>
@@ -63,5 +75,13 @@
 	<servlet-mapping>
 		<servlet-name>Scylla</servlet-name>
 		<url-pattern>/Data/InstrumentPrice</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EndingPositionTable</servlet-name>
+		<url-pattern>/Tables/EndingPosition</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AveragePrice</servlet-name>
+		<url-pattern>/Tables/AveragePrice</url-pattern>
 	</servlet-mapping>
 </web-app>
