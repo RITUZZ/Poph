@@ -100,14 +100,8 @@ public class DatabaseManagerSecure extends ColumnFixture {
 			PreparedStatement ps = connection.prepareStatement("INSERT INTO userSecure (user_id, user_pwd) VALUES (?, ?)");
 			ps.setString(1, user);
 			ps.setString(2, password);
-			ResultSet rs = ps.executeQuery();
-
-			while (rs.next()) {
-				String userResult = rs.getString("user_id");
-				if (userResult != null && !userResult.equals("")) {
-					return true;
-				}
-			}
+			int rs = ps.executeUpdate();
+			return rs>0;
 
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -115,6 +109,19 @@ public class DatabaseManagerSecure extends ColumnFixture {
 		return false;
 	}
 
+	public boolean deleteUser(String user) {
+		PreparedStatement ps;
+		try {
+			ps = connection.prepareStatement("DELETE userSecure WHERE user_id = ?");
+			ps.setString(1, user);
+			int rs = ps.executeUpdate();
+			return rs>0;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return false;
+	}
 
 
 }

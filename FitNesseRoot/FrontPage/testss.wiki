@@ -3,11 +3,8 @@ Test
 ---
 !define TEST_SYSTEM {slim}
 !path C:\Users\Graduate\workspace\Poph\target\classes;C:\Users\Graduate\workspace\Poph\target\test-classes
-
-
 | databaseTier.DatabaseConnectorTest |
 | testConnectionUser? |
-| test-user |
 | true |
 
 | model.User |

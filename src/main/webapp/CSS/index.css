@@ -13,6 +13,13 @@
 .zeropadding{
 	padding:0px;
 }
+.tableview{
+	padding:20px;
+	padding-top:0px;
+}
+.tablemargin{
+	margin:50px;
+}
 .zeromargin{
 	margin:0px;
 }
@@ -25,6 +32,7 @@ html,body{
 }
 .longnomargin{
 	height:100%;
+	overflow:auto;
 	margin:0px;
 }
 #dash-body{

@@ -1,33 +1,80 @@
 <div class="tableview dash-block">
-	<table id="myTableDeal" class="table-striped">  
-        <thead>  
-          <tr>  
-            <td>Instrument_id</td>  
-            <td>Counterparty_id</td>  
-            <td>Type</td>  
-            <td>Amount</td>
-            <td>Quantity</td>
-            <td>Time</td>  
-          </tr>  
-        </thead>  
-        <tbody>  
-          
-        </tbody>  
-      </table>  
+<h1>Deals</h1>
+	<div class="tablemargin">
+		<table id="myTableDeal" class="table-striped">  
+	        <thead>  
+	          <tr>  
+	            <td>Instrument_Name</td>  
+	            <td>Counterparty_Name</td>  
+	            <td>Type</td>  
+	            <td>Amount</td>
+	            <td>Quantity</td>
+	            <td>Time</td>  
+	          </tr>  
+	        </thead>  
+	        <tbody>  
+	          
+	        </tbody>  
+	      </table> 
+      </div>
+       
+       <h1>Instruments</h1>
+      <div class="tablemargin">
+	      <table id="myTableInstruments" class="table-striped">  
+	        <thead>  
+	          <tr>  
+	            <td>Instrument_Name</td>  
+	          </tr>  
+	        </thead>  
+	        <tbody>  
+	          
+	        </tbody>  
+	      </table> 
+	  </div>
+      
+      <h1>Counter Party</h1>
+      <div class="tablemargin">
+	      <table id="myTableCounterParty" class="table-striped">  
+	        <thead>  
+	          <tr>  
+	            <td>Counterparty_Name</td> 
+	          </tr>  
+	        </thead>  
+	        <tbody>  
+	          
+	        </tbody>  
+	      </table> 
+      </div>
+      
 </div>
 <script>
 	jQuery(function($){
 		console.log(deal)
-		/*
 		console.log(counterParty)
 		console.log(instruments)
+		
+		
 		var data=deal.answer;
-		*/
-		data =deal.answer
+
 		for(i in data)
 		{
 			$('#myTableDeal>tbody').append('<tr><td>'+data[i].instrumentname+'</td><td>'+data[i].counterpartyname+'</td><td>'+data[i].type+'</td><td>'+data[i].amount+'</td><td>'+data[i].quantity+'</td><td>'+data[i].time+'</td></tr>');
 		}
 		$('#myTableDeal').dataTable();
+		
+		data=counterParty.answer;
+		for(i in data)
+		{
+			$('#myTableCounterParty>tbody').append('<tr><td>'+data[i].name+'</td></tr>');
+		}
+		$('#myTableCounterParty').dataTable()
+		
+		data=instruments.answer;
+		for(i in data)
+		{
+			$('#myTableInstruments>tbody').append('<tr><td>'+data[i].name+'</td></tr>');
+		}
+		$('#myTableInstruments').dataTable()
+		
 	});
 </script>

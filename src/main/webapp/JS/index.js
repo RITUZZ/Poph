@@ -75,7 +75,6 @@ app.controller("main-controller",function($scope,$http){
 			console.log("error");
 		});
 	
-	/*
 	$http({
 		  url: 'Tables/Counterparty',
 		  method: 'GET',
@@ -97,5 +96,5 @@ app.controller("main-controller",function($scope,$http){
 			instruments=data.data;
 		},function error(data){
 			console.log("error");
-		});*/
+		});
 });
