@@ -31,14 +31,14 @@ public class DatabaseManagerOriginal {
 //		for (Deal sd : s) {
 //			System.out.println(sd.getCoutnerpartyName() + ", " + sd.getTime() + ", " + sd.getInstrumentName());
 //		}
-//				ArrayList<AverageInstrumentPrice> s = d.getAveragePrices();
-//				for (AverageInstrumentPrice sd : s) {
-//					System.out.println(sd.getId() + "    " + sd.getAverageBuy() + "   " + sd.getAverageSell());
-//				}
-				ArrayList<EndPosition> s = d.getEndingPositions();
-				for (EndPosition sd : s) {
-					System.out.println(sd.getDealCounterpart() + "    " + sd.getInstrumentName() + "   " + sd.getBought() + "   " + sd.getSold() + "   " + sd.getTotal());
+				ArrayList<AverageInstrumentPrice> s = d.getAveragePrices();
+				for (AverageInstrumentPrice sd : s) {
+					System.out.println(sd.getId() + "    " + sd.getAverageBuy() + "   " + sd.getAverageSell());
 				}
+//				ArrayList<EndPosition> s = d.getEndingPositions();
+//				for (EndPosition sd : s) {
+//					System.out.println(sd.getDealCounterpart() + "    " + sd.getInstrumentName() + "   " + sd.getBought() + "   " + sd.getSold() + "   " + sd.getTotal());
+//				}
 //				ArrayList<Deal> s = d.getInstumentDetails("Eclipse", "B");
 //				for (Deal sd : s) {
 //					System.out.println(sd.getInstrumentName() + "   " + sd.getTime() + "    " + sd.getAmount() + "    " + sd.getQuantity());
@@ -295,7 +295,7 @@ public class DatabaseManagerOriginal {
 
 					boolean found = false;
 					for (AverageInstrumentPrice aip : results) {
-						if (aip.getId() == id) {
+						if (aip.getId().equals(id)) {
 							aip.setAverageSell(rs.getBigDecimal(3));
 							found = true;
 							break;
