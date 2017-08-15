@@ -2,8 +2,8 @@
 	<table id="myTableDeal" class="table-striped">  
         <thead>  
           <tr>  
-            <td>Instrument_id</td>  
-            <td>Counterparty_id</td>  
+            <td>Instrument_Name</td>  
+            <td>Counterparty_Name</td>  
             <td>Type</td>  
             <td>Amount</td>
             <td>Quantity</td>
@@ -13,37 +13,32 @@
         <tbody>  
           
         </tbody>  
-      </table>  
+      </table> 
+      
+       
       <table id="myTableInstruments" class="table-striped">  
         <thead>  
           <tr>  
-            <td>Instrument_id</td>  
-            <td>Counterparty_id</td>  
-            <td>Type</td>  
-            <td>Amount</td>
-            <td>Quantity</td>
-            <td>Time</td>  
+            <td>Instrument_Name</td>  
           </tr>  
         </thead>  
         <tbody>  
           
         </tbody>  
       </table> 
+      
+      
       <table id="myTableCounterParty" class="table-striped">  
         <thead>  
           <tr>  
-            <td>Instrument_id</td>  
-            <td>Counterparty_id</td>  
-            <td>Type</td>  
-            <td>Amount</td>
-            <td>Quantity</td>
-            <td>Time</td>  
+            <td>Counterparty_Name</td> 
           </tr>  
         </thead>  
         <tbody>  
           
         </tbody>  
       </table> 
+      
 </div>
 <script>
 	jQuery(function($){
@@ -62,13 +57,16 @@
 		data=counterParty.answer;
 		for(i in data)
 		{
-			$('#myTableCounterParty>tbody').append('<tr><td>'++'</td></tr>');
+			$('#myTableCounterParty>tbody').append('<tr><td>'+data[i].name+'</td></tr>');
 		}
+		$('#myTableCounterParty').dataTable()
 		
 		data=instruments.answer;
 		for(i in data)
 		{
-			$('#myTableInstruments>tbody').append('<tr><td>'++'</td></tr>');
+			$('#myTableInstruments>tbody').append('<tr><td>'+data[i].name+'</td></tr>');
 		}
+		$('#myTableInstruments').dataTable()
+		
 	});
 </script>
