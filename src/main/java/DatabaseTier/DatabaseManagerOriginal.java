@@ -27,14 +27,18 @@ public class DatabaseManagerOriginal {
 		final long databaseEndTime = System.currentTimeMillis();
 		System.out.println("Database connect time: " + (databaseEndTime - startTime)/1000);
 
+		ArrayList<Deal> s = d.getDealTable(new ArrayList<Deal>(), 0, 100);
+		for (Deal sd : s) {
+			System.out.println(sd.getId() + "   " + sd.getTime());
+		}
 //		ArrayList<AverageInstrumentPrice> s = d.getAveragePrices();
 //		for (AverageInstrumentPrice sd : s) {
 //			System.out.println(sd.getId() + "    " + sd.getAverageBuy() + "   " + sd.getAverageSell());
 //		}
-		ArrayList<EndPosition> s = d.getEndingPositions();
-		for (EndPosition sd : s) {
-			System.out.println(sd.getDealCounterpart() + "    " + sd.getInstrumentName() + "   " + sd.getBought() + "   " + sd.getSold() + "   " + sd.getTotal());
-		}
+//		ArrayList<EndPosition> s = d.getEndingPositions();
+//		for (EndPosition sd : s) {
+//			System.out.println(sd.getDealCounterpart() + "    " + sd.getInstrumentName() + "   " + sd.getBought() + "   " + sd.getSold() + "   " + sd.getTotal());
+//		}
 		System.out.println(s.size());
 
 		final long endTime = System.currentTimeMillis();
@@ -100,7 +104,7 @@ public class DatabaseManagerOriginal {
 		return null;
 	}
 
-	public ArrayList<Deal> getDealTable(ArrayList<Deal> deals, int limit, int offset) {
+	public ArrayList<Deal> getDealTable(ArrayList<Deal> deals, int offset, int limit) {
 
 		try {
 
