@@ -34,7 +34,10 @@ app.controller('SubmitController',function($scope,$http,$rootScope){
 		}
 	});
 
-app.controller("main-controller",function($scope){
+
+var deal,instruments,counterParty;
+
+app.controller("main-controller",function($scope,$http){
 	$scope.View={};
 	$scope.View.subUrl="HTML/dash-tradeoverview.html";
 	$scope.View.url="HTML/dashboard.html ";
@@ -58,11 +61,11 @@ app.controller("main-controller",function($scope){
 		}
 		 $(obj.target.parentNode).addClass('active');
 	};
-	
 	var handleDeal={
 			offset:0,
 			limit:10
 	};
+	
 	$http({
 		  url: 'Tables/Deal',
 		  method: 'GET',
@@ -70,8 +73,7 @@ app.controller("main-controller",function($scope){
 		  datatype:'JSON'
 		})
 		.then(function success(data){
-			console.log("Deal");
-			console.log(data);
+			deal=data;
 		},function error(data){
 			console.log("error");
 		});
@@ -83,8 +85,7 @@ app.controller("main-controller",function($scope){
 		  datatype:'JSON'
 		})
 		.then(function success(data){
-			console.log("CounterParty");
-			console.log(data);
+			counterParty=data;
 		},function error(data){
 			console.log("error");
 		});
@@ -96,10 +97,8 @@ app.controller("main-controller",function($scope){
 		  datatype:'JSON'
 		})
 		.then(function success(data){
-			console.log("Instruments");
-			console.log(data);
+			instruments=data;
 		},function error(data){
 			console.log("error");
 		});
-	
 });
