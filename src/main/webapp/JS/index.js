@@ -1,4 +1,6 @@
 var app = angular.module('db', []);
+
+
 app.controller('SubmitController',function($scope,$http,$rootScope){
 	$scope.username="USERNAME";
 		$scope.submit=function(){
@@ -9,9 +11,8 @@ app.controller('SubmitController',function($scope,$http,$rootScope){
 					username:$scope.username,
 					password:$scope.password
 				};
-			var root = '';
 			$http({
-			  url: root + 'Login',
+			  url: 'Login',
 			  method: 'POST',
 			  data:loginDetails,
 			  datatype:'JSON'
@@ -32,6 +33,7 @@ app.controller('SubmitController',function($scope,$http,$rootScope){
 			});
 		}
 	});
+
 app.controller("main-controller",function($scope){
 	$scope.View={};
 	$scope.View.subUrl="HTML/dash-tradeoverview.html";
@@ -56,5 +58,48 @@ app.controller("main-controller",function($scope){
 		}
 		 $(obj.target.parentNode).addClass('active');
 	};
+	
+	var handleDeal={
+			offset:0,
+			limit:10
+	};
+	$http({
+		  url: 'Tables/Deal',
+		  method: 'GET',
+		  data:handleDeal,
+		  datatype:'JSON'
+		})
+		.then(function success(data){
+			console.log("Deal");
+			console.log(data);
+		},function error(data){
+			console.log("error");
+		});
+	
+	
+	$http({
+		  url: 'Tables/Counterparty',
+		  method: 'GET',
+		  datatype:'JSON'
+		})
+		.then(function success(data){
+			console.log("CounterParty");
+			console.log(data);
+		},function error(data){
+			console.log("error");
+		});
+	
+	
+	$http({
+		  url: 'Tables/Instruments',
+		  method: 'GET',
+		  datatype:'JSON'
+		})
+		.then(function success(data){
+			console.log("Instruments");
+			console.log(data);
+		},function error(data){
+			console.log("error");
+		});
 	
 });
