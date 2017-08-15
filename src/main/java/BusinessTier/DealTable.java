@@ -3,7 +3,9 @@ package BusinessTier;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Enumeration;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -44,24 +46,15 @@ public class DealTable extends HttpServlet {
 		ArrayList<Deal> dealList = new ArrayList<Deal>();
 		List<ObjectNode> answerList = new ArrayList<ObjectNode>();
 		
-		//calling method to get Deal table
-//		HttpHelper helper = new HttpHelper();
-//		String responseString = helper.getResponseString(request);
-//		System.out.println("response is "+responseString);
-//		Map<String,Object> map = mapper.readValue(responseString, Map.class);
-//		int limit = (Integer) map.get("limit");
-//		int offset = (Integer) map.get("offset");
-		
-		int limit = 10;
-		int offset = 0;
+		int limit = Integer.parseInt(request.getParameter("limit"));
+		int offset = Integer.parseInt(request.getParameter("offset"));
 		
 		dealList = db.getDealTable(dealList,offset,limit);
 		Deal deal;
-		System.out.println(dealList.size());
 		
 		for(int i=0; i<dealList.size();i++){
 			deal = dealList.get(i);
-			System.out.println(deal);
+			//System.out.println(deal);
 				ObjectNode node = JsonNodeFactory.instance.objectNode();
 				//node.put("id",deal.getId());
 				node.put("instrumentname", deal.getInstrumentName());
@@ -86,6 +79,7 @@ public class DealTable extends HttpServlet {
 		responseNode.put("answer", array);
 		String jsonInString = mapper.writeValueAsString(responseNode);
 		out.println(jsonInString);
+		out.close();
 	}
 
 	/**

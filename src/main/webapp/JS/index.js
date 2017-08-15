@@ -62,15 +62,11 @@ app.controller("main-controller",function($scope,$http){
 		}
 		 $(obj.target.parentNode).addClass('active');
 	};
-	var handleDeal={
-			offset:0,
-			limit:10
-	};
 	
 	$http({
-		  url: 'Tables/Deal',
+		  url: 'Tables/Deal?offset=0&limit=1500',
 		  method: 'GET',
-		  data:handleDeal,
+		  
 		  datatype:'JSON'
 		})
 		.then(function success(data){
@@ -79,7 +75,7 @@ app.controller("main-controller",function($scope,$http){
 			console.log("error");
 		});
 	
-	
+	/*
 	$http({
 		  url: 'Tables/Counterparty',
 		  method: 'GET',
@@ -101,5 +97,5 @@ app.controller("main-controller",function($scope,$http){
 			instruments=data.data;
 		},function error(data){
 			console.log("error");
-		});
+		});*/
 });

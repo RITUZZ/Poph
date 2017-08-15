@@ -66,6 +66,7 @@ public class EndingPositionTable extends HttpServlet {
 		//hardcoded true for now
 		responseNode.put("status", true);
 		
+		
 		ArrayNode array = mapper.valueToTree(answerList);
 		responseNode.put("answer", array);
 		String jsonInString = mapper.writeValueAsString(responseNode);
