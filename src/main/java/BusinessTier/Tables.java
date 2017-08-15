@@ -72,33 +72,6 @@ public class Tables extends HttpServlet {
 		out.println(jsonInString);
     }
     
-    public void getInstrumentTable(DatabaseManagerOriginal db, ObjectMapper mapper, PrintWriter out) throws JsonGenerationException, JsonMappingException, IOException{
-    	ArrayList<Instrument> instrumentList = new ArrayList<Instrument>();
-		List<ObjectNode> answerList = new ArrayList<ObjectNode>();
-		instrumentList = db.getInstrumentTable();
-		Instrument instrument;
-		
-		for(int i=0; i<instrumentList.size();i++){
-			instrument = instrumentList.get(i);
-				ObjectNode node = JsonNodeFactory.instance.objectNode();
-				node.put("id",instrument.getId());
-				node.put("name", instrument.getName());
-				answerList.add(node);
-			
-		}
-		mapper.writeValueAsString(answerList);
-		ObjectNode responseNode = JsonNodeFactory.instance.objectNode();
-		
-		//hardcoded true for now
-		responseNode.put("status", true);
-		
-		responseNode.put("tabletype", "instrument");
-		
-		ArrayNode array = mapper.valueToTree(answerList);
-		responseNode.put("answer", array);
-		String jsonInString = mapper.writeValueAsString(responseNode);
-		out.println(jsonInString);
-    }
     
     public void getCounterpartyTable(DatabaseManagerOriginal db, ObjectMapper mapper, PrintWriter out) throws JsonGenerationException, JsonMappingException, IOException{
     	ArrayList<Counterparty> counterpartyList = new ArrayList<Counterparty>();

@@ -10,7 +10,6 @@ app.controller('SubmitController',function($scope,$http,$rootScope){
 					password:$scope.password
 				};
 			var root = '';
-			$scope.View.url="HTML/dashboard.html";
 			$http({
 			  url: root + 'Login',
 			  method: 'POST',
@@ -20,9 +19,11 @@ app.controller('SubmitController',function($scope,$http,$rootScope){
 			.then(function success(data){
 				
 				console.log("Success");
-				console.log(data);
-				if(data.status==true)
+				data=data.data
+				if(data.status==true){
 					$scope.View.url="HTML/dashboard.html";
+					console.log("inside if")
+				}
 				else
 					alert("Wrong Username or Password");
 				console.log($scope.View.url);

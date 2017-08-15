@@ -27,10 +27,10 @@ public class DatabaseManagerOriginal {
 		final long databaseEndTime = System.currentTimeMillis();
 		System.out.println("Database connect time: " + (databaseEndTime - startTime)/1000);
 
-//		ArrayList<Deal> s = d.getDealTable(new ArrayList<Deal>(), 0, 100);
-//		for (Deal sd : s) {
-//			System.out.println(sd.getId() + "   " + sd.getTime());
-//		}
+		ArrayList<Deal> s = d.getDealTable(new ArrayList<Deal>(), 0, 100);
+		for (Deal sd : s) {
+			System.out.println(sd.getId() + "   " + sd.getTime());
+		}
 		//		ArrayList<AverageInstrumentPrice> s = d.getAveragePrices();
 		//		for (AverageInstrumentPrice sd : s) {
 		//			System.out.println(sd.getId() + "    " + sd.getAverageBuy() + "   " + sd.getAverageSell());
@@ -39,10 +39,10 @@ public class DatabaseManagerOriginal {
 		//		for (EndPosition sd : s) {
 		//			System.out.println(sd.getDealCounterpart() + "    " + sd.getInstrumentName() + "   " + sd.getBought() + "   " + sd.getSold() + "   " + sd.getTotal());
 		//		}
-		ArrayList<Deal> s = d.getInstumentDetails("Eclipse", "B");
-		for (Deal sd : s) {
-			System.out.println(sd.getInstrumentName() + "   " + sd.getTime() + "    " + sd.getAmount() + "    " + sd.getQuantity());
-		}
+//		ArrayList<Deal> s = d.getInstumentDetails("Eclipse", "B");
+//		for (Deal sd : s) {
+//			System.out.println(sd.getInstrumentName() + "   " + sd.getTime() + "    " + sd.getAmount() + "    " + sd.getQuantity());
+//		}
 		System.out.println(s.size());
 
 		final long endTime = System.currentTimeMillis();
