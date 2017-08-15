@@ -33,7 +33,9 @@ public class DatabaseManagerOriginal {
 //		}
 				ArrayList<AverageInstrumentPrice> s = d.getAveragePrices();
 				for (AverageInstrumentPrice sd : s) {
+
 					System.out.println(sd.getName() + "    " + sd.getAverageBuy() + "   " + sd.getAverageSell());
+
 				}
 //				ArrayList<EndPosition> s = d.getEndingPositions();
 //				for (EndPosition sd : s) {
@@ -295,7 +297,9 @@ public class DatabaseManagerOriginal {
 
 					boolean found = false;
 					for (AverageInstrumentPrice aip : results) {
-						if (aip.getName() == name) {
+
+						if (aip.getName().equals(name)) {
+
 							aip.setAverageSell(rs.getBigDecimal(3));
 							found = true;
 							break;
