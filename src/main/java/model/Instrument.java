@@ -1,16 +1,12 @@
 package model;
 
 public class Instrument {
-	private int id;
+	
 	private String name;
 	
-	public Instrument(int id, String name) {
+	public Instrument(String name) {
 		super();
-		this.id = id;
 		this.name = name;
-	}
-	public int getId() {
-		return id;
 	}
 	public String getName() {
 		return name;
@@ -18,7 +14,7 @@ public class Instrument {
 	
 	@Override
 	public String toString() {
-		return "Instrument [id=" + id + ", name=" + name + "]";
+		return "Instrument [name=" + name + "]";
 	}
 	
 	

@@ -1,4 +1,6 @@
 var app = angular.module('db', []);
+
+
 app.controller('SubmitController',function($scope,$http,$rootScope){
 	$scope.username="USERNAME";
 		$scope.submit=function(){
@@ -9,9 +11,8 @@ app.controller('SubmitController',function($scope,$http,$rootScope){
 					username:$scope.username,
 					password:$scope.password
 				};
-			var root = '';
 			$http({
-			  url: root + 'Login',
+			  url: 'Login',
 			  method: 'POST',
 			  data:loginDetails,
 			  datatype:'JSON'
@@ -32,7 +33,73 @@ app.controller('SubmitController',function($scope,$http,$rootScope){
 			});
 		}
 	});
-app.controller("main-controller",function($scope){
+
+
+var deal,instruments,counterParty;
+
+app.controller("main-controller",function($scope,$http){
+
 	$scope.View={};
+	$scope.View.subUrl="HTML/dash-tradeoverview.html";
 	$scope.View.url="HTML/login.html ";
+	
+	
+	$scope.navoptions=function(obj){
+		
+		var temp = angular.element(".dash-nav>.navbar-nav>li").removeClass('active');
+		var type = angular.element(obj.target.parentNode).attr('navtype');
+		if(type=='1')
+			{
+				$scope.View.subUrl="HTML/dash-tradeoverview.html";
+			}
+		else if(type=='2')
+			{
+				$scope.View.subUrl="HTML/dash-tableview.html";
+			}
+		else if(type=='3')
+		{
+			$scope.View.subUrl="HTML/dash-options.html";
+		}
+		 $(obj.target.parentNode).addClass('active');
+	};
+	var handleDeal={
+			offset:0,
+			limit:10
+	};
+	
+	$http({
+		  url: 'Tables/Deal',
+		  method: 'GET',
+		  data:handleDeal,
+		  datatype:'JSON'
+		})
+		.then(function success(data){
+			deal=data.data;
+		},function error(data){
+			console.log("error");
+		});
+	
+	
+	$http({
+		  url: 'Tables/Counterparty',
+		  method: 'GET',
+		  datatype:'JSON'
+		})
+		.then(function success(data){
+			counterParty=data.data;
+		},function error(data){
+			console.log("error");
+		});
+	
+	
+	$http({
+		  url: 'Tables/Instruments',
+		  method: 'GET',
+		  datatype:'JSON'
+		})
+		.then(function success(data){
+			instruments=data.data;
+		},function error(data){
+			console.log("error");
+		});
 });

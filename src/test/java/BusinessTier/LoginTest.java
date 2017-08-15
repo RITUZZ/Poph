@@ -16,11 +16,6 @@ public class LoginTest {
 	public static void setUp(){
 		login = new Login();
 	}
-
-	@Test
-	public void testGetResponseString() {
-		fail("Not yet implemented");
-	}
 	
 	@Test
 	public void testVerifyLogin(){

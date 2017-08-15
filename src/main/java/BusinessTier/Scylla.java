@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -18,42 +19,53 @@ import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
 import DatabaseTier.DatabaseManagerOriginal;
-import model.Instrument;
+import model.Deal;
 
 /**
- * Servlet implementation class InstrumentTable
+ * Servlet implementation class Scylla
  */
-public class InstrumentTable extends HttpServlet {
+public class Scylla extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public InstrumentTable() {
+    public Scylla() {
         super();
         // TODO Auto-generated constructor stub
     }
-    
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		
 		DatabaseManagerOriginal db = new DatabaseManagerOriginal();
 		ObjectMapper mapper = new ObjectMapper();
 		PrintWriter out = response.getWriter();
 		
-		ArrayList<Instrument> instrumentList = new ArrayList<Instrument>();
-		List<ObjectNode> answerList = new ArrayList<ObjectNode>();
-		instrumentList = db.getInstrumentTable();
-		Instrument instrument;
+//HttpHelper helper = new HttpHelper();
+//		
+//		String responseString = helper.getResponseString(request);
+//		System.out.println("response is "+responseString);
+//		Map<String,Object> map = mapper.readValue(responseString, Map.class);
 		
-		for(int i=0; i<instrumentList.size();i++){
-			instrument = instrumentList.get(i);
+		ArrayList<Deal> instrumentDetailList = new ArrayList<Deal>();
+		List<ObjectNode> answerList = new ArrayList<ObjectNode>();
+//		instrumentDetailList = db.getInstumentDetails((String)map.get("instrument"), (String)map.get("dealType"));
+		instrumentDetailList = db.getInstumentDetails("Eclipse", "B");
+		Deal deal;
+		
+		for(int i=0; i<instrumentDetailList.size(); i++){
+			deal = instrumentDetailList.get(i);
+	
 				ObjectNode node = JsonNodeFactory.instance.objectNode();
-//				node.put("id",instrument.getId());
-				node.put("name", instrument.getName());
+				node.put("instrumentName", deal.getInstrumentName());
+				node.put("dealTime", deal.getTime().toString());
+				node.put("dealQuantity", deal.getQuantity());
+				node.put("dealAmount", deal.getAmount());
+				
+	
 				answerList.add(node);
 			
 		}
@@ -66,8 +78,7 @@ public class InstrumentTable extends HttpServlet {
 		ArrayNode array = mapper.valueToTree(answerList);
 		responseNode.put("answer", array);
 		String jsonInString = mapper.writeValueAsString(responseNode);
-		out.println(jsonInString);
-	
+		out.println(jsonInString); 
 	}
 
 	/**

@@ -10,30 +10,27 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.fasterxml.jackson.core.JsonGenerationException;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
 import DatabaseTier.DatabaseManagerOriginal;
-import model.Instrument;
+import model.EndPosition;
 
 /**
- * Servlet implementation class InstrumentTable
+ * Servlet implementation class EndingPositionTable
  */
-public class InstrumentTable extends HttpServlet {
+public class EndingPositionTable extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public InstrumentTable() {
+    public EndingPositionTable() {
         super();
         // TODO Auto-generated constructor stub
     }
-    
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -44,16 +41,22 @@ public class InstrumentTable extends HttpServlet {
 		ObjectMapper mapper = new ObjectMapper();
 		PrintWriter out = response.getWriter();
 		
-		ArrayList<Instrument> instrumentList = new ArrayList<Instrument>();
+		ArrayList<EndPosition> endingPositionsList = new ArrayList<EndPosition>();
 		List<ObjectNode> answerList = new ArrayList<ObjectNode>();
-		instrumentList = db.getInstrumentTable();
-		Instrument instrument;
+		endingPositionsList = db.getEndingPositions();
+		EndPosition endPosition;
 		
-		for(int i=0; i<instrumentList.size();i++){
-			instrument = instrumentList.get(i);
+		for(int i=0; i<endingPositionsList.size();i++){
+			endPosition = endingPositionsList.get(i);
+			
 				ObjectNode node = JsonNodeFactory.instance.objectNode();
-//				node.put("id",instrument.getId());
-				node.put("name", instrument.getName());
+				node.put("dealCounterpart", endPosition.getDealCounterpart());
+				
+				node.put("instrumentName", endPosition.getInstrumentName());
+				node.put("bought", endPosition.getBought());
+				node.put("sold", endPosition.getSold());
+				node.put("total", endPosition.getTotal());
+	
 				answerList.add(node);
 			
 		}

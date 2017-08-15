@@ -1,23 +1,19 @@
 package model;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 public class Counterparty {
-	private int id;
+	
 	private String name;
 	private String status;
-	private Date dateRegistered;
+	private Timestamp dateRegistered;
 	 
-	public Counterparty(int id, String name, String string, Date dateRegistered) {
+	public Counterparty(String name, String string, Timestamp dateRegistered) {
 		super();
-		this.id = id;
 		this.name = name;
 		this.status = string;
 		this.dateRegistered = dateRegistered;
-	}
-
-	public int getId() {
-		return id;
 	}
 
 	public String getName() {
@@ -28,13 +24,13 @@ public class Counterparty {
 		return status;
 	}
 
-	public Date getDateRegistered() {
+	public Timestamp getDateRegistered() {
 		return dateRegistered;
 	}
 
 	@Override
 	public String toString() {
-		return "Counterparty [id=" + id + ", name=" + name + ", status=" + status + ", dateRegistered=" + dateRegistered
+		return "Counterparty [name=" + name + ", status=" + status + ", dateRegistered=" + dateRegistered
 				+ "]";
 	} 
 	

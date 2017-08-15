@@ -10,30 +10,27 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.fasterxml.jackson.core.JsonGenerationException;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
 import DatabaseTier.DatabaseManagerOriginal;
-import model.Instrument;
+import model.Deal;
 
 /**
- * Servlet implementation class InstrumentTable
+ * Servlet implementation class DealTable
  */
-public class InstrumentTable extends HttpServlet {
+public class DealTable extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public InstrumentTable() {
+    public DealTable() {
         super();
         // TODO Auto-generated constructor stub
     }
-    
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -44,16 +41,37 @@ public class InstrumentTable extends HttpServlet {
 		ObjectMapper mapper = new ObjectMapper();
 		PrintWriter out = response.getWriter();
 		
-		ArrayList<Instrument> instrumentList = new ArrayList<Instrument>();
+		ArrayList<Deal> dealList = new ArrayList<Deal>();
 		List<ObjectNode> answerList = new ArrayList<ObjectNode>();
-		instrumentList = db.getInstrumentTable();
-		Instrument instrument;
 		
-		for(int i=0; i<instrumentList.size();i++){
-			instrument = instrumentList.get(i);
+		//calling method to get Deal table
+//		HttpHelper helper = new HttpHelper();
+//		String responseString = helper.getResponseString(request);
+//		System.out.println("response is "+responseString);
+//		Map<String,Object> map = mapper.readValue(responseString, Map.class);
+//		int limit = (Integer) map.get("limit");
+//		int offset = (Integer) map.get("offset");
+		
+		int limit = 10;
+		int offset = 0;
+		
+		dealList = db.getDealTable(dealList,offset,limit);
+		Deal deal;
+		System.out.println(dealList.size());
+		
+		for(int i=0; i<dealList.size();i++){
+			deal = dealList.get(i);
+			System.out.println(deal);
 				ObjectNode node = JsonNodeFactory.instance.objectNode();
-//				node.put("id",instrument.getId());
-				node.put("name", instrument.getName());
+				//node.put("id",deal.getId());
+				node.put("instrumentname", deal.getInstrumentName());
+				node.put("counterpartyname", deal.getCounterpartyName());
+				node.put("time", deal.getTime().toString());
+				//node.put("counterpartyid",deal.getCounterpartyId());
+				//node.put("instrumentid", deal.getInstrumentId());
+				node.put("type", deal.getType());
+				node.put("amount", deal.getAmount());
+				node.put("quantity", deal.getQuantity());
 				answerList.add(node);
 			
 		}
@@ -63,11 +81,11 @@ public class InstrumentTable extends HttpServlet {
 		//hardcoded true for now
 		responseNode.put("status", true);
 		
+		
 		ArrayNode array = mapper.valueToTree(answerList);
 		responseNode.put("answer", array);
 		String jsonInString = mapper.writeValueAsString(responseNode);
 		out.println(jsonInString);
-	
 	}
 
 	/**

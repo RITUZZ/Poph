@@ -7,6 +7,8 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+		<script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
 		<script src="JS/index.js"></script>
 	</head>
 
@@ -14,7 +16,7 @@
 
 	<body ng-app="db">
 		<div class="col-md-12" id="main-container" ng-controller="main-controller">
-			<div id="ng-include-container" ng-include src="View.url">
+			<div class="longnomargin" ng-include src="View.url">
 			</div>
 		</div>
 	</body>
