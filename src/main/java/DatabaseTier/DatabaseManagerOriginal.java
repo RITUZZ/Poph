@@ -31,18 +31,18 @@ public class DatabaseManagerOriginal {
 //		for (Deal sd : s) {
 //			System.out.println(sd.getCoutnerpartyName() + ", " + sd.getTime() + ", " + sd.getInstrumentName());
 //		}
-				ArrayList<AverageInstrumentPrice> s = d.getAveragePrices();
-				for (AverageInstrumentPrice sd : s) {
-					System.out.println(sd.getId() + "    " + sd.getAverageBuy() + "   " + sd.getAverageSell());
+//				ArrayList<AverageInstrumentPrice> s = d.getAveragePrices();
+//				for (AverageInstrumentPrice sd : s) {
+//					System.out.println(sd.getId() + "    " + sd.getAverageBuy() + "   " + sd.getAverageSell());
+//				}
+				ArrayList<EndPosition> s = d.getEndingPositions();
+				for (EndPosition sd : s) {
+					System.out.println(sd.getDealCounterpart() + "    " + sd.getInstrumentName() + "   " + sd.getBought() + "   " + sd.getSold() + "   " + sd.getTotal());
 				}
-		//		ArrayList<EndPosition> s = d.getEndingPositions();
-		//		for (EndPosition sd : s) {
-		//			System.out.println(sd.getDealCounterpart() + "    " + sd.getInstrumentName() + "   " + sd.getBought() + "   " + sd.getSold() + "   " + sd.getTotal());
-		//		}
-		//		ArrayList<Deal> s = d.getInstumentDetails("Eclipse", "B");
-		//		for (Deal sd : s) {
-		//			System.out.println(sd.getInstrumentName() + "   " + sd.getTime() + "    " + sd.getAmount() + "    " + sd.getQuantity());
-		//		}
+//				ArrayList<Deal> s = d.getInstumentDetails("Eclipse", "B");
+//				for (Deal sd : s) {
+//					System.out.println(sd.getInstrumentName() + "   " + sd.getTime() + "    " + sd.getAmount() + "    " + sd.getQuantity());
+//				}
 		System.out.println(s.size());
 
 		final long endTime = System.currentTimeMillis();
@@ -229,7 +229,7 @@ public class DatabaseManagerOriginal {
 				} else {
 					boolean found = false;
 					for (EndPosition ep : results) {
-						if (ep.getDealCounterpart() == dealer && ep.getInstrumentName().equals(instrument)) {
+						if (ep.getDealCounterpart().equals(dealer) && ep.getInstrumentName().equals(instrument)) {
 							ep.setSold(rs.getBigDecimal(4));
 							ep.setTotal(ep.getBought().subtract(ep.getSold()));
 							found = true;
@@ -237,46 +237,56 @@ public class DatabaseManagerOriginal {
 						}
 					}
 					if (!found) {
-						results.add(new EndPosition(dealer, instrument, null, rs.getBigDecimal(3), null));
+						results.add(new EndPosition(dealer, instrument, null, rs.getBigDecimal(4), null));
 					}
 				}
 
 			}
 
-			//			while (rs.next()) {
-			//				EndPosition ep = new EndPosition(rs.getInt(1), rs.getString(2));
-			//				ep.setBought(rs.getBigDecimal(3));
-			//				results.add(ep);
-			//			}	
-			//
-			//			rs = statement.executeQuery("select deal.deal_counterparty_id, "+
-			//					"instrument.instrument_name, "+
-			//					"sum(deal.deal_quantity*deal.deal_amount) AS Total "+
-			//					"from deal "+
-			//					"inner join instrument on deal.deal_instrument_id = instrument.instrument_id "+
-			//					"where deal.deal_type = 'S' "+
-			//					"group by deal.deal_counterparty_id, instrument.instrument_id, instrument.instrument_name;");
-			//
-			//			while (rs.next()) {
-			//				String instrumentName = rs.getString(2);
-			//				int counterpart = rs.getInt(1);
-			//				boolean found = false;
-			//				for (EndPosition ep : results) {
-			//					if (ep.getInstrumentName().equals(instrumentName) && ep.getDealCounterpart() == counterpart) {
-			//						ep.setSold(rs.getBigDecimal(3));
-			//						ep.setTotal(ep.getBought().subtract(rs.getBigDecimal(3)));
-			//						found = true;
-			//						break;
-			//					}
-			//				}
-			//				if (!found) {
-			//					EndPosition ep = new EndPosition(rs.getInt(1), rs.getString(2));
-			//					ep.setBought(new BigDecimal(0));
-			//					ep.setSold(rs.getBigDecimal(3));
-			//					ep.setTotal(ep.getBought().subtract(ep.getSold()));
-			//					results.add(ep);
-			//				}
-			//			}
+			return results;
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+	public ArrayList<EndPosition> getEndingPositionsGraphs() {
+		try {
+			Statement statement = connection.createStatement();
+			ResultSet rs = statement.executeQuery("select counterparty.counterparty_name, "+
+					"sum(deal.deal_quantity*deal.deal_amount) AS Total "+
+					"from deal "+
+					"inner join instrument on deal.deal_instrument_id = instrument.instrument_id "+
+					"inner join counterparty on deal.deal_counterparty_id = counterparty.counterparty_id "+
+					"group by counterparty.counterparty_name, instrument.instrument_id, deal.deal_type, instrument.instrument_name "+
+					"order by deal.deal_type, counterparty.counterparty_name;");
+			ArrayList<EndPosition> results = new ArrayList<EndPosition>();
+
+			while (rs.next()) {
+
+				String dealer = rs.getString(1);
+				String instrument = rs.getString(2);
+				String dealType = rs.getString(3);
+
+				if (dealType.equalsIgnoreCase("b")) {
+					results.add(new EndPosition(dealer, instrument, rs.getBigDecimal(4), null, null));
+				} else {
+					boolean found = false;
+					for (EndPosition ep : results) {
+						if (ep.getDealCounterpart().equals(dealer) && ep.getInstrumentName().equals(instrument)) {
+							ep.setSold(rs.getBigDecimal(4));
+							ep.setTotal(ep.getBought().subtract(ep.getSold()));
+							found = true;
+							break;
+						}
+					}
+					if (!found) {
+						results.add(new EndPosition(dealer, instrument, null, rs.getBigDecimal(4), null));
+					}
+				}
+
+			}
 
 			return results;
 

@@ -41,7 +41,7 @@ app.controller("main-controller",function($scope,$http){
 
 	$scope.View={};
 	$scope.View.subUrl="HTML/dash-tradeoverview.html";
-	$scope.View.url="HTML/dashboard.html ";
+	$scope.View.url="HTML/login.html ";
 	
 	
 	$scope.navoptions=function(obj){
