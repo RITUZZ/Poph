@@ -11,13 +11,13 @@ public class Deal {
 	private String type;
 	private BigDecimal amount;
 	private int quantity;
-	private String coutnerpartyName;
+	private String counterpartyName;
 	
 	
-	public Deal(String instrumentName, String coutnerpartyName, Timestamp time, String type, BigDecimal amount, int quantity) {
+	public Deal(String instrumentName, String counterpartyName, Timestamp time, String type, BigDecimal amount, int quantity) {
 		super();
 		this.instrumentName = instrumentName;
-		this.coutnerpartyName = coutnerpartyName;
+		this.counterpartyName = counterpartyName;
 		this.time = time;
 		this.type = type;
 		this.amount = amount;
@@ -39,8 +39,8 @@ public class Deal {
 	public String getInstrumentName() {
 		return instrumentName;
 	}
-	public String getCoutnerpartyName() {
-		return coutnerpartyName;
+	public String getCounterpartyName() {
+		return counterpartyName;
 	}
 
 	@Override

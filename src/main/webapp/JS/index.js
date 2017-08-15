@@ -34,7 +34,7 @@ app.controller('SubmitController',function($scope,$http,$rootScope){
 		}
 	});
 
-app.controller("main-controller",function($scope){
+app.controller("main-controller",function($scope, $http){
 	$scope.View={};
 	$scope.View.subUrl="HTML/dash-tradeoverview.html";
 	$scope.View.url="HTML/dashboard.html ";

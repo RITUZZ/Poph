@@ -63,10 +63,12 @@ public class DealTable extends HttpServlet {
 			deal = dealList.get(i);
 			System.out.println(deal);
 				ObjectNode node = JsonNodeFactory.instance.objectNode();
-				node.put("id",deal.getId());
+				//node.put("id",deal.getId());
+				node.put("instrumentname", deal.getInstrumentName());
+				node.put("counterpartyname", deal.getCounterpartyName());
 				node.put("time", deal.getTime().toString());
-				node.put("counterpartyid",deal.getCounterpartyId());
-				node.put("instrumentid", deal.getInstrumentId());
+				//node.put("counterpartyid",deal.getCounterpartyId());
+				//node.put("instrumentid", deal.getInstrumentId());
 				node.put("type", deal.getType());
 				node.put("amount", deal.getAmount());
 				node.put("quantity", deal.getQuantity());
