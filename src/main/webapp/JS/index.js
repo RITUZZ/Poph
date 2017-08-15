@@ -11,7 +11,6 @@ app.controller('SubmitController',function($scope,$http,$rootScope){
 				};
 			var root = '';
 			$scope.View.url="HTML/dashboard.html";
-			/*
 			$http({
 			  url: root + 'Login',
 			  method: 'POST',
@@ -30,7 +29,6 @@ app.controller('SubmitController',function($scope,$http,$rootScope){
 			},function error(data){
 				console.log("error");
 			});
-			*/
 		}
 	});
 app.controller("main-controller",function($scope){
