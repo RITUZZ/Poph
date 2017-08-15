@@ -1,10 +1,13 @@
 	package model;
 
+import java.sql.Time;
+import java.sql.Timestamp;
 import java.util.Date;
 
 public class Deal {
+	private String instrumentName;
 	private int id;
-	private Date time;
+	private Timestamp time;
 	private int counterpartyId;
 	private int instrumentId;
 	private String type;
@@ -12,8 +15,9 @@ public class Deal {
 	private int quantity;
 	
 	
-	public Deal(int id, Date time, int counterpartyId, int instrumentId, String type, float amount, int quantity) {
+	public Deal(String instrumentName, int id, Timestamp time, int counterpartyId, int instrumentId, String type, float amount, int quantity) {
 		super();
+		this.instrumentName = instrumentName;
 		this.id = id;
 		this.time = time;
 		this.counterpartyId = counterpartyId;
@@ -26,7 +30,7 @@ public class Deal {
 	public int getId() {
 		return id;
 	}
-	public Date getTime() {
+	public Timestamp getTime() {
 		return time;
 	}
 	public int getCounterpartyId() {
@@ -43,6 +47,9 @@ public class Deal {
 	}
 	public int getQuantity() {
 		return quantity;
+	}
+	public String getInstrumentName() {
+		return instrumentName;
 	}
 
 	@Override
