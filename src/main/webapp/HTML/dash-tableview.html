@@ -2,12 +2,12 @@
 	<table id="myTableDeal" class="table-striped">  
         <thead>  
           <tr>  
-            <th>Instrument_id</th>  
-            <th>Counterparty_id</th>  
-            <th>Type</th>  
-            <th>Amount</th>
-            <th>Quantity</th>
-            <th>Time</th>  
+            <td>Instrument_id</td>  
+            <td>Counterparty_id</td>  
+            <td>Type</td>  
+            <td>Amount</td>
+            <td>Quantity</td>
+            <td>Time</td>  
           </tr>  
         </thead>  
         <tbody>  
@@ -16,17 +16,20 @@
       </table>  
 </div>
 <script>
-	$(document).ready(function(){
-	    $('#myTableDeal').dataTable();
-	});
 	jQuery(function($){
+		/*
 		console.log(deal)
 		console.log(counterParty)
 		console.log(instruments)
 		var data=deal.answer;
+		*/
+		var data={"status":true,"answer":[{"instrumentname":"Astronomica","counterpartyname":"Lina","time":"2017-07-28 17:06:29.976","type":"B","amount":3474.17,"quantity":713},{"instrumentname":"Astronomica","counterpartyname":"Nidia","time":"2017-07-28 17:06:30.0","type":"S","amount":3444.86,"quantity":4},{"instrumentname":"Astronomica","counterpartyname":"Lina","time":"2017-07-28 17:06:30.003","type":"S","amount":3412.58,"quantity":1},{"instrumentname":"Astronomica","counterpartyname":"Richard","time":"2017-07-28 17:06:30.003","type":"S","amount":3378.13,"quantity":46},{"instrumentname":"Astronomica","counterpartyname":"John","time":"2017-07-28 17:06:30.003","type":"S","amount":3339.48,"quantity":414},{"instrumentname":"Astronomica","counterpartyname":"Lewis","time":"2017-07-28 17:06:30.004","type":"S","amount":3309.95,"quantity":491},{"instrumentname":"Astronomica","counterpartyname":"Selvyn","time":"2017-07-28 17:06:30.049","type":"B","amount":3341.40,"quantity":662},{"instrumentname":"Astronomica","counterpartyname":"John","time":"2017-07-28 17:06:30.05","type":"B","amount":3375.46,"quantity":243},{"instrumentname":"Astronomica","counterpartyname":"Nidia","time":"2017-07-28 17:06:30.06","type":"B","amount":3406.91,"quantity":16},{"instrumentname":"Astronomica","counterpartyname":"John","time":"2017-07-28 17:06:30.06","type":"S","amount":3368.43,"quantity":16}]}
+		console.log(data);
+		data =data.answer
 		for(i in data)
 		{
-			$('#myTableDeal>tbody').append('<tr><th>'data[i].instrumentid'</th><th>'data[i].counterpartyid'</th><th>'data[i].type'</th><th>'data[i].amount'</th><th>'data[i].quantity'</th><th>'data[i].time'</th></tr>');
+			$('#myTableDeal>tbody').append('<tr><td>'+data[i].instrumentid+'</td><td>'+data[i].counterpartyid+'</td><td>'+data[i].type+'</td><td>'+data[i].amount+'</td><td>'+data[i].quantity+'</td><td>'+data[i].time+'</td></tr>');
 		}
+		 $('#myTableDeal').dataTable();
 	});
 </script>
