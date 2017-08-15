@@ -23,7 +23,7 @@ html,body{
 	padding:0px;
 	height:100%;
 }
-#ng-include-container{
+.longnomargin{
 	height:100%;
 	margin:0px;
 }
@@ -34,7 +34,7 @@ html,body{
 .dash-nav{
 	height:100%;
 }
-.dash-block{
+.bigblock{
 	padding:0px;
 	height:100%;
 }
