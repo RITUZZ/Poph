@@ -108,31 +108,6 @@ public class DatabaseManagerOriginal {
 		return null;
 	}
 	
-	public ArrayList<Deal> getFullDealTable(ArrayList<Deal> deals){
-		try {
-
-			PreparedStatement ps = connection.prepareStatement("SELECT instrument.instrument_name, "+
-					"counterparty.counterparty_name, "+	
-					"deal.deal_time, "+
-					"deal.deal_type, "+										
-					"deal.deal_amount, "+
-					"deal.deal_quantity "+
-					"FROM deal "+
-					"inner join instrument on instrument.instrument_id = deal.deal_instrument_id "+
-					"inner join counterparty on counterparty.counterparty_id = deal.deal_counterparty_id;");
-			ResultSet rs = ps.executeQuery();
-
-			while (rs.next()) {
-				deals.add(new Deal(rs.getString(1), rs.getString(2), rs.getTimestamp(3), rs.getString(4), rs.getBigDecimal(5), rs.getInt(6)));
-			}
-			return deals;
-
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-
-		return null;
-	}
 
 	public ArrayList<Deal> getDealTable(ArrayList<Deal> deals, int offset, int limit) {
 
