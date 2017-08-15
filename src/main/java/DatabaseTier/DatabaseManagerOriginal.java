@@ -41,7 +41,7 @@ public class DatabaseManagerOriginal {
 		//		}
 		ArrayList<Deal> s = d.getInstumentDetails("Eclipse", "B");
 		for (Deal sd : s) {
-			System.out.println(sd.getInstrumentName() + "   " + sd.getTime());
+			System.out.println(sd.getInstrumentName() + "   " + sd.getTime() + "    " + sd.getAmount() + "    " + sd.getQuantity());
 		}
 		System.out.println(s.size());
 
@@ -118,7 +118,7 @@ public class DatabaseManagerOriginal {
 			ResultSet rs = ps.executeQuery();
 
 			while (rs.next()) {
-				deals.add(new Deal(null, rs.getInt(1), rs.getTimestamp(2), rs.getInt(3), rs.getInt(4), rs.getString(5), rs.getFloat(6), rs.getInt(7)));
+				deals.add(new Deal(null, rs.getInt(1), rs.getTimestamp(2), rs.getInt(3), rs.getInt(4), rs.getString(5), rs.getBigDecimal(6), rs.getInt(7)));
 			}
 			return deals;
 
@@ -312,7 +312,7 @@ public class DatabaseManagerOriginal {
 			ArrayList<Deal> results = new ArrayList<Deal>();
 
 			while (rs.next()) {
-				results.add(new Deal(rs.getString(1), 0, rs.getTimestamp(2), 0, 0, null, 0, 0));
+				results.add(new Deal(rs.getString(1), 0, rs.getTimestamp(2), 0, 0, null, rs.getBigDecimal(4), rs.getInt(3)));
 			}
 			
 			return results;
