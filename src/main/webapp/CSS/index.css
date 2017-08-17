@@ -84,10 +84,17 @@ a{
 	height:100%;
 }
 .block1{
-	height:400px;
+	margin-top:30px;
+	height:600px;
+	background:#e8eaf6;
 	margin-bottom:150px;
 }
-
+.back{
+	background:#e8eaf6;
+	padding:10px;
+	margin-bottom:60px;
+	margin-top:30px;
+}
 #body-container{
 	padding-top:100px;
 	background-image:url("../images/back.jpg");

@@ -29,7 +29,7 @@ app.controller('SubmitController',function($scope,$http,$rootScope){
 		}
 	});
 
-var deal,instruments,counterParty,endingPosition,average,instrumentPrice,selectedInst="Astronomica",type="B";
+var deal,instruments,counterParty,endingPosition,average,instrumentPrice,selectedInst="Astronomica",type="B",rprofit,eprofit;
 function getData($http)
 {
 	$http({
@@ -53,7 +53,28 @@ function getData($http)
 		},function error(data){
 			console.log("error");
 		});
-	
+	$http({
+		  url: 'Table/RealisedProfitLoss',
+		  method: 'GET',
+		  datatype:'JSON'
+		})
+		.then(function success(data){
+			rprofit=data.data;
+			console.log(rprofit);
+		},function error(data){
+			console.log("error");
+		});
+	$http({
+		  url: 'Table/EffectiveProfitLoss',
+		  method: 'GET',
+		  datatype:'JSON'
+		})
+		.then(function success(data){
+			eprofit=data.data;
+			console.log(eprofit);
+		},function error(data){
+			console.log("error");
+		});
 	
 	$http({
 		  url: 'Tables/Instruments',

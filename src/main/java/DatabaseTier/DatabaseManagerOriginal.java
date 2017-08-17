@@ -444,28 +444,6 @@ public class DatabaseManagerOriginal {
 		return null;
 	}
 
-	public void getEffectiveProfitLoss() {
-		try {
-
-			Statement statement = connection.createStatement();
-			ResultSet rs = statement.executeQuery("select deal_time, "+
-					"instrument.instrument_name, "+
-					"counterparty.counterparty_name "+
-					"from deal "+
-					"inner join instrument on deal.deal_instrument_id = instrument.instrument_id "+
-					"inner join counterparty on deal.deal_counterparty_id = counterparty.counterparty_id "+
-					"order by deal.deal_time desc;");
-
-			ArrayList<RealisedProfitLoss> results = new ArrayList<RealisedProfitLoss>();
-
-			while (rs.next()) {
-
-			}
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-
-	}
 
 	public Counterparty searchCounterparty(String counterparty) {
 		try {

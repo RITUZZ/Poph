@@ -108,7 +108,7 @@
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>RealisedProfitLossTable</servlet-name>
-		<url-pattern>/Table/RealisedProfitLoss/</url-pattern>
+		<url-pattern>/Table/RealisedProfitLoss</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>EffectiveProfitLossTable</servlet-name>
