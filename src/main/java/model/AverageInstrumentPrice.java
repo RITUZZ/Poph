@@ -13,7 +13,7 @@ public class AverageInstrumentPrice {
 		this.averageSell = averageSell;
 	}
 
-	public String getId() {
+	public String getName() {
 		return name;
 	}
 
@@ -25,8 +25,8 @@ public class AverageInstrumentPrice {
 		return averageSell;
 	}
 
-	public void setId(String id) {
-		this.name = id;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public void setAverageBuy(BigDecimal averageBuy) {

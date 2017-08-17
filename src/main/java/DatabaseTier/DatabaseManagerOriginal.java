@@ -31,14 +31,16 @@ public class DatabaseManagerOriginal {
 //		for (Deal sd : s) {
 //			System.out.println(sd.getCoutnerpartyName() + ", " + sd.getTime() + ", " + sd.getInstrumentName());
 //		}
-//				ArrayList<AverageInstrumentPrice> s = d.getAveragePrices();
-//				for (AverageInstrumentPrice sd : s) {
-//					System.out.println(sd.getId() + "    " + sd.getAverageBuy() + "   " + sd.getAverageSell());
-//				}
-				ArrayList<EndPosition> s = d.getEndingPositions();
-				for (EndPosition sd : s) {
-					System.out.println(sd.getDealCounterpart() + "    " + sd.getInstrumentName() + "   " + sd.getBought() + "   " + sd.getSold() + "   " + sd.getTotal());
+				ArrayList<AverageInstrumentPrice> s = d.getAveragePrices();
+				for (AverageInstrumentPrice sd : s) {
+
+					System.out.println(sd.getName() + "    " + sd.getAverageBuy() + "   " + sd.getAverageSell());
+
 				}
+//				ArrayList<EndPosition> s = d.getEndingPositions();
+//				for (EndPosition sd : s) {
+//					System.out.println(sd.getDealCounterpart() + "    " + sd.getInstrumentName() + "   " + sd.getBought() + "   " + sd.getSold() + "   " + sd.getTotal());
+//				}
 //				ArrayList<Deal> s = d.getInstumentDetails("Eclipse", "B");
 //				for (Deal sd : s) {
 //					System.out.println(sd.getInstrumentName() + "   " + sd.getTime() + "    " + sd.getAmount() + "    " + sd.getQuantity());
@@ -108,31 +110,6 @@ public class DatabaseManagerOriginal {
 		return null;
 	}
 	
-	public ArrayList<Deal> getFullDealTable(ArrayList<Deal> deals){
-		try {
-
-			PreparedStatement ps = connection.prepareStatement("SELECT instrument.instrument_name, "+
-					"counterparty.counterparty_name, "+	
-					"deal.deal_time, "+
-					"deal.deal_type, "+										
-					"deal.deal_amount, "+
-					"deal.deal_quantity "+
-					"FROM deal "+
-					"inner join instrument on instrument.instrument_id = deal.deal_instrument_id "+
-					"inner join counterparty on counterparty.counterparty_id = deal.deal_counterparty_id;");
-			ResultSet rs = ps.executeQuery();
-
-			while (rs.next()) {
-				deals.add(new Deal(rs.getString(1), rs.getString(2), rs.getTimestamp(3), rs.getString(4), rs.getBigDecimal(5), rs.getInt(6)));
-			}
-			return deals;
-
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-
-		return null;
-	}
 
 	public ArrayList<Deal> getDealTable(ArrayList<Deal> deals, int offset, int limit) {
 
@@ -310,24 +287,26 @@ public class DatabaseManagerOriginal {
 
 			while (rs.next()) {
 
-				String id = rs.getString(1);
+				String name = rs.getString(1);
 				String dealType = rs.getString(2);
 
 				if (dealType.equalsIgnoreCase("b")) {
-					results.add(new AverageInstrumentPrice(id, rs.getBigDecimal(3), null));
+					results.add(new AverageInstrumentPrice(name, rs.getBigDecimal(3), null));
 
 				} else {	
 
 					boolean found = false;
 					for (AverageInstrumentPrice aip : results) {
-						if (aip.getId() == id) {
+
+						if (aip.getName().equals(name)) {
+
 							aip.setAverageSell(rs.getBigDecimal(3));
 							found = true;
 							break;
 						}
 					}
 					if (!found) {
-						results.add(new AverageInstrumentPrice(id, null, rs.getBigDecimal(3)));
+						results.add(new AverageInstrumentPrice(name, null, rs.getBigDecimal(3)));
 					}
 
 				}

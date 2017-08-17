@@ -50,7 +50,8 @@ public class AveragePrice extends HttpServlet {
 			averagePrice = averagePriceList.get(i);
 	
 				ObjectNode node = JsonNodeFactory.instance.objectNode();
-				node.put("id", averagePrice.getId());
+				//node.put("id", averagePrice.getId());
+				node.put("name", averagePrice.getName());
 				node.put("averageBuy", averagePrice.getAverageBuy());
 				node.put("averageSell", averagePrice.getAverageSell());
 	
