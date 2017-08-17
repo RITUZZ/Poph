@@ -39,6 +39,12 @@ html,body{
 	overflow:auto;
 	margin:0px;
 }
+.instrument:hover{
+	background:#e3f2fd;
+}
+.instrument{
+	font-size:12px;
+}
 #dash-body{
 	padding:0px;
 	height:100%;
@@ -51,7 +57,8 @@ html,body{
 	height:100%;
 }
 .block1{
-	height:50%;
+	height:400px;
+	margin-bottom:150px;
 }
 
 #body-container{

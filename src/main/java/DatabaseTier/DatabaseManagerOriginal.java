@@ -388,7 +388,12 @@ public class DatabaseManagerOriginal {
 				String dealer = rs.getString(3);				
 				String dealType = rs.getString(1);
 				BigDecimal quantity = new BigDecimal(rs.getInt(4));
+<<<<<<< HEAD
 
+=======
+//System.out.println(rs.getBigDecimal(5).divide(quantity, 2));
+				
+>>>>>>> 52e8b0e9a6d6225d1f272791bc627631aa8779ff
 				if (dealType.equalsIgnoreCase("b")) {
 					BigDecimal lastTradePrice = null;
 					while(rsTime.next()) {

@@ -82,7 +82,7 @@ public class Scylla extends HttpServlet {
 		
 		String jsonInString = mapper.writeValueAsString(finalResponse);
 		out.println(jsonInString);
-		System.out.println(jsonInString);
+		//System.out.println(jsonInString);
 	}
 
 	/**

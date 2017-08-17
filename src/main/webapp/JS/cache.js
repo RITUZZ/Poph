@@ -23,7 +23,7 @@ validateLineGraphData = function(data) {
 }
 
 svgheight = 400,
-svgwidth = 600;
+svgwidth =600;
 
 margin = {top: 50, right: 100, bottom: 30, left: 70},
 width = +svgwidth - margin.left - margin.right,

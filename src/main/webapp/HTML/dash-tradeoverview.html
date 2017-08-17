@@ -1,10 +1,35 @@
 <div class="tradeoverview longnomargin dash-block col-md-12">
+	<div class="navbar navbar-default">
+		<ul class="nav navbar-nav navbar-left zeromargin instrumentsLeft">
+			<li class='instrument active' ng-click="instnav($event)"><a href='#'>Astronomica</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right zeromargin instrumentsRight">
+			<li class='instrument active' ng-click="changeType($event)"><a href='#'>B</a></li>
+			<li class='instrument' ng-click="changeType($event)"><a href='#'>S</a></li>
+		</ul>
+	</div>
+	
 	<div class="col-md-10 col-sm-10 bigblock">
 		<div class="col-md-12 col-sm-12  block1">
-			<h2>b</h2>
-			<div id="linegraph" class="col-md-12 border"></div>
+			<h2>Instrument Price</h2>
+			<div id="linegraph" class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8"></div>
+			<script src="JS/cache.js"></script>
+			<script src="JS/linegraph.js"></script>
+		</div>
+		<div class="col-md-12 col-sm-12  block1">
+			<h2>Instrument Volume</h2>
+			<div id="volumegraph" class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8"></div>
+			<script src="JS/volumegraph.js"></script>
 		</div>
 	</div>
 </div>
+
+<script>
+var data=["Borealis","Celestial","Deuteronic","Eclipse","Floral","Galactia","Heliosphere","Interstella","Jupiter","Koronis","Lunatic"];
+	for(i in data)
+	{		
+		$(".instrumentsLeft").append("<li class='instrument' ng-click=instnav($event)><a href='#'>"+data[i]+"</a></li>");
+	}
+</script>
 
 
