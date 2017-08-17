@@ -36,6 +36,40 @@
 		      </table> 
 	      </div>
 	</div>
+	<div class="back">
+		<h2>Realised Profit Loss</h2>
+		<div class="tablemargin">
+			<table id="myTableReal" class="table-striped">  
+		        <thead>  
+		          <tr>  
+		            <td>Instrument_Name</td>  
+		            <td>Counterparty_Name</td>  
+		            <td>Profit/Loss</td>  
+		          </tr>  
+		        </thead>  
+		        <tbody>  
+		          
+		        </tbody>  
+		      </table> 
+	      </div>
+	</div>
+	<div class="back">
+		<h2>Effective Profit Loss</h2>
+		<div class="tablemargin">
+			<table id="myTableEff" class="table-striped">  
+		        <thead>  
+		          <tr>  
+		            <td>Instrument_Name</td>  
+		            <td>Counterparty_Name</td>  
+		            <td>Profit/Loss</td> 
+		          </tr>  
+		        </thead>  
+		        <tbody>  
+		          
+		        </tbody>  
+		      </table> 
+	      </div>
+	</div>
 </div>
 <script>
 	jQuery(function($){
@@ -45,14 +79,22 @@
 			$('#myTableOptions>tbody').append('<tr><td>'+data[i].instrumentName+'</td><td>'+data[i].dealCounterpart+'</td><td>'+data[i].bought+'</td><td>'+data[i].sold+'</td><td>'+data[i].total+'</td></tr>');
 		}
 		$('#myTableOptions').dataTable();
-		data=average.answer;
-		console.log(data);
 		
+		data=average.answer;
 		for(i in data)
 		{
 			$('#myTableAverage>tbody').append('<tr><td>'+data[i].name+'</td><td>'+data[i].averageBuy+'</td><td>'+data[i].averageSell+'</td></tr>');
 		}
 		$('#myTableAverage').dataTable();
+		
+		
+		
+		data=eprofit.answer;
+		for(i in data)
+		{
+			$('#myTableEff>tbody').append('<tr><td>'+data[i].instrument_name+'</td><td>'+data[i].counterparty_name+'</td><td>'+data[i].profit+'</td></tr>');
+		}
+		$('#myTableEff').dataTable();
 		
 	});
 </script>
