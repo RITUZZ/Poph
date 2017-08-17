@@ -10,8 +10,10 @@ public class RealisedProfitLoss {
 	private BigDecimal boughtSum, soldSum, totalBought, totalSold;
 	private int totalQuantity;
 	private BigDecimal realisedProfit;
+	private BigDecimal lastTradePrice;
+	private BigDecimal effectiveProfit;
 
-	public RealisedProfitLoss(String instrumentName, String counterparty, int boughtQuantity, int soldQuantity, BigDecimal boughtSum, BigDecimal soldSum, BigDecimal totalBought, BigDecimal totalSold) {
+	public RealisedProfitLoss(String instrumentName, String counterparty, int boughtQuantity, int soldQuantity, BigDecimal boughtSum, BigDecimal soldSum, BigDecimal totalBought, BigDecimal totalSold, BigDecimal lastTradePrice, BigDecimal effectiveProfit) {
 		this.instrumentName = instrumentName;
 		this.counterparty = counterparty;
 		this.boughtQuantity = boughtQuantity;
@@ -20,6 +22,8 @@ public class RealisedProfitLoss {
 		this.soldSum = soldSum;
 		this.totalBought = totalBought;
 		this.totalSold = totalSold;
+		this.lastTradePrice = lastTradePrice;
+		this.effectiveProfit = effectiveProfit;
 	}
 
 	public String getInstrumentName() {
@@ -100,6 +104,22 @@ public class RealisedProfitLoss {
 
 	public void setRealisedProfit(BigDecimal realisedProfit) {
 		this.realisedProfit = realisedProfit;
+	}
+
+	public BigDecimal getLastTradePrice() {
+		return lastTradePrice;
+	}
+
+	public void setLastTradePrice(BigDecimal lastTradePrice) {
+		this.lastTradePrice = lastTradePrice;
+	}
+
+	public BigDecimal getEffectiveProfit() {
+		return effectiveProfit;
+	}
+
+	public void setEffectiveProfit(BigDecimal effectiveProfit) {
+		this.effectiveProfit = effectiveProfit;
 	}
 	
 	
