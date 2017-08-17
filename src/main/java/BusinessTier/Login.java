@@ -26,6 +26,7 @@ import model.User;
 public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	public static DatabaseManagerOriginal db = new DatabaseManagerOriginal();
+	DatabaseManagerSecure connector = new DatabaseManagerSecure();
 
 	/**
 	 * @see HttpServlet#HttpServlet()
@@ -51,7 +52,6 @@ public class Login extends HttpServlet {
 		String username = (String) map.get("username");
 		String password = (String) map.get("password");
 		
-		DatabaseManagerSecure connector = new DatabaseManagerSecure();
 		User user = connector.checklogin(username);
 		//initialize as false
 		boolean status = false;
