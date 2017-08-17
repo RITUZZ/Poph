@@ -33,7 +33,7 @@ var deal,instruments,counterParty,endingPosition,average,instrumentPrice;
 function getData($http)
 {
 	$http({
-		  url: 'Tables/Deal?offset=0&limit=1500',
+		  url: 'Tables/Deal?offset=0&limit=1000',
 		  method: 'GET',
 		  datatype:'JSON'
 		})
@@ -87,6 +87,7 @@ function getData($http)
 		},function error(data){
 			console.log("error");
 		});
+	getInstrumentPrice($http,"Eclipse");
 }
 function getInstrumentPrice($http,id){
 	$http({
@@ -111,7 +112,6 @@ app.controller("main-controller",function($scope,$http){
 	
 	
 	$scope.navoptions=function(obj){
-		
 		var temp = angular.element(".dash-nav>.navbar-nav>li").removeClass('active');
 		var type = angular.element(obj.target.parentNode).attr('navtype');
 		if(type=='1')

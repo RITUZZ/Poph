@@ -41,7 +41,6 @@ var LineGraphDrawer = {
 	  		.text(instrument.instrument); 
 		},
 	start : function(data) {
-		console.log("inside linegraph");
 		if(validateLineGraphData(data)) {
 			addLineGraphData(data);
 		}
