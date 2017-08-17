@@ -379,7 +379,7 @@ public class DatabaseManagerOriginal {
 				String dealer = rs.getString(3);				
 				String dealType = rs.getString(1);
 				BigDecimal quantity = new BigDecimal(rs.getInt(4));
-System.out.println(rs.getBigDecimal(5).divide(quantity, 2));
+//System.out.println(rs.getBigDecimal(5).divide(quantity, 2));
 				
 				if (dealType.equalsIgnoreCase("b")) {
 					results.add(new RealisedProfitLoss(instrument, dealer, rs.getInt(4), 0, rs.getBigDecimal(5), null, rs.getBigDecimal(5).divide(quantity, 2), null));
