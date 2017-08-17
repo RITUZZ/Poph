@@ -1,7 +1,6 @@
 package DatabaseTier;
 
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -13,7 +12,7 @@ import java.util.Properties;
 
 import model.*;
 
-public class DatabaseManagerOriginal {
+public class DatabaseManagerOriginal extends DatabaseManagerOriginalBase {
 
 	static Properties configProps;
 	Connection connection;
@@ -178,39 +177,6 @@ public class DatabaseManagerOriginal {
 		return null;
 	}
 
-	public ArrayList<EndPosition> getEndingPositions() {
-			EndingPositionSet rs = new EndingPositionSetSql(this);
-			ArrayList<EndPosition> results = new ArrayList<EndPosition>();
-
-			while (rs.next()) {
-
-				String dealer = rs.getString(1);
-				String instrument = rs.getString(2);
-				String dealType = rs.getString(3);
-
-				if (dealType.equalsIgnoreCase("b")) {
-					results.add(new EndPosition(dealer, instrument, rs.getBigDecimal(4), null, null));
-				} else {
-					boolean found = false;
-					for (EndPosition ep : results) {
-						if (ep.getDealCounterpart().equals(dealer) && ep.getInstrumentName().equals(instrument)) {
-							ep.setSold(rs.getBigDecimal(4));
-							ep.setTotal(ep.getBought().subtract(ep.getSold()));
-							found = true;
-							break;
-						}
-					}
-					if (!found) {
-						results.add(new EndPosition(dealer, instrument, null, rs.getBigDecimal(4), null));
-					}
-				}
-
-			}
-
-			return results;
-		return null;
-	}
-	
 	public ArrayList<EndPosition> getEndingPositionsGraphs() {
 		try {
 			Statement statement = connection.createStatement();
@@ -350,6 +316,11 @@ public class DatabaseManagerOriginal {
 			e.printStackTrace();
 		}
 		return null;
+	}
+
+	public Connection connection() {
+		// TODO Auto-generated method stub
+		return connection;
 	}
 
 }
