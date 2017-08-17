@@ -84,10 +84,12 @@ var LineGraphDrawer = {
 	  	  .attr('class', 'x axis') // specify 	classes
 	  	  .call(xAxis);
 	  	              // let the axis do its thing
+  		this.drawLine(data, 0, focus,x,y);
+/*
 	  	lineGraphCache.instrumentNames.forEach(function(instrumentName,index) {
-	  		var instrument = lineGraphCache[instrumentName]
-	  		this.drawLine(instrument, index, focus,x,y)
+	  		this.drawLine(data, index, focus,x,y)
 	  	},this);
+	  	*/
 	}	
 }
 LineGraphDrawer.start(instrumentPrice.answer);
