@@ -84,10 +84,13 @@ var VolumeGraphDrawer = {
 	  	  .attr('class', 'x axis') // specify 	classes
 	  	  .call(xAxis);
 	  	              // let the axis do its thing
+	  	this.drawArea(data, 0, focus,x,y);
+	  	/*
 	  	lineGraphCache.instrumentNames.forEach(function(instrumentName,index) {
-	  		var instrument = lineGraphCache[instrumentName]
-	  		this.drawArea(instrument, index, focus,x,y)
+	  		//var instrument = lineGraphCache[instrumentName]
+	  		this.drawArea(data, index, focus,x,y)
 	  	},this);
+	  	*/
 	}	
 }
 VolumeGraphDrawer.start(instrumentPrice.answer);

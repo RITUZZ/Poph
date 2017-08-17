@@ -32,12 +32,12 @@ public class DatabaseManagerOriginal {
 		//		for (Deal sd : s) {
 		//			System.out.println(sd.getCoutnerpartyName() + ", " + sd.getTime() + ", " + sd.getInstrumentName());
 		//		}
-//		ArrayList<AverageInstrumentPrice> s = d.getAveragePrices();
-//		for (AverageInstrumentPrice sd : s) {
-//
-//			System.out.println(sd.getName() + "    " + sd.getAverageBuy() + "   " + sd.getAverageSell());
-//
-//		}
+		//		ArrayList<AverageInstrumentPrice> s = d.getAveragePrices();
+		//		for (AverageInstrumentPrice sd : s) {
+		//
+		//			System.out.println(sd.getName() + "    " + sd.getAverageBuy() + "   " + sd.getAverageSell());
+		//
+		//		}
 		//				ArrayList<EndPosition> s = d.getEndingPositions();
 		//				for (EndPosition sd : s) {
 		//					System.out.println(sd.getDealCounterpart() + "    " + sd.getInstrumentName() + "   " + sd.getBought() + "   " + sd.getSold() + "   " + sd.getTotal());
@@ -49,7 +49,7 @@ public class DatabaseManagerOriginal {
 		ArrayList<RealisedProfitLoss> s = d.getRealisedProfitLoss();;
 		for (RealisedProfitLoss sd : s) {
 			System.out.println(sd.getInstrumentName()+ ", " + sd.getCounterparty() + ", " + 
-		sd.getTotalBought() + ", " + sd.getTotalSold() + ", " + sd.getRealisedProfit());
+					sd.getTotalBought() + ", " + sd.getTotalSold() + ", " + sd.getRealisedProfit() + ", " + sd.getLastTradePrice() + ", " + sd.getEffectiveProfit());
 		}
 		System.out.println(s.size());
 
@@ -370,6 +370,15 @@ public class DatabaseManagerOriginal {
 					"inner join counterparty on deal.deal_counterparty_id = counterparty.counterparty_id "+
 					"group by deal_instrument_id, deal_counterparty_id, deal_type " +
 					"order by deal_type;");
+			
+			statement = connection.createStatement();
+			ResultSet rsTime = statement.executeQuery("select deal_time, "+
+					"instrument.instrument_name, "+
+					"counterparty.counterparty_name "+
+					"from deal "+
+					"inner join instrument on deal.deal_instrument_id = instrument.instrument_id "+
+					"inner join counterparty on deal.deal_counterparty_id = counterparty.counterparty_id "+
+					"order by deal.deal_time desc;");
 
 			ArrayList<RealisedProfitLoss> results = new ArrayList<RealisedProfitLoss>();
 
@@ -379,10 +388,17 @@ public class DatabaseManagerOriginal {
 				String dealer = rs.getString(3);				
 				String dealType = rs.getString(1);
 				BigDecimal quantity = new BigDecimal(rs.getInt(4));
-System.out.println(rs.getBigDecimal(5).divide(quantity, 2));
-				
+
 				if (dealType.equalsIgnoreCase("b")) {
-					results.add(new RealisedProfitLoss(instrument, dealer, rs.getInt(4), 0, rs.getBigDecimal(5), null, rs.getBigDecimal(5).divide(quantity, 2), null));
+					BigDecimal lastTradePrice = null;
+					while(rsTime.next()) {
+						if (rsTime.getString(2).equals(instrument) && rsTime.getString(3).equals(dealer)) {
+							lastTradePrice = rs.getBigDecimal(4);
+							rsTime.beforeFirst();
+							break;
+						}
+					}
+					results.add(new RealisedProfitLoss(instrument, dealer, rs.getInt(4), 0, rs.getBigDecimal(5), null, rs.getBigDecimal(5).divide(quantity, 2), null, lastTradePrice, null));
 				} else {
 					boolean found = false;
 					for (RealisedProfitLoss rp : results) {
@@ -399,23 +415,56 @@ System.out.println(rs.getBigDecimal(5).divide(quantity, 2));
 							}
 
 							rp.setRealisedProfit( (rp.getTotalSold().subtract(rp.getTotalBought())).multiply(new BigDecimal(rp.getTotalQuantity())) );
+							
+							rp.setEffectiveProfit( (new BigDecimal(Math.abs(rp.getBoughtQuantity()-rp.getSoldQuantity()))).multiply((rp.getLastTradePrice().subtract(rp.getTotalBought())) ));
 
 							found = true;
 							break;
 						}
 					}
 					if (!found) {
-						results.add(new RealisedProfitLoss(instrument, dealer, 0, rs.getInt(4), null, rs.getBigDecimal(5), null, rs.getBigDecimal(5).divide(quantity)));
+						BigDecimal lastTradePrice = null;
+						while(rsTime.next()) {
+							if (rsTime.getString(2).equals(instrument) && rsTime.getString(3).equals(dealer)) {
+								lastTradePrice = rs.getBigDecimal(4);
+								rsTime.beforeFirst();
+								break;
+							}
+						}
+						results.add(new RealisedProfitLoss(instrument, dealer, 0, rs.getInt(4), null, rs.getBigDecimal(5), null, rs.getBigDecimal(5).divide(quantity), lastTradePrice, null));
 					}
 				}
 			}
 
 			return results;
-			
+
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		return null;
+	}
+
+	public void getEffectiveProfitLoss() {
+		try {
+
+			Statement statement = connection.createStatement();
+			ResultSet rs = statement.executeQuery("select deal_time, "+
+					"instrument.instrument_name, "+
+					"counterparty.counterparty_name "+
+					"from deal "+
+					"inner join instrument on deal.deal_instrument_id = instrument.instrument_id "+
+					"inner join counterparty on deal.deal_counterparty_id = counterparty.counterparty_id "+
+					"order by deal.deal_time desc;");
+
+			ArrayList<RealisedProfitLoss> results = new ArrayList<RealisedProfitLoss>();
+
+			while (rs.next()) {
+
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
 	}
 
 	public Counterparty searchCounterparty(String counterparty) {

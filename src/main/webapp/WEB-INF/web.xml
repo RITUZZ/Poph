@@ -64,6 +64,12 @@
 		<description></description>
 		<servlet-class>BusinessTier.RealisedProfitLossTable</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>EffectiveProfitLossTable</servlet-name>
+		<display-name>EffectiveProfitLossTable</display-name>
+		<description></description>
+		<servlet-class>BusinessTier.EffectiveProfitLossTable</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>Tables</servlet-name>
 		<url-pattern>/Tables</url-pattern>
@@ -103,5 +109,9 @@
 	<servlet-mapping>
 		<servlet-name>RealisedProfitLossTable</servlet-name>
 		<url-pattern>/Table/RealisedProfitLoss/</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EffectiveProfitLossTable</servlet-name>
+		<url-pattern>/Table/EffectiveProfitLoss</url-pattern>
 	</servlet-mapping>
 </web-app>

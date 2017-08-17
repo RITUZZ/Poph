@@ -16,43 +16,41 @@ import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
 import DatabaseTier.DatabaseManagerOriginal;
-import model.Deal;
 import model.RealisedProfitLoss;
 
 /**
- * Servlet implementation class RealisedProfitLossTable
+ * Servlet implementation class EffectiveProfitLossTable
  */
-public class RealisedProfitLossTable extends HttpServlet {
+public class EffectiveProfitLossTable extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public EffectiveProfitLossTable() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
 
 	/**
-	 * @see HttpServlet#HttpServlet()
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	public RealisedProfitLossTable() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
 		DatabaseManagerOriginal db = Login.db;
 		ObjectMapper mapper = new ObjectMapper();
 		PrintWriter out = response.getWriter();
 
-		ArrayList<RealisedProfitLoss> realisedList = db.getRealisedProfitLoss();
+		ArrayList<RealisedProfitLoss> effectiveList = db.getRealisedProfitLoss();
 		List<ObjectNode> answerList = new ArrayList<ObjectNode>();
-		RealisedProfitLoss rpl;
+		RealisedProfitLoss epl;
 
-		for (int i = 0; i < realisedList.size(); i++) {
-			rpl = realisedList.get(i);
+		for (int i = 0; i < effectiveList.size(); i++) {
+			epl = effectiveList.get(i);
 			ObjectNode node = JsonNodeFactory.instance.objectNode();
-			node.put("instrument_name", rpl.getInstrumentName().toString());
-			node.put("counterparty_name", rpl.getCounterparty());
-			node.put("profit", rpl.getRealisedProfit());
+			node.put("instrument_name", epl.getInstrumentName().toString());
+			node.put("counterparty_name", epl.getCounterparty());
+			node.put("profit", epl.getEffectiveProfit());
 
 			answerList.add(node);
 
@@ -67,17 +65,14 @@ public class RealisedProfitLossTable extends HttpServlet {
 		responseNode.put("answer", array);
 		String jsonInString = mapper.writeValueAsString(responseNode);
 		out.println(jsonInString);
-//		System.out.println(jsonInString);
+		System.out.println(jsonInString);
 		out.close();
-
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
-	 *      response)
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
