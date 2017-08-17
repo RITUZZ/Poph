@@ -43,42 +43,46 @@ public class Scylla extends HttpServlet {
 		DatabaseManagerOriginal db = Login.db;
 		ObjectMapper mapper = new ObjectMapper();
 		PrintWriter out = response.getWriter();
-		
-//HttpHelper helper = new HttpHelper();
-//		
-//		String responseString = helper.getResponseString(request);
-//		System.out.println("response is "+responseString);
-//		Map<String,Object> map = mapper.readValue(responseString, Map.class);
+	
+		String name = request.getParameter("id");
+		String dealType = request.getParameter("type");
+	
 		
 		ArrayList<Deal> instrumentDetailList = new ArrayList<Deal>();
 		List<ObjectNode> answerList = new ArrayList<ObjectNode>();
 //		instrumentDetailList = db.getInstumentDetails((String)map.get("instrument"), (String)map.get("dealType"));
-		instrumentDetailList = db.getInstumentDetails("Eclipse", "B");
+		//instrumentDetailList = db.getInstumentDetails("Eclipse", "B");
+		instrumentDetailList = db.getInstrumentDetails(name,dealType);
 		Deal deal;
+		ObjectNode responseNode = JsonNodeFactory.instance.objectNode();
+		ObjectNode finalResponse = JsonNodeFactory.instance.objectNode();
 		
 		for(int i=0; i<instrumentDetailList.size(); i++){
 			deal = instrumentDetailList.get(i);
-	
 				ObjectNode node = JsonNodeFactory.instance.objectNode();
-				node.put("instrumentName", deal.getInstrumentName());
-				node.put("dealTime", deal.getTime().toString());
-				node.put("dealQuantity", deal.getQuantity());
-				node.put("dealAmount", deal.getAmount());
+				node.put("deal_time", deal.getTime().toString());
+				node.put("deal_quantity", deal.getQuantity());
+				node.put("deal_amount", deal.getAmount());
 				
-	
 				answerList.add(node);
 			
 		}
 		mapper.writeValueAsString(answerList);
-		ObjectNode responseNode = JsonNodeFactory.instance.objectNode();
-		
-		//hardcoded true for now
-		responseNode.put("status", true);
 		
 		ArrayNode array = mapper.valueToTree(answerList);
-		responseNode.put("answer", array);
-		String jsonInString = mapper.writeValueAsString(responseNode);
-		out.println(jsonInString); 
+		responseNode.put("deals", array);
+		responseNode.put("instrument", name);
+		//hardcoded true for now
+		finalResponse.put("status", true);
+		finalResponse.put("answer", responseNode);
+		
+//		String jsonInString = mapper.writeValueAsString(responseNode);
+//		out.println(jsonInString);
+//		System.out.println(jsonInString);
+		
+		String jsonInString = mapper.writeValueAsString(finalResponse);
+		out.println(jsonInString);
+		System.out.println(jsonInString);
 	}
 
 	/**

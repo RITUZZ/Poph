@@ -1,4 +1,4 @@
-package databaseTier;
+package DatabaseTier;
 
 import static org.junit.Assert.*;
 
