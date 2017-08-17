@@ -40,6 +40,7 @@ var VolumeGraphDrawer = {
 	  		.text(instrument.instrument); 
 		},
 	start : function(data) {
+		console.log("line graph 2")
 		if(validateLineGraphData(data)) {
 			addLineGraphData(data);
 		}
@@ -89,11 +90,4 @@ var VolumeGraphDrawer = {
 	  	},this);
 	}	
 }
-
-d3.json('data.json', function(err, data) {
-	if(err) {
-		console.error(err);
-		return;
-	}
-	VolumeGraphDrawer.start(data);
-})
+VolumeGraphDrawer.start(instrumentPrice.answer);

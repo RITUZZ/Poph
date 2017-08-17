@@ -29,7 +29,7 @@ app.controller('SubmitController',function($scope,$http,$rootScope){
 		}
 	});
 
-var deal,instruments,counterParty,endingPosition,average,instrumentPrice;
+var deal,instruments,counterParty,endingPosition,average,instrumentPrice,selectedInst="Astronomica",type="B";
 function getData($http)
 {
 	$http({
@@ -87,9 +87,11 @@ function getData($http)
 		},function error(data){
 			console.log("error");
 		});
-	getInstrumentPrice($http,"Eclipse","B");
+	getInstrumentPrice($http,selectedInst,type);
 }
 function getInstrumentPrice($http,id,type){
+	console.log(id);
+	console.log(type);
 	$http({
 		  url: 'Data/InstrumentPrice?id='+id+'&type='+type,
 		  method: 'GET',
@@ -97,8 +99,8 @@ function getInstrumentPrice($http,id,type){
 		})
 		.then(function success(data){
 			instrumentPrice=data.data;
-			console.log(instrumentPrice.answer);
 			LineGraphDrawer.start(instrumentPrice.answer);
+			VolumeGraphDrawer.start(instrumentPrice.answer);
 		},function error(data){
 			console.log("error");
 		});
@@ -127,5 +129,17 @@ app.controller("main-controller",function($scope,$http){
 			$scope.View.subUrl="HTML/dash-options.html";
 		}
 		 $(obj.target.parentNode).addClass('active');
+	};
+	
+	$scope.instnav=function(obj){
+		selectedInst = obj.target.text;
+		angular.element( document.querySelector( '#linegraph' )).empty();
+		angular.element( document.querySelector( '#volumegraph' )).empty();
+		getInstrumentPrice($http,selectedInst,type);
+	};
+	
+	$scope.changeType=function(obj){
+		type = obj.target.text;
+		getInstrumentPrice($http,selectedInst,type);
 	};
 });
