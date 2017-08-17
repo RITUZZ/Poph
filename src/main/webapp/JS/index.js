@@ -133,13 +133,19 @@ app.controller("main-controller",function($scope,$http){
 	
 	$scope.instnav=function(obj){
 		selectedInst = obj.target.text;
-		angular.element( document.querySelector( '#linegraph' )).empty();
-		angular.element( document.querySelector( '#volumegraph' )).empty();
+		$('#linegraph>svg').empty();
+		$('#volumegraph>svg').empty();
+		var temp = angular.element(".instrument").removeClass('active');
+		 $(obj.target.parentNode).addClass('active');
 		getInstrumentPrice($http,selectedInst,type);
 	};
 	
 	$scope.changeType=function(obj){
 		type = obj.target.text;
+		$('#linegraph>svg').empty();
+		$('#volumegraph>svg').empty();
+		var temp = angular.element(".instrumentnav").removeClass('active');
+		 $(obj.target.parentNode).addClass('active');
 		getInstrumentPrice($http,selectedInst,type);
 	};
 });
