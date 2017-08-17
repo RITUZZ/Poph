@@ -35,7 +35,7 @@ app.controller('SubmitController',function($scope,$http,$rootScope){
 	});
 
 
-var deal,instruments,counterParty;
+var deal,instruments,counterParty,endingPosition,average;
 
 app.controller("main-controller",function($scope,$http){
 
@@ -62,11 +62,9 @@ app.controller("main-controller",function($scope,$http){
 		}
 		 $(obj.target.parentNode).addClass('active');
 	};
-	
 	$http({
 		  url: 'Tables/Deal?offset=0&limit=1500',
 		  method: 'GET',
-		  
 		  datatype:'JSON'
 		})
 		.then(function success(data){
@@ -94,6 +92,28 @@ app.controller("main-controller",function($scope,$http){
 		})
 		.then(function success(data){
 			instruments=data.data;
+		},function error(data){
+			console.log("error");
+		});
+		
+	$http({
+		  url: 'Tables/EndingPosition',
+		  method: 'GET',
+		  datatype:'JSON'
+		})
+		.then(function success(data){
+			endingPosition=data.data;
+		},function error(data){
+			console.log("error");
+		});
+	
+	$http({
+		  url: 'Tables/AveragePrice',
+		  method: 'GET',
+		  datatype:'JSON'
+		})
+		.then(function success(data){
+			average=data.data;
 		},function error(data){
 			console.log("error");
 		});
