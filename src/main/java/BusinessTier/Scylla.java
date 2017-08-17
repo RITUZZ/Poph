@@ -46,12 +46,7 @@ public class Scylla extends HttpServlet {
 	
 		String name = request.getParameter("id");
 		String dealType = request.getParameter("type");
-		
-//HttpHelper helper = new HttpHelper();
-//		
-//		String responseString = helper.getResponseString(request);
-//		System.out.println("response is "+responseString);
-//		Map<String,Object> map = mapper.readValue(responseString, Map.class);
+	
 		
 		ArrayList<Deal> instrumentDetailList = new ArrayList<Deal>();
 		List<ObjectNode> answerList = new ArrayList<ObjectNode>();
@@ -60,10 +55,7 @@ public class Scylla extends HttpServlet {
 		instrumentDetailList = db.getInstrumentDetails(name,dealType);
 		Deal deal;
 		ObjectNode responseNode = JsonNodeFactory.instance.objectNode();
-		
-		//hardcoded true for now
-		responseNode.put("status", true);
-		responseNode.put("instrument", name);
+		ObjectNode finalResponse = JsonNodeFactory.instance.objectNode();
 		
 		for(int i=0; i<instrumentDetailList.size(); i++){
 			deal = instrumentDetailList.get(i);
@@ -79,9 +71,18 @@ public class Scylla extends HttpServlet {
 		
 		ArrayNode array = mapper.valueToTree(answerList);
 		responseNode.put("deals", array);
-		String jsonInString = mapper.writeValueAsString(responseNode);
+		responseNode.put("instrument", name);
+		//hardcoded true for now
+		finalResponse.put("status", true);
+		finalResponse.put("answer", responseNode);
+		
+//		String jsonInString = mapper.writeValueAsString(responseNode);
+//		out.println(jsonInString);
+//		System.out.println(jsonInString);
+		
+		String jsonInString = mapper.writeValueAsString(finalResponse);
 		out.println(jsonInString);
-		System.out.println(jsonInString);
+		//System.out.println(jsonInString);
 	}
 
 	/**

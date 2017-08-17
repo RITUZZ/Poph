@@ -41,6 +41,7 @@ var LineGraphDrawer = {
 	  		.text(instrument.instrument); 
 		},
 	start : function(data) {
+		console.log("line graph 1")
 		if(validateLineGraphData(data)) {
 			addLineGraphData(data);
 		}
@@ -89,13 +90,4 @@ var LineGraphDrawer = {
 	  	},this);
 	}	
 }
-
-/*
-d3.json('JS/data.json', function(err, data) {
-	if(err) {
-		console.error(err);
-		return;
-	}
-	LineGraphDrawer.start(data);
-})
-*/
+LineGraphDrawer.start(instrumentPrice.answer);

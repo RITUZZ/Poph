@@ -2,6 +2,7 @@ package DatabaseTier;
 
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -27,24 +28,29 @@ public class DatabaseManagerOriginal {
 		final long databaseEndTime = System.currentTimeMillis();
 		System.out.println("Database connect time: " + (databaseEndTime - startTime)/1000);
 
-//		ArrayList<Deal> s = d.getDealTable(new ArrayList<Deal>(), 0, 100);
-//		for (Deal sd : s) {
-//			System.out.println(sd.getCoutnerpartyName() + ", " + sd.getTime() + ", " + sd.getInstrumentName());
+		//		ArrayList<Deal> s = d.getDealTable(new ArrayList<Deal>(), 0, 100);
+		//		for (Deal sd : s) {
+		//			System.out.println(sd.getCoutnerpartyName() + ", " + sd.getTime() + ", " + sd.getInstrumentName());
+		//		}
+//		ArrayList<AverageInstrumentPrice> s = d.getAveragePrices();
+//		for (AverageInstrumentPrice sd : s) {
+//
+//			System.out.println(sd.getName() + "    " + sd.getAverageBuy() + "   " + sd.getAverageSell());
+//
 //		}
-				ArrayList<AverageInstrumentPrice> s = d.getAveragePrices();
-				for (AverageInstrumentPrice sd : s) {
-
-					System.out.println(sd.getName() + "    " + sd.getAverageBuy() + "   " + sd.getAverageSell());
-
-				}
-//				ArrayList<EndPosition> s = d.getEndingPositions();
-//				for (EndPosition sd : s) {
-//					System.out.println(sd.getDealCounterpart() + "    " + sd.getInstrumentName() + "   " + sd.getBought() + "   " + sd.getSold() + "   " + sd.getTotal());
-//				}
-//				ArrayList<Deal> s = d.getInstumentDetails("Eclipse", "B");
-//				for (Deal sd : s) {
-//					System.out.println(sd.getInstrumentName() + "   " + sd.getTime() + "    " + sd.getAmount() + "    " + sd.getQuantity());
-//				}
+		//				ArrayList<EndPosition> s = d.getEndingPositions();
+		//				for (EndPosition sd : s) {
+		//					System.out.println(sd.getDealCounterpart() + "    " + sd.getInstrumentName() + "   " + sd.getBought() + "   " + sd.getSold() + "   " + sd.getTotal());
+		//				}
+		//				ArrayList<Deal> s = d.getInstumentDetails("Eclipse", "B");
+		//				for (Deal sd : s) {
+		//					System.out.println(sd.getInstrumentName() + "   " + sd.getTime() + "    " + sd.getAmount() + "    " + sd.getQuantity());
+		//				}
+		ArrayList<RealisedProfitLoss> s = d.getRealisedProfitLoss();;
+		for (RealisedProfitLoss sd : s) {
+			System.out.println(sd.getInstrumentName()+ ", " + sd.getCounterparty() + ", " + 
+		sd.getTotalBought() + ", " + sd.getTotalSold() + ", " + sd.getRealisedProfit());
+		}
 		System.out.println(s.size());
 
 		final long endTime = System.currentTimeMillis();
@@ -109,7 +115,7 @@ public class DatabaseManagerOriginal {
 		}
 		return null;
 	}
-	
+
 
 	public ArrayList<Deal> getDealTable(ArrayList<Deal> deals, int offset, int limit) {
 
@@ -227,7 +233,7 @@ public class DatabaseManagerOriginal {
 		}
 		return null;
 	}
-	
+
 	public ArrayList<EndPosition> getEndingPositionsGraphs() {
 		try {
 			Statement statement = connection.createStatement();
@@ -349,8 +355,67 @@ public class DatabaseManagerOriginal {
 		return null;
 	}
 
-	public void realisedProfitLoss() {
+	public ArrayList<RealisedProfitLoss> getRealisedProfitLoss() {
 
+		try {
+
+			Statement statement = connection.createStatement();
+			ResultSet rs = statement.executeQuery("select deal.deal_type, "+
+					"instrument.instrument_name, "+
+					"counterparty.counterparty_name, "+
+					"sum(deal_quantity), "+
+					"sum(deal_quantity*deal_amount) "+
+					"from deal "+
+					"inner join instrument on deal.deal_instrument_id = instrument.instrument_id "+
+					"inner join counterparty on deal.deal_counterparty_id = counterparty.counterparty_id "+
+					"group by deal_instrument_id, deal_counterparty_id, deal_type " +
+					"order by deal_type;");
+
+			ArrayList<RealisedProfitLoss> results = new ArrayList<RealisedProfitLoss>();
+
+			while (rs.next()) {
+
+				String instrument = rs.getString(2);
+				String dealer = rs.getString(3);				
+				String dealType = rs.getString(1);
+				BigDecimal quantity = new BigDecimal(rs.getInt(4));
+System.out.println(rs.getBigDecimal(5).divide(quantity, 2));
+				
+				if (dealType.equalsIgnoreCase("b")) {
+					results.add(new RealisedProfitLoss(instrument, dealer, rs.getInt(4), 0, rs.getBigDecimal(5), null, rs.getBigDecimal(5).divide(quantity, 2), null));
+				} else {
+					boolean found = false;
+					for (RealisedProfitLoss rp : results) {
+						if (rp.getInstrumentName().equals(instrument) && rp.getCounterparty().equals(dealer)) {
+
+							rp.setSoldQuantity(rs.getInt(4));
+							rp.setSoldSum(rs.getBigDecimal(5));
+							rp.setTotalSold(rp.getSoldSum().divide(new BigDecimal(rp.getSoldQuantity()), 2));
+
+							if (rp.getBoughtQuantity() < rp.getSoldQuantity()) {
+								rp.setTotalQuantity(rp.getBoughtQuantity());
+							} else {
+								rp.setTotalQuantity(rp.getSoldQuantity());
+							}
+
+							rp.setRealisedProfit( (rp.getTotalSold().subtract(rp.getTotalBought())).multiply(new BigDecimal(rp.getTotalQuantity())) );
+
+							found = true;
+							break;
+						}
+					}
+					if (!found) {
+						results.add(new RealisedProfitLoss(instrument, dealer, 0, rs.getInt(4), null, rs.getBigDecimal(5), null, rs.getBigDecimal(5).divide(quantity)));
+					}
+				}
+			}
+
+			return results;
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 	public Counterparty searchCounterparty(String counterparty) {
@@ -364,7 +429,7 @@ public class DatabaseManagerOriginal {
 			ResultSet rs = ps.executeQuery();
 
 			return new Counterparty(rs.getString(1), rs.getString(2), rs.getTimestamp(3));
-			
+
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
