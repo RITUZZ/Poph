@@ -26,7 +26,7 @@ import model.User;
 public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	public static DatabaseManagerOriginal db = new DatabaseManagerOriginal();
-	DatabaseManagerSecure connector = new DatabaseManagerSecure();
+	DatabaseManagerSecure connector;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
@@ -52,6 +52,10 @@ public class Login extends HttpServlet {
 		String username = (String) map.get("username");
 		String password = (String) map.get("password");
 		
+		if (connector == null) {
+			connector = new DatabaseManagerSecure();
+		}
+		
 		User user = connector.checklogin(username);
 		//initialize as false
 		boolean status = false;
@@ -60,6 +64,8 @@ public class Login extends HttpServlet {
 		if (user != null) {
 			if (verifyLogin(user, password)) {
 				System.out.println("LOGIN SUCCESSFUL");
+				connector.disconnectDatabase();
+				connector = null;
 				status = true;
 				//set session
 //				HttpSession session=request.getSession();  
@@ -80,7 +86,7 @@ public class Login extends HttpServlet {
 		System.out.println(jsonInString);
 		//send JSON in response
 		out.println(jsonInString);
-		connector.disconnectDatabase();
+		
 		out.close();
 
 
