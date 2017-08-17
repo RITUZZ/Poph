@@ -36,10 +36,26 @@ public class EndingPositionTable extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		List<ObjectNode> answerList = get_table();
+		ObjectMapper mapper = new ObjectMapper();
+		mapper.writeValueAsString(answerList);
+		ObjectNode responseNode = JsonNodeFactory.instance.objectNode();
+		
+		//hardcoded true for now
+		responseNode.put("status", true);
+		
+		ArrayNode array = mapper.valueToTree(answerList);
+		responseNode.put("answer", array);
+		String jsonInString = mapper.writeValueAsString(responseNode);
+		PrintWriter out = response.getWriter();
+		out.println(jsonInString);
+	
+	}
+
+	protected List<ObjectNode> get_table() {
+
 		// TODO Auto-generated method stub
 		DatabaseManagerOriginal db = new DatabaseManagerOriginal();
-		ObjectMapper mapper = new ObjectMapper();
-		PrintWriter out = response.getWriter();
 		
 		ArrayList<EndPosition> endingPositionsList = new ArrayList<EndPosition>();
 		List<ObjectNode> answerList = new ArrayList<ObjectNode>();
@@ -60,17 +76,7 @@ public class EndingPositionTable extends HttpServlet {
 				answerList.add(node);
 			
 		}
-		mapper.writeValueAsString(answerList);
-		ObjectNode responseNode = JsonNodeFactory.instance.objectNode();
-		
-		//hardcoded true for now
-		responseNode.put("status", true);
-		
-		ArrayNode array = mapper.valueToTree(answerList);
-		responseNode.put("answer", array);
-		String jsonInString = mapper.writeValueAsString(responseNode);
-		out.println(jsonInString);
-	
+		return answerList;
 	}
 
 	/**

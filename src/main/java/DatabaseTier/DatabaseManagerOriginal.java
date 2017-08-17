@@ -16,7 +16,7 @@ import model.*;
 public class DatabaseManagerOriginal {
 
 	static Properties configProps;
-	private Connection connection;
+	Connection connection;
 
 	public static void main(String[] args) {
 
@@ -179,17 +179,7 @@ public class DatabaseManagerOriginal {
 	}
 
 	public ArrayList<EndPosition> getEndingPositions() {
-		try {
-			Statement statement = connection.createStatement();
-			ResultSet rs = statement.executeQuery("select counterparty.counterparty_name, "+
-					"instrument.instrument_name, "+
-					"deal.deal_type, " +
-					"sum(deal.deal_quantity*deal.deal_amount) AS Total "+
-					"from deal "+
-					"inner join instrument on deal.deal_instrument_id = instrument.instrument_id "+
-					"inner join counterparty on deal.deal_counterparty_id = counterparty.counterparty_id "+
-					"group by counterparty.counterparty_name, instrument.instrument_id, deal.deal_type, instrument.instrument_name "+
-					"order by deal.deal_type, counterparty.counterparty_name;");
+			EndingPositionSet rs = new EndingPositionSetSql(this);
 			ArrayList<EndPosition> results = new ArrayList<EndPosition>();
 
 			while (rs.next()) {
@@ -218,10 +208,6 @@ public class DatabaseManagerOriginal {
 			}
 
 			return results;
-
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
 		return null;
 	}
 	
