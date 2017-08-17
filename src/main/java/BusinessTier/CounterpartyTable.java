@@ -36,7 +36,7 @@ public class CounterpartyTable extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		DatabaseManagerOriginal db = new DatabaseManagerOriginal();
+		DatabaseManagerOriginal db = Login.db;
 		ObjectMapper mapper = new ObjectMapper();
 		PrintWriter out = response.getWriter();
 		
