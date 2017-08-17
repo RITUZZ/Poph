@@ -35,13 +35,13 @@ app.controller('SubmitController',function($scope,$http,$rootScope){
 	});
 
 
-var deal,instruments,counterParty,endingPosition,average;
+var deal,instruments,counterParty,endingPosition,average,instrumentPrice;
 
 app.controller("main-controller",function($scope,$http){
 
 	$scope.View={};
 	$scope.View.subUrl="HTML/dash-tradeoverview.html";
-	$scope.View.url="HTML/login.html ";
+	$scope.View.url="HTML/dashboard.html ";
 	
 	
 	$scope.navoptions=function(obj){
@@ -114,6 +114,16 @@ app.controller("main-controller",function($scope,$http){
 		})
 		.then(function success(data){
 			average=data.data;
+		},function error(data){
+			console.log("error");
+		});
+	$http({
+		  url: 'Data/InstrumentPrice',
+		  method: 'GET',
+		  datatype:'JSON'
+		})
+		.then(function success(data){
+			instrumentPrice=data.data;
 		},function error(data){
 			console.log("error");
 		});

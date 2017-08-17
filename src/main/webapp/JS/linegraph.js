@@ -89,11 +89,13 @@ var LineGraphDrawer = {
 	  	},this);
 	}	
 }
-
-d3.json('data.json', function(err, data) {
+LineGraphDrawer.start(instrumentPrice);
+/*
+d3.json('JS/data.json', function(err, data) {
 	if(err) {
 		console.error(err);
 		return;
 	}
 	LineGraphDrawer.start(data);
 })
+*/
