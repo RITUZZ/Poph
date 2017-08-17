@@ -53,7 +53,7 @@ public class DatabaseManagerSecure extends ColumnFixture {
 			System.out.println("CONNECTING");
 
 			Class.forName("com.mysql.jdbc.Driver");
-			connection = DriverManager.getConnection(new StringBuilder().append(configProps.getProperty("jdbcHost")).append(configProps.getProperty("jdbcName")).toString(), configProps.getProperty("jdbcUsername"), configProps.getProperty("jdbcPassword"));
+			connection = DriverManager.getConnection(new StringBuilder().append(configProps.getProperty("jdbcHost")).append(configProps.getProperty("jdbcNameSecure")).toString(), configProps.getProperty("jdbcUsername"), configProps.getProperty("jdbcPassword"));
 			System.out.println("CONNECTED");
 
 			System.out.println(checklogin("test") != null ? "Database Test: Success" : "Database Test: Fail");

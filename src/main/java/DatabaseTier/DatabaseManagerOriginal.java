@@ -79,7 +79,7 @@ public class DatabaseManagerOriginal {
 			System.out.println("CONNECTING");
 
 			Class.forName("com.mysql.jdbc.Driver");
-			connection = DriverManager.getConnection(new StringBuilder().append(configProps.getProperty("jdbcHostOriginal")).append(configProps.getProperty("jdbcNameOriginal")).toString(), configProps.getProperty("jdbcUsernameOriginal"), configProps.getProperty("jdbcPasswordOriginal"));
+			connection = DriverManager.getConnection(new StringBuilder().append(configProps.getProperty("jdbcHost")).append(configProps.getProperty("jdbcNameOriginal")).toString(), configProps.getProperty("jdbcUsername"), configProps.getProperty("jdbcPassword"));
 			System.out.println("CONNECTED");
 
 			return true;
