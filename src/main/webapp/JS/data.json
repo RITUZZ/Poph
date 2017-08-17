@@ -1,0 +1,5004 @@
+{ "instrument" : 1002,
+	"deals" : [
+	{
+		"deal_time" : "2017-07-28T17:06:29.955",
+		"deal_quantity" : 3,
+		"deal_amount" : 5820.48
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:29.959",
+		"deal_quantity" : 27,
+		"deal_amount" : 5875.48
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:29.972",
+		"deal_quantity" : 695,
+		"deal_amount" : 5807.81
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:29.972",
+		"deal_quantity" : 1,
+		"deal_amount" : 5732.20
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:29.972",
+		"deal_quantity" : 2,
+		"deal_amount" : 5794.19
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:29.977",
+		"deal_quantity" : 13,
+		"deal_amount" : 5744.60
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.003",
+		"deal_quantity" : 40,
+		"deal_amount" : 5694.27
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.003",
+		"deal_quantity" : 5,
+		"deal_amount" : 5750.07
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.004",
+		"deal_quantity" : 2,
+		"deal_amount" : 5685.40
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.042",
+		"deal_quantity" : 2,
+		"deal_amount" : 5740.24
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.049",
+		"deal_quantity" : 3,
+		"deal_amount" : 5685.57
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.049",
+		"deal_quantity" : 345,
+		"deal_amount" : 5622.78
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.049",
+		"deal_quantity" : 3,
+		"deal_amount" : 5670.55
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.050",
+		"deal_quantity" : 47,
+		"deal_amount" : 5604.74
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.060",
+		"deal_quantity" : 108,
+		"deal_amount" : 5548.54
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.080",
+		"deal_quantity" : 40,
+		"deal_amount" : 5609.51
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.098",
+		"deal_quantity" : 1,
+		"deal_amount" : 5550.51
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.098",
+		"deal_quantity" : 60,
+		"deal_amount" : 5604.53
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.099",
+		"deal_quantity" : 6,
+		"deal_amount" : 5554.10
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.099",
+		"deal_quantity" : 11,
+		"deal_amount" : 5499.21
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.099",
+		"deal_quantity" : 35,
+		"deal_amount" : 5434.15
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.102",
+		"deal_quantity" : 94,
+		"deal_amount" : 5490.53
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.395",
+		"deal_quantity" : 7,
+		"deal_amount" : 5536.21
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.398",
+		"deal_quantity" : 3,
+		"deal_amount" : 5598.01
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.398",
+		"deal_quantity" : 17,
+		"deal_amount" : 5653.37
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.398",
+		"deal_quantity" : 3,
+		"deal_amount" : 5592.62
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.569",
+		"deal_quantity" : 2,
+		"deal_amount" : 5644.12
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.633",
+		"deal_quantity" : 931,
+		"deal_amount" : 5675.55
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.633",
+		"deal_quantity" : 269,
+		"deal_amount" : 5726.27
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.637",
+		"deal_quantity" : 273,
+		"deal_amount" : 5778.53
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.637",
+		"deal_quantity" : 5,
+		"deal_amount" : 5726.07
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.638",
+		"deal_quantity" : 20,
+		"deal_amount" : 5793.54
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.672",
+		"deal_quantity" : 295,
+		"deal_amount" : 5843.31
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:30.717",
+		"deal_quantity" : 24,
+		"deal_amount" : 5901.80
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:32.318",
+		"deal_quantity" : 608,
+		"deal_amount" : 5849.78
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:32.319",
+		"deal_quantity" : 81,
+		"deal_amount" : 5914.45
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:32.321",
+		"deal_quantity" : 1,
+		"deal_amount" : 5982.62
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:32.322",
+		"deal_quantity" : 273,
+		"deal_amount" : 6044.30
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:32.322",
+		"deal_quantity" : 1,
+		"deal_amount" : 6117.33
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:32.322",
+		"deal_quantity" : 389,
+		"deal_amount" : 6178.25
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:32.322",
+		"deal_quantity" : 6,
+		"deal_amount" : 6239.22
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:32.346",
+		"deal_quantity" : 124,
+		"deal_amount" : 6297.95
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:32.348",
+		"deal_quantity" : 40,
+		"deal_amount" : 6237.97
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:32.348",
+		"deal_quantity" : 79,
+		"deal_amount" : 6185.09
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:32.490",
+		"deal_quantity" : 417,
+		"deal_amount" : 6237.45
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:32.610",
+		"deal_quantity" : 707,
+		"deal_amount" : 6302.39
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:40.194",
+		"deal_quantity" : 324,
+		"deal_amount" : 6368.92
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:40.216",
+		"deal_quantity" : 209,
+		"deal_amount" : 6304.66
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.331",
+		"deal_quantity" : 372,
+		"deal_amount" : 6366.58
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.355",
+		"deal_quantity" : 1,
+		"deal_amount" : 6414.91
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.678",
+		"deal_quantity" : 10,
+		"deal_amount" : 6470.63
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.678",
+		"deal_quantity" : 11,
+		"deal_amount" : 6419.11
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.679",
+		"deal_quantity" : 1,
+		"deal_amount" : 6349.45
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.680",
+		"deal_quantity" : 73,
+		"deal_amount" : 6412.73
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.681",
+		"deal_quantity" : 543,
+		"deal_amount" : 6469.68
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.685",
+		"deal_quantity" : 21,
+		"deal_amount" : 6533.49
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.696",
+		"deal_quantity" : 1,
+		"deal_amount" : 6466.35
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.697",
+		"deal_quantity" : 2,
+		"deal_amount" : 6530.06
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.698",
+		"deal_quantity" : 40,
+		"deal_amount" : 6583.54
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.698",
+		"deal_quantity" : 32,
+		"deal_amount" : 6505.04
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.714",
+		"deal_quantity" : 1,
+		"deal_amount" : 6444.49
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.714",
+		"deal_quantity" : 3,
+		"deal_amount" : 6506.57
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.717",
+		"deal_quantity" : 4,
+		"deal_amount" : 6432.81
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.823",
+		"deal_quantity" : 1,
+		"deal_amount" : 6509.43
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.823",
+		"deal_quantity" : 138,
+		"deal_amount" : 6445.15
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.848",
+		"deal_quantity" : 133,
+		"deal_amount" : 6500.26
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.923",
+		"deal_quantity" : 7,
+		"deal_amount" : 6436.65
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.950",
+		"deal_quantity" : 1,
+		"deal_amount" : 6372.56
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.950",
+		"deal_quantity" : 1,
+		"deal_amount" : 6314.52
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.954",
+		"deal_quantity" : 855,
+		"deal_amount" : 6380.47
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.954",
+		"deal_quantity" : 147,
+		"deal_amount" : 6304.44
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.962",
+		"deal_quantity" : 1,
+		"deal_amount" : 6248.73
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.963",
+		"deal_quantity" : 560,
+		"deal_amount" : 6196.64
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.970",
+		"deal_quantity" : 26,
+		"deal_amount" : 6133.83
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:42.970",
+		"deal_quantity" : 24,
+		"deal_amount" : 6189.31
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.067",
+		"deal_quantity" : 71,
+		"deal_amount" : 6254.81
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.067",
+		"deal_quantity" : 22,
+		"deal_amount" : 6194.45
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.067",
+		"deal_quantity" : 1,
+		"deal_amount" : 6251.52
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.068",
+		"deal_quantity" : 183,
+		"deal_amount" : 6307.14
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.068",
+		"deal_quantity" : 534,
+		"deal_amount" : 6378.48
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.068",
+		"deal_quantity" : 191,
+		"deal_amount" : 6442.15
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.069",
+		"deal_quantity" : 37,
+		"deal_amount" : 6380.98
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.070",
+		"deal_quantity" : 6,
+		"deal_amount" : 6436.16
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.115",
+		"deal_quantity" : 23,
+		"deal_amount" : 6485.52
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.119",
+		"deal_quantity" : 104,
+		"deal_amount" : 6557.49
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.227",
+		"deal_quantity" : 67,
+		"deal_amount" : 6630.04
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.230",
+		"deal_quantity" : 3,
+		"deal_amount" : 6570.19
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.231",
+		"deal_quantity" : 9,
+		"deal_amount" : 6506.48
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.439",
+		"deal_quantity" : 121,
+		"deal_amount" : 6569.45
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.439",
+		"deal_quantity" : 1,
+		"deal_amount" : 6505.44
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.440",
+		"deal_quantity" : 237,
+		"deal_amount" : 6427.74
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.450",
+		"deal_quantity" : 10,
+		"deal_amount" : 6365.02
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.459",
+		"deal_quantity" : 130,
+		"deal_amount" : 6412.34
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.465",
+		"deal_quantity" : 970,
+		"deal_amount" : 6472.87
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.488",
+		"deal_quantity" : 8,
+		"deal_amount" : 6399.08
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.488",
+		"deal_quantity" : 5,
+		"deal_amount" : 6332.02
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.506",
+		"deal_quantity" : 1,
+		"deal_amount" : 6396.73
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.544",
+		"deal_quantity" : 45,
+		"deal_amount" : 6347.99
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.544",
+		"deal_quantity" : 23,
+		"deal_amount" : 6404.82
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.665",
+		"deal_quantity" : 26,
+		"deal_amount" : 6471.20
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.666",
+		"deal_quantity" : 23,
+		"deal_amount" : 6532.71
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.723",
+		"deal_quantity" : 1,
+		"deal_amount" : 6606.02
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.723",
+		"deal_quantity" : 2,
+		"deal_amount" : 6545.51
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.783",
+		"deal_quantity" : 6,
+		"deal_amount" : 6483.81
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:43.783",
+		"deal_quantity" : 43,
+		"deal_amount" : 6414.38
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.482",
+		"deal_quantity" : 900,
+		"deal_amount" : 6342.87
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.482",
+		"deal_quantity" : 184,
+		"deal_amount" : 6284.14
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.482",
+		"deal_quantity" : 10,
+		"deal_amount" : 6349.15
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.482",
+		"deal_quantity" : 49,
+		"deal_amount" : 6427.43
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.483",
+		"deal_quantity" : 1,
+		"deal_amount" : 6352.29
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.484",
+		"deal_quantity" : 503,
+		"deal_amount" : 6416.47
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.715",
+		"deal_quantity" : 171,
+		"deal_amount" : 6476.11
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.716",
+		"deal_quantity" : 16,
+		"deal_amount" : 6413.51
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.725",
+		"deal_quantity" : 106,
+		"deal_amount" : 6345.38
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.726",
+		"deal_quantity" : 45,
+		"deal_amount" : 6282.70
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.727",
+		"deal_quantity" : 306,
+		"deal_amount" : 6344.66
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.841",
+		"deal_quantity" : 242,
+		"deal_amount" : 6283.70
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.843",
+		"deal_quantity" : 80,
+		"deal_amount" : 6341.78
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.843",
+		"deal_quantity" : 71,
+		"deal_amount" : 6270.86
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.843",
+		"deal_quantity" : 816,
+		"deal_amount" : 6209.55
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.843",
+		"deal_quantity" : 26,
+		"deal_amount" : 6157.33
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.844",
+		"deal_quantity" : 26,
+		"deal_amount" : 6216.85
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.844",
+		"deal_quantity" : 2,
+		"deal_amount" : 6269.50
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.877",
+		"deal_quantity" : 148,
+		"deal_amount" : 6332.60
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.878",
+		"deal_quantity" : 276,
+		"deal_amount" : 6265.67
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.878",
+		"deal_quantity" : 26,
+		"deal_amount" : 6198.85
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.883",
+		"deal_quantity" : 1,
+		"deal_amount" : 6258.81
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.883",
+		"deal_quantity" : 45,
+		"deal_amount" : 6320.32
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.891",
+		"deal_quantity" : 2,
+		"deal_amount" : 6253.24
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.896",
+		"deal_quantity" : 18,
+		"deal_amount" : 6187.10
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.897",
+		"deal_quantity" : 59,
+		"deal_amount" : 6251.54
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.898",
+		"deal_quantity" : 548,
+		"deal_amount" : 6328.18
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.903",
+		"deal_quantity" : 59,
+		"deal_amount" : 6388.75
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.903",
+		"deal_quantity" : 347,
+		"deal_amount" : 6454.56
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.904",
+		"deal_quantity" : 57,
+		"deal_amount" : 6511.78
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.912",
+		"deal_quantity" : 9,
+		"deal_amount" : 6573.27
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.912",
+		"deal_quantity" : 30,
+		"deal_amount" : 6507.04
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.913",
+		"deal_quantity" : 12,
+		"deal_amount" : 6442.80
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.932",
+		"deal_quantity" : 165,
+		"deal_amount" : 6499.58
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:44.955",
+		"deal_quantity" : 19,
+		"deal_amount" : 6449.04
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:45.258",
+		"deal_quantity" : 3,
+		"deal_amount" : 6384.19
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:45.258",
+		"deal_quantity" : 509,
+		"deal_amount" : 6332.29
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:45.258",
+		"deal_quantity" : 68,
+		"deal_amount" : 6268.88
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:45.259",
+		"deal_quantity" : 86,
+		"deal_amount" : 6341.02
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:45.260",
+		"deal_quantity" : 181,
+		"deal_amount" : 6275.15
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:45.376",
+		"deal_quantity" : 173,
+		"deal_amount" : 6339.53
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:45.387",
+		"deal_quantity" : 43,
+		"deal_amount" : 6277.34
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:45.393",
+		"deal_quantity" : 146,
+		"deal_amount" : 6212.19
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:45.396",
+		"deal_quantity" : 17,
+		"deal_amount" : 6157.74
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:45.396",
+		"deal_quantity" : 62,
+		"deal_amount" : 6101.28
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:45.396",
+		"deal_quantity" : 2,
+		"deal_amount" : 6163.04
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:45.396",
+		"deal_quantity" : 1,
+		"deal_amount" : 6092.62
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:45.396",
+		"deal_quantity" : 712,
+		"deal_amount" : 6036.76
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:45.445",
+		"deal_quantity" : 702,
+		"deal_amount" : 6092.98
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:45.974",
+		"deal_quantity" : 2,
+		"deal_amount" : 6161.25
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:45.976",
+		"deal_quantity" : 179,
+		"deal_amount" : 6108.49
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:46.142",
+		"deal_quantity" : 244,
+		"deal_amount" : 6056.21
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:46.142",
+		"deal_quantity" : 306,
+		"deal_amount" : 6105.82
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:46.144",
+		"deal_quantity" : 207,
+		"deal_amount" : 6164.72
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:46.147",
+		"deal_quantity" : 22,
+		"deal_amount" : 6222.65
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:46.148",
+		"deal_quantity" : 36,
+		"deal_amount" : 6169.77
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:46.148",
+		"deal_quantity" : 25,
+		"deal_amount" : 6238.48
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:46.150",
+		"deal_quantity" : 125,
+		"deal_amount" : 6299.07
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:46.151",
+		"deal_quantity" : 13,
+		"deal_amount" : 6233.80
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:46.186",
+		"deal_quantity" : 1,
+		"deal_amount" : 6289.51
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:46.187",
+		"deal_quantity" : 88,
+		"deal_amount" : 6234.15
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:46.194",
+		"deal_quantity" : 10,
+		"deal_amount" : 6300.01
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:46.815",
+		"deal_quantity" : 3,
+		"deal_amount" : 6374.23
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:46.830",
+		"deal_quantity" : 24,
+		"deal_amount" : 6310.93
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:46.845",
+		"deal_quantity" : 189,
+		"deal_amount" : 6373.90
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:47.042",
+		"deal_quantity" : 11,
+		"deal_amount" : 6436.25
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:47.043",
+		"deal_quantity" : 220,
+		"deal_amount" : 6499.71
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:47.213",
+		"deal_quantity" : 47,
+		"deal_amount" : 6566.16
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:47.215",
+		"deal_quantity" : 152,
+		"deal_amount" : 6646.64
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:47.215",
+		"deal_quantity" : 16,
+		"deal_amount" : 6718.87
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:47.218",
+		"deal_quantity" : 133,
+		"deal_amount" : 6646.43
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:47.229",
+		"deal_quantity" : 286,
+		"deal_amount" : 6570.70
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:47.229",
+		"deal_quantity" : 277,
+		"deal_amount" : 6509.52
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:47.231",
+		"deal_quantity" : 74,
+		"deal_amount" : 6578.39
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:47.232",
+		"deal_quantity" : 2,
+		"deal_amount" : 6514.48
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:47.242",
+		"deal_quantity" : 2,
+		"deal_amount" : 6442.78
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:47.246",
+		"deal_quantity" : 452,
+		"deal_amount" : 6377.29
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:47.248",
+		"deal_quantity" : 21,
+		"deal_amount" : 6312.48
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:47.248",
+		"deal_quantity" : 36,
+		"deal_amount" : 6368.88
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:47.248",
+		"deal_quantity" : 23,
+		"deal_amount" : 6306.02
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:47.258",
+		"deal_quantity" : 339,
+		"deal_amount" : 6237.04
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:47.258",
+		"deal_quantity" : 23,
+		"deal_amount" : 6181.77
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:47.262",
+		"deal_quantity" : 25,
+		"deal_amount" : 6237.20
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:48.890",
+		"deal_quantity" : 554,
+		"deal_amount" : 6173.03
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:48.892",
+		"deal_quantity" : 714,
+		"deal_amount" : 6226.09
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:48.892",
+		"deal_quantity" : 94,
+		"deal_amount" : 6153.91
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:48.893",
+		"deal_quantity" : 79,
+		"deal_amount" : 6091.47
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:48.893",
+		"deal_quantity" : 802,
+		"deal_amount" : 6024.48
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:48.893",
+		"deal_quantity" : 29,
+		"deal_amount" : 6087.23
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:48.899",
+		"deal_quantity" : 170,
+		"deal_amount" : 6145.79
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:48.977",
+		"deal_quantity" : 239,
+		"deal_amount" : 6088.25
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:48.981",
+		"deal_quantity" : 7,
+		"deal_amount" : 6144.87
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:48.981",
+		"deal_quantity" : 657,
+		"deal_amount" : 6078.43
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:49.456",
+		"deal_quantity" : 79,
+		"deal_amount" : 6141.24
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:49.459",
+		"deal_quantity" : 14,
+		"deal_amount" : 6090.38
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:49.459",
+		"deal_quantity" : 94,
+		"deal_amount" : 6153.40
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:49.462",
+		"deal_quantity" : 51,
+		"deal_amount" : 6098.96
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:49.473",
+		"deal_quantity" : 1,
+		"deal_amount" : 6042.44
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:49.474",
+		"deal_quantity" : 896,
+		"deal_amount" : 6096.98
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:49.477",
+		"deal_quantity" : 1,
+		"deal_amount" : 6164.85
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:49.477",
+		"deal_quantity" : 22,
+		"deal_amount" : 6105.02
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:49.482",
+		"deal_quantity" : 28,
+		"deal_amount" : 6051.28
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:49.482",
+		"deal_quantity" : 2,
+		"deal_amount" : 5981.46
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:49.482",
+		"deal_quantity" : 14,
+		"deal_amount" : 6037.42
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:49.483",
+		"deal_quantity" : 51,
+		"deal_amount" : 5986.13
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:49.484",
+		"deal_quantity" : 50,
+		"deal_amount" : 5925.09
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:49.484",
+		"deal_quantity" : 36,
+		"deal_amount" : 5853.84
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:49.486",
+		"deal_quantity" : 43,
+		"deal_amount" : 5910.19
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:49.496",
+		"deal_quantity" : 43,
+		"deal_amount" : 5844.09
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:49.498",
+		"deal_quantity" : 37,
+		"deal_amount" : 5903.57
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:49.513",
+		"deal_quantity" : 34,
+		"deal_amount" : 5860.00
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:49.513",
+		"deal_quantity" : 20,
+		"deal_amount" : 5803.69
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:49.513",
+		"deal_quantity" : 12,
+		"deal_amount" : 5865.11
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:49.521",
+		"deal_quantity" : 686,
+		"deal_amount" : 5797.47
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:49.530",
+		"deal_quantity" : 36,
+		"deal_amount" : 5733.31
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:49.537",
+		"deal_quantity" : 2,
+		"deal_amount" : 5782.66
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:49.537",
+		"deal_quantity" : 1,
+		"deal_amount" : 5726.52
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:53.253",
+		"deal_quantity" : 294,
+		"deal_amount" : 5681.01
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:53.429",
+		"deal_quantity" : 94,
+		"deal_amount" : 5740.34
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:53.431",
+		"deal_quantity" : 1,
+		"deal_amount" : 5686.21
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:53.432",
+		"deal_quantity" : 2,
+		"deal_amount" : 5751.17
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:53.432",
+		"deal_quantity" : 3,
+		"deal_amount" : 5805.42
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:53.433",
+		"deal_quantity" : 17,
+		"deal_amount" : 5746.73
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:54.291",
+		"deal_quantity" : 528,
+		"deal_amount" : 5810.69
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:54.293",
+		"deal_quantity" : 18,
+		"deal_amount" : 5757.15
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:54.293",
+		"deal_quantity" : 95,
+		"deal_amount" : 5817.65
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:54.294",
+		"deal_quantity" : 2,
+		"deal_amount" : 5756.30
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:55.121",
+		"deal_quantity" : 1,
+		"deal_amount" : 5804.90
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:55.124",
+		"deal_quantity" : 37,
+		"deal_amount" : 5736.10
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:55.124",
+		"deal_quantity" : 19,
+		"deal_amount" : 5679.51
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:55.128",
+		"deal_quantity" : 366,
+		"deal_amount" : 5619.38
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:55.132",
+		"deal_quantity" : 148,
+		"deal_amount" : 5557.26
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:55.132",
+		"deal_quantity" : 47,
+		"deal_amount" : 5497.04
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:55.137",
+		"deal_quantity" : 44,
+		"deal_amount" : 5445.99
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:55.137",
+		"deal_quantity" : 51,
+		"deal_amount" : 5500.69
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:55.143",
+		"deal_quantity" : 3,
+		"deal_amount" : 5447.55
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:55.277",
+		"deal_quantity" : 33,
+		"deal_amount" : 5391.86
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:55.444",
+		"deal_quantity" : 4,
+		"deal_amount" : 5453.00
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:55.444",
+		"deal_quantity" : 145,
+		"deal_amount" : 5392.74
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:55.462",
+		"deal_quantity" : 82,
+		"deal_amount" : 5448.28
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:55.466",
+		"deal_quantity" : 39,
+		"deal_amount" : 5501.01
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:55.466",
+		"deal_quantity" : 197,
+		"deal_amount" : 5455.35
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:55.613",
+		"deal_quantity" : 36,
+		"deal_amount" : 5518.62
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:55.669",
+		"deal_quantity" : 12,
+		"deal_amount" : 5586.82
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:55.671",
+		"deal_quantity" : 375,
+		"deal_amount" : 5535.22
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:55.671",
+		"deal_quantity" : 1,
+		"deal_amount" : 5601.38
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:56.333",
+		"deal_quantity" : 822,
+		"deal_amount" : 5658.09
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:56.342",
+		"deal_quantity" : 6,
+		"deal_amount" : 5594.66
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:56.342",
+		"deal_quantity" : 6,
+		"deal_amount" : 5650.19
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:56.352",
+		"deal_quantity" : 795,
+		"deal_amount" : 5602.96
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:56.352",
+		"deal_quantity" : 270,
+		"deal_amount" : 5550.74
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:56.353",
+		"deal_quantity" : 1,
+		"deal_amount" : 5616.00
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:56.364",
+		"deal_quantity" : 1,
+		"deal_amount" : 5559.02
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:56.436",
+		"deal_quantity" : 900,
+		"deal_amount" : 5612.45
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:56.436",
+		"deal_quantity" : 10,
+		"deal_amount" : 5567.23
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:56.438",
+		"deal_quantity" : 434,
+		"deal_amount" : 5507.37
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:56.438",
+		"deal_quantity" : 8,
+		"deal_amount" : 5561.70
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:56.584",
+		"deal_quantity" : 1,
+		"deal_amount" : 5508.51
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:56.584",
+		"deal_quantity" : 339,
+		"deal_amount" : 5447.24
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:56.586",
+		"deal_quantity" : 13,
+		"deal_amount" : 5498.15
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:56.588",
+		"deal_quantity" : 11,
+		"deal_amount" : 5553.30
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:56.653",
+		"deal_quantity" : 35,
+		"deal_amount" : 5613.39
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:56.653",
+		"deal_quantity" : 230,
+		"deal_amount" : 5564.14
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:56.654",
+		"deal_quantity" : 123,
+		"deal_amount" : 5505.06
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:57.947",
+		"deal_quantity" : 6,
+		"deal_amount" : 5452.19
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:57.948",
+		"deal_quantity" : 311,
+		"deal_amount" : 5401.72
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:58.391",
+		"deal_quantity" : 237,
+		"deal_amount" : 5354.73
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:58.391",
+		"deal_quantity" : 66,
+		"deal_amount" : 5418.49
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:58.394",
+		"deal_quantity" : 287,
+		"deal_amount" : 5468.08
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:58.488",
+		"deal_quantity" : 28,
+		"deal_amount" : 5420.82
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:58.488",
+		"deal_quantity" : 63,
+		"deal_amount" : 5472.00
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:58.488",
+		"deal_quantity" : 1,
+		"deal_amount" : 5406.01
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:58.503",
+		"deal_quantity" : 1,
+		"deal_amount" : 5457.19
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:58.520",
+		"deal_quantity" : 21,
+		"deal_amount" : 5498.48
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:58.520",
+		"deal_quantity" : 3,
+		"deal_amount" : 5546.44
+	},
+	{
+		"deal_time" : "2017-07-28T17:06:58.536",
+		"deal_quantity" : 376,
+		"deal_amount" : 5488.22
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:00.659",
+		"deal_quantity" : 236,
+		"deal_amount" : 5539.74
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:00.703",
+		"deal_quantity" : 249,
+		"deal_amount" : 5603.04
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:00.703",
+		"deal_quantity" : 726,
+		"deal_amount" : 5537.24
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:00.709",
+		"deal_quantity" : 1,
+		"deal_amount" : 5595.26
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:00.711",
+		"deal_quantity" : 191,
+		"deal_amount" : 5664.06
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:00.712",
+		"deal_quantity" : 7,
+		"deal_amount" : 5600.15
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:00.712",
+		"deal_quantity" : 62,
+		"deal_amount" : 5674.20
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:00.716",
+		"deal_quantity" : 18,
+		"deal_amount" : 5619.61
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:00.973",
+		"deal_quantity" : 4,
+		"deal_amount" : 5548.47
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:01.168",
+		"deal_quantity" : 1,
+		"deal_amount" : 5485.93
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:01.168",
+		"deal_quantity" : 26,
+		"deal_amount" : 5539.41
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:01.176",
+		"deal_quantity" : 972,
+		"deal_amount" : 5579.75
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:01.509",
+		"deal_quantity" : 18,
+		"deal_amount" : 5522.64
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:01.510",
+		"deal_quantity" : 1,
+		"deal_amount" : 5583.51
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:01.565",
+		"deal_quantity" : 21,
+		"deal_amount" : 5530.66
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:01.567",
+		"deal_quantity" : 6,
+		"deal_amount" : 5485.06
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:01.567",
+		"deal_quantity" : 542,
+		"deal_amount" : 5536.20
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:01.567",
+		"deal_quantity" : 74,
+		"deal_amount" : 5577.74
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:01.567",
+		"deal_quantity" : 9,
+		"deal_amount" : 5638.10
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:01.590",
+		"deal_quantity" : 6,
+		"deal_amount" : 5581.87
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:01.596",
+		"deal_quantity" : 333,
+		"deal_amount" : 5641.55
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:01.596",
+		"deal_quantity" : 7,
+		"deal_amount" : 5584.34
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:01.596",
+		"deal_quantity" : 207,
+		"deal_amount" : 5524.15
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:01.758",
+		"deal_quantity" : 3,
+		"deal_amount" : 5486.84
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:01.759",
+		"deal_quantity" : 68,
+		"deal_amount" : 5430.67
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:01.760",
+		"deal_quantity" : 292,
+		"deal_amount" : 5370.28
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:01.760",
+		"deal_quantity" : 2,
+		"deal_amount" : 5421.83
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:01.763",
+		"deal_quantity" : 124,
+		"deal_amount" : 5372.36
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:01.767",
+		"deal_quantity" : 75,
+		"deal_amount" : 5426.67
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:01.773",
+		"deal_quantity" : 39,
+		"deal_amount" : 5380.43
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:01.773",
+		"deal_quantity" : 89,
+		"deal_amount" : 5336.14
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:01.776",
+		"deal_quantity" : 15,
+		"deal_amount" : 5381.23
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:02.639",
+		"deal_quantity" : 71,
+		"deal_amount" : 5443.89
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:02.639",
+		"deal_quantity" : 1,
+		"deal_amount" : 5488.69
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:02.639",
+		"deal_quantity" : 68,
+		"deal_amount" : 5436.77
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:02.647",
+		"deal_quantity" : 3,
+		"deal_amount" : 5388.83
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:02.679",
+		"deal_quantity" : 54,
+		"deal_amount" : 5440.81
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:02.765",
+		"deal_quantity" : 512,
+		"deal_amount" : 5491.19
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:02.783",
+		"deal_quantity" : 3,
+		"deal_amount" : 5441.98
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:02.783",
+		"deal_quantity" : 1,
+		"deal_amount" : 5380.14
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:02.784",
+		"deal_quantity" : 10,
+		"deal_amount" : 5326.31
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:02.788",
+		"deal_quantity" : 44,
+		"deal_amount" : 5387.91
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:02.791",
+		"deal_quantity" : 498,
+		"deal_amount" : 5443.50
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:02.796",
+		"deal_quantity" : 1,
+		"deal_amount" : 5505.19
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:02.805",
+		"deal_quantity" : 561,
+		"deal_amount" : 5446.54
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:02.823",
+		"deal_quantity" : 554,
+		"deal_amount" : 5513.48
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:02.823",
+		"deal_quantity" : 2,
+		"deal_amount" : 5564.49
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:02.824",
+		"deal_quantity" : 1,
+		"deal_amount" : 5522.24
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:02.825",
+		"deal_quantity" : 362,
+		"deal_amount" : 5457.24
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:02.835",
+		"deal_quantity" : 35,
+		"deal_amount" : 5407.28
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:02.857",
+		"deal_quantity" : 128,
+		"deal_amount" : 5475.16
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:02.915",
+		"deal_quantity" : 3,
+		"deal_amount" : 5415.17
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:02.919",
+		"deal_quantity" : 13,
+		"deal_amount" : 5480.71
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:02.928",
+		"deal_quantity" : 137,
+		"deal_amount" : 5537.18
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:02.929",
+		"deal_quantity" : 1,
+		"deal_amount" : 5488.05
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:03.120",
+		"deal_quantity" : 22,
+		"deal_amount" : 5551.57
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:03.120",
+		"deal_quantity" : 42,
+		"deal_amount" : 5507.08
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:03.142",
+		"deal_quantity" : 28,
+		"deal_amount" : 5450.22
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:03.145",
+		"deal_quantity" : 224,
+		"deal_amount" : 5410.19
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:03.147",
+		"deal_quantity" : 103,
+		"deal_amount" : 5352.93
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:03.153",
+		"deal_quantity" : 67,
+		"deal_amount" : 5295.37
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:03.153",
+		"deal_quantity" : 808,
+		"deal_amount" : 5250.96
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:03.154",
+		"deal_quantity" : 51,
+		"deal_amount" : 5310.23
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:03.154",
+		"deal_quantity" : 102,
+		"deal_amount" : 5358.93
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:03.831",
+		"deal_quantity" : 4,
+		"deal_amount" : 5417.66
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:03.835",
+		"deal_quantity" : 2,
+		"deal_amount" : 5478.97
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:03.839",
+		"deal_quantity" : 2,
+		"deal_amount" : 5409.49
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.078",
+		"deal_quantity" : 5,
+		"deal_amount" : 5458.85
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.078",
+		"deal_quantity" : 8,
+		"deal_amount" : 5512.47
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.078",
+		"deal_quantity" : 252,
+		"deal_amount" : 5459.52
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.081",
+		"deal_quantity" : 62,
+		"deal_amount" : 5517.00
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.081",
+		"deal_quantity" : 19,
+		"deal_amount" : 5443.28
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.081",
+		"deal_quantity" : 6,
+		"deal_amount" : 5398.19
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.081",
+		"deal_quantity" : 180,
+		"deal_amount" : 5338.87
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.082",
+		"deal_quantity" : 1,
+		"deal_amount" : 5285.69
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.109",
+		"deal_quantity" : 12,
+		"deal_amount" : 5333.84
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.111",
+		"deal_quantity" : 125,
+		"deal_amount" : 5386.33
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.115",
+		"deal_quantity" : 377,
+		"deal_amount" : 5332.95
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.118",
+		"deal_quantity" : 21,
+		"deal_amount" : 5390.10
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.118",
+		"deal_quantity" : 329,
+		"deal_amount" : 5343.63
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.118",
+		"deal_quantity" : 143,
+		"deal_amount" : 5393.31
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.131",
+		"deal_quantity" : 21,
+		"deal_amount" : 5343.87
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.131",
+		"deal_quantity" : 1,
+		"deal_amount" : 5284.60
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.145",
+		"deal_quantity" : 274,
+		"deal_amount" : 5345.81
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.146",
+		"deal_quantity" : 33,
+		"deal_amount" : 5391.07
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.146",
+		"deal_quantity" : 772,
+		"deal_amount" : 5331.94
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.147",
+		"deal_quantity" : 1,
+		"deal_amount" : 5389.50
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.147",
+		"deal_quantity" : 154,
+		"deal_amount" : 5442.34
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.147",
+		"deal_quantity" : 15,
+		"deal_amount" : 5509.66
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.147",
+		"deal_quantity" : 72,
+		"deal_amount" : 5569.48
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.148",
+		"deal_quantity" : 143,
+		"deal_amount" : 5618.93
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.159",
+		"deal_quantity" : 44,
+		"deal_amount" : 5683.88
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.159",
+		"deal_quantity" : 22,
+		"deal_amount" : 5744.20
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.160",
+		"deal_quantity" : 103,
+		"deal_amount" : 5801.26
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.160",
+		"deal_quantity" : 119,
+		"deal_amount" : 5868.83
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.167",
+		"deal_quantity" : 75,
+		"deal_amount" : 5919.17
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.316",
+		"deal_quantity" : 202,
+		"deal_amount" : 5981.40
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.318",
+		"deal_quantity" : 621,
+		"deal_amount" : 6045.20
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.318",
+		"deal_quantity" : 1,
+		"deal_amount" : 6108.68
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.318",
+		"deal_quantity" : 2,
+		"deal_amount" : 6178.82
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.318",
+		"deal_quantity" : 670,
+		"deal_amount" : 6115.89
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.336",
+		"deal_quantity" : 1,
+		"deal_amount" : 6055.87
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.338",
+		"deal_quantity" : 1,
+		"deal_amount" : 6114.11
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.349",
+		"deal_quantity" : 211,
+		"deal_amount" : 6060.29
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.351",
+		"deal_quantity" : 3,
+		"deal_amount" : 6116.56
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.351",
+		"deal_quantity" : 800,
+		"deal_amount" : 6174.06
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.351",
+		"deal_quantity" : 466,
+		"deal_amount" : 6112.50
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.352",
+		"deal_quantity" : 1,
+		"deal_amount" : 6058.99
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.419",
+		"deal_quantity" : 170,
+		"deal_amount" : 6112.41
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.422",
+		"deal_quantity" : 7,
+		"deal_amount" : 6174.41
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.426",
+		"deal_quantity" : 235,
+		"deal_amount" : 6114.57
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.428",
+		"deal_quantity" : 1,
+		"deal_amount" : 6059.76
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.428",
+		"deal_quantity" : 2,
+		"deal_amount" : 5996.86
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.435",
+		"deal_quantity" : 1,
+		"deal_amount" : 6057.45
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.435",
+		"deal_quantity" : 1,
+		"deal_amount" : 6126.97
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.435",
+		"deal_quantity" : 10,
+		"deal_amount" : 6193.01
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:04.436",
+		"deal_quantity" : 338,
+		"deal_amount" : 6252.69
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.069",
+		"deal_quantity" : 1,
+		"deal_amount" : 6186.70
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.070",
+		"deal_quantity" : 150,
+		"deal_amount" : 6253.20
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.394",
+		"deal_quantity" : 57,
+		"deal_amount" : 6184.35
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.394",
+		"deal_quantity" : 2,
+		"deal_amount" : 6236.64
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.399",
+		"deal_quantity" : 7,
+		"deal_amount" : 6167.46
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.403",
+		"deal_quantity" : 56,
+		"deal_amount" : 6228.75
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.416",
+		"deal_quantity" : 8,
+		"deal_amount" : 6175.61
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.417",
+		"deal_quantity" : 96,
+		"deal_amount" : 6235.95
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.417",
+		"deal_quantity" : 393,
+		"deal_amount" : 6293.76
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.440",
+		"deal_quantity" : 51,
+		"deal_amount" : 6358.83
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.440",
+		"deal_quantity" : 2,
+		"deal_amount" : 6290.88
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.441",
+		"deal_quantity" : 51,
+		"deal_amount" : 6347.63
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.460",
+		"deal_quantity" : 686,
+		"deal_amount" : 6419.10
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.461",
+		"deal_quantity" : 45,
+		"deal_amount" : 6471.35
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.462",
+		"deal_quantity" : 249,
+		"deal_amount" : 6405.72
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.467",
+		"deal_quantity" : 30,
+		"deal_amount" : 6462.87
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.467",
+		"deal_quantity" : 39,
+		"deal_amount" : 6389.44
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.471",
+		"deal_quantity" : 335,
+		"deal_amount" : 6329.19
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.472",
+		"deal_quantity" : 2,
+		"deal_amount" : 6259.36
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.472",
+		"deal_quantity" : 1,
+		"deal_amount" : 6321.78
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.472",
+		"deal_quantity" : 17,
+		"deal_amount" : 6385.36
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.472",
+		"deal_quantity" : 21,
+		"deal_amount" : 6316.63
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.472",
+		"deal_quantity" : 178,
+		"deal_amount" : 6251.92
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.472",
+		"deal_quantity" : 69,
+		"deal_amount" : 6194.63
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.550",
+		"deal_quantity" : 836,
+		"deal_amount" : 6144.21
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.550",
+		"deal_quantity" : 3,
+		"deal_amount" : 6197.59
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.552",
+		"deal_quantity" : 359,
+		"deal_amount" : 6129.44
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.552",
+		"deal_quantity" : 18,
+		"deal_amount" : 6076.20
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.602",
+		"deal_quantity" : 4,
+		"deal_amount" : 6012.50
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.602",
+		"deal_quantity" : 11,
+		"deal_amount" : 5948.28
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.605",
+		"deal_quantity" : 20,
+		"deal_amount" : 5884.87
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.753",
+		"deal_quantity" : 207,
+		"deal_amount" : 5949.45
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.753",
+		"deal_quantity" : 289,
+		"deal_amount" : 6009.07
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.754",
+		"deal_quantity" : 17,
+		"deal_amount" : 6070.59
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.754",
+		"deal_quantity" : 74,
+		"deal_amount" : 6121.72
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.754",
+		"deal_quantity" : 1,
+		"deal_amount" : 6183.40
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.754",
+		"deal_quantity" : 60,
+		"deal_amount" : 6244.22
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.997",
+		"deal_quantity" : 8,
+		"deal_amount" : 6166.40
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:08.998",
+		"deal_quantity" : 365,
+		"deal_amount" : 6227.33
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:09",
+		"deal_quantity" : 975,
+		"deal_amount" : 6169.96
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:09.004",
+		"deal_quantity" : 2,
+		"deal_amount" : 6096.05
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:09.004",
+		"deal_quantity" : 625,
+		"deal_amount" : 6036.25
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:09.005",
+		"deal_quantity" : 197,
+		"deal_amount" : 6097.51
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:09.005",
+		"deal_quantity" : 6,
+		"deal_amount" : 6042.92
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:09.174",
+		"deal_quantity" : 1,
+		"deal_amount" : 6095.16
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:09.175",
+		"deal_quantity" : 249,
+		"deal_amount" : 6150.78
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:09.268",
+		"deal_quantity" : 189,
+		"deal_amount" : 6087.60
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:09.271",
+		"deal_quantity" : 1,
+		"deal_amount" : 6015.38
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:09.272",
+		"deal_quantity" : 20,
+		"deal_amount" : 5956.41
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:09.280",
+		"deal_quantity" : 1,
+		"deal_amount" : 5896.48
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:09.503",
+		"deal_quantity" : 1,
+		"deal_amount" : 5944.94
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:09.503",
+		"deal_quantity" : 444,
+		"deal_amount" : 5880.89
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:09.520",
+		"deal_quantity" : 336,
+		"deal_amount" : 5820.55
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:09.521",
+		"deal_quantity" : 5,
+		"deal_amount" : 5870.94
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:09.526",
+		"deal_quantity" : 6,
+		"deal_amount" : 5932.59
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:09.555",
+		"deal_quantity" : 44,
+		"deal_amount" : 5992.66
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:09.555",
+		"deal_quantity" : 461,
+		"deal_amount" : 5937.18
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:09.644",
+		"deal_quantity" : 39,
+		"deal_amount" : 5886.71
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:09.644",
+		"deal_quantity" : 21,
+		"deal_amount" : 5824.88
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:10.048",
+		"deal_quantity" : 50,
+		"deal_amount" : 5771.44
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:10.048",
+		"deal_quantity" : 960,
+		"deal_amount" : 5710.16
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.213",
+		"deal_quantity" : 164,
+		"deal_amount" : 5755.95
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.213",
+		"deal_quantity" : 290,
+		"deal_amount" : 5806.87
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.213",
+		"deal_quantity" : 13,
+		"deal_amount" : 5868.27
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.218",
+		"deal_quantity" : 6,
+		"deal_amount" : 5812.84
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.221",
+		"deal_quantity" : 381,
+		"deal_amount" : 5760.33
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.315",
+		"deal_quantity" : 334,
+		"deal_amount" : 5689.71
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.315",
+		"deal_quantity" : 475,
+		"deal_amount" : 5749.47
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.316",
+		"deal_quantity" : 12,
+		"deal_amount" : 5700.69
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.320",
+		"deal_quantity" : 9,
+		"deal_amount" : 5759.11
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.320",
+		"deal_quantity" : 3,
+		"deal_amount" : 5826.82
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.320",
+		"deal_quantity" : 171,
+		"deal_amount" : 5886.99
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.844",
+		"deal_quantity" : 2,
+		"deal_amount" : 5819.58
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.859",
+		"deal_quantity" : 3,
+		"deal_amount" : 5764.41
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.867",
+		"deal_quantity" : 11,
+		"deal_amount" : 5813.08
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.868",
+		"deal_quantity" : 124,
+		"deal_amount" : 5755.77
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.954",
+		"deal_quantity" : 1,
+		"deal_amount" : 5812.00
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.954",
+		"deal_quantity" : 128,
+		"deal_amount" : 5761.92
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.954",
+		"deal_quantity" : 52,
+		"deal_amount" : 5708.13
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.955",
+		"deal_quantity" : 1,
+		"deal_amount" : 5656.02
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.955",
+		"deal_quantity" : 22,
+		"deal_amount" : 5709.85
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.955",
+		"deal_quantity" : 10,
+		"deal_amount" : 5766.01
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.955",
+		"deal_quantity" : 516,
+		"deal_amount" : 5705.46
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.958",
+		"deal_quantity" : 215,
+		"deal_amount" : 5755.57
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.958",
+		"deal_quantity" : 31,
+		"deal_amount" : 5694.20
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.960",
+		"deal_quantity" : 463,
+		"deal_amount" : 5766.43
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.960",
+		"deal_quantity" : 3,
+		"deal_amount" : 5819.61
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.961",
+		"deal_quantity" : 2,
+		"deal_amount" : 5864.99
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.970",
+		"deal_quantity" : 189,
+		"deal_amount" : 5918.77
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.971",
+		"deal_quantity" : 25,
+		"deal_amount" : 5983.11
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.971",
+		"deal_quantity" : 503,
+		"deal_amount" : 5921.53
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.974",
+		"deal_quantity" : 6,
+		"deal_amount" : 5869.95
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:11.975",
+		"deal_quantity" : 168,
+		"deal_amount" : 5932.89
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:12.250",
+		"deal_quantity" : 3,
+		"deal_amount" : 5998.35
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:12.252",
+		"deal_quantity" : 933,
+		"deal_amount" : 6059.82
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:12.255",
+		"deal_quantity" : 3,
+		"deal_amount" : 6129.91
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:12.255",
+		"deal_quantity" : 298,
+		"deal_amount" : 6199.60
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:12.271",
+		"deal_quantity" : 9,
+		"deal_amount" : 6252.30
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:12.440",
+		"deal_quantity" : 8,
+		"deal_amount" : 6318.18
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:12.440",
+		"deal_quantity" : 9,
+		"deal_amount" : 6256.21
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:12.440",
+		"deal_quantity" : 1,
+		"deal_amount" : 6191.48
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:12.441",
+		"deal_quantity" : 13,
+		"deal_amount" : 6260.93
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:12.441",
+		"deal_quantity" : 8,
+		"deal_amount" : 6193.42
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:12.441",
+		"deal_quantity" : 351,
+		"deal_amount" : 6259.86
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:12.443",
+		"deal_quantity" : 87,
+		"deal_amount" : 6330.55
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:12.458",
+		"deal_quantity" : 126,
+		"deal_amount" : 6269.01
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:12.460",
+		"deal_quantity" : 144,
+		"deal_amount" : 6321.11
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:12.460",
+		"deal_quantity" : 42,
+		"deal_amount" : 6257.36
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:12.477",
+		"deal_quantity" : 12,
+		"deal_amount" : 6190.73
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:12.478",
+		"deal_quantity" : 266,
+		"deal_amount" : 6125.67
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:12.511",
+		"deal_quantity" : 131,
+		"deal_amount" : 6182.19
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:12.522",
+		"deal_quantity" : 162,
+		"deal_amount" : 6114.61
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:12.525",
+		"deal_quantity" : 33,
+		"deal_amount" : 6048.57
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:12.525",
+		"deal_quantity" : 91,
+		"deal_amount" : 6006.10
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:16.401",
+		"deal_quantity" : 84,
+		"deal_amount" : 6076.88
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:16.502",
+		"deal_quantity" : 9,
+		"deal_amount" : 6131.56
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:16.502",
+		"deal_quantity" : 304,
+		"deal_amount" : 6184.83
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:16.515",
+		"deal_quantity" : 1,
+		"deal_amount" : 6121.38
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:16.678",
+		"deal_quantity" : 1,
+		"deal_amount" : 6170.47
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:16.686",
+		"deal_quantity" : 12,
+		"deal_amount" : 6108.03
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:16.686",
+		"deal_quantity" : 1,
+		"deal_amount" : 6161.54
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:16.692",
+		"deal_quantity" : 889,
+		"deal_amount" : 6234.40
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:16.692",
+		"deal_quantity" : 224,
+		"deal_amount" : 6180.36
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:16.693",
+		"deal_quantity" : 11,
+		"deal_amount" : 6114.57
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:16.715",
+		"deal_quantity" : 794,
+		"deal_amount" : 6052.41
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:16.782",
+		"deal_quantity" : 2,
+		"deal_amount" : 5998.35
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:16.782",
+		"deal_quantity" : 74,
+		"deal_amount" : 6041.57
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:16.782",
+		"deal_quantity" : 12,
+		"deal_amount" : 6100.71
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:16.786",
+		"deal_quantity" : 157,
+		"deal_amount" : 6172.90
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:16.793",
+		"deal_quantity" : 638,
+		"deal_amount" : 6120.73
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:16.803",
+		"deal_quantity" : 1,
+		"deal_amount" : 6177.25
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:16.855",
+		"deal_quantity" : 248,
+		"deal_amount" : 6234.11
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:16.975",
+		"deal_quantity" : 10,
+		"deal_amount" : 6283.05
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:16.975",
+		"deal_quantity" : 1,
+		"deal_amount" : 6214.01
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:16.975",
+		"deal_quantity" : 46,
+		"deal_amount" : 6291.85
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:16.984",
+		"deal_quantity" : 310,
+		"deal_amount" : 6235.18
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:17.022",
+		"deal_quantity" : 66,
+		"deal_amount" : 6168.76
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:17.022",
+		"deal_quantity" : 158,
+		"deal_amount" : 6220.94
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:17.054",
+		"deal_quantity" : 56,
+		"deal_amount" : 6286.42
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:17.094",
+		"deal_quantity" : 548,
+		"deal_amount" : 6343.25
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:17.094",
+		"deal_quantity" : 376,
+		"deal_amount" : 6416.15
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:17.097",
+		"deal_quantity" : 45,
+		"deal_amount" : 6494.70
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:17.097",
+		"deal_quantity" : 2,
+		"deal_amount" : 6429.18
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:17.113",
+		"deal_quantity" : 12,
+		"deal_amount" : 6489.42
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:17.113",
+		"deal_quantity" : 71,
+		"deal_amount" : 6546.93
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:17.113",
+		"deal_quantity" : 18,
+		"deal_amount" : 6476.95
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:17.119",
+		"deal_quantity" : 4,
+		"deal_amount" : 6410.22
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:17.132",
+		"deal_quantity" : 15,
+		"deal_amount" : 6346.10
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:17.132",
+		"deal_quantity" : 9,
+		"deal_amount" : 6414.78
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:17.132",
+		"deal_quantity" : 62,
+		"deal_amount" : 6363.47
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:17.132",
+		"deal_quantity" : 22,
+		"deal_amount" : 6307.54
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.400",
+		"deal_quantity" : 2,
+		"deal_amount" : 6370.52
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.437",
+		"deal_quantity" : 108,
+		"deal_amount" : 6429.43
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.444",
+		"deal_quantity" : 248,
+		"deal_amount" : 6485.82
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.444",
+		"deal_quantity" : 57,
+		"deal_amount" : 6544.03
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.444",
+		"deal_quantity" : 23,
+		"deal_amount" : 6481.75
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.451",
+		"deal_quantity" : 77,
+		"deal_amount" : 6558.36
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.451",
+		"deal_quantity" : 282,
+		"deal_amount" : 6620.29
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.451",
+		"deal_quantity" : 3,
+		"deal_amount" : 6686.30
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.453",
+		"deal_quantity" : 113,
+		"deal_amount" : 6613.11
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.454",
+		"deal_quantity" : 1,
+		"deal_amount" : 6678.91
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.454",
+		"deal_quantity" : 250,
+		"deal_amount" : 6750.63
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.454",
+		"deal_quantity" : 1,
+		"deal_amount" : 6681.67
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.457",
+		"deal_quantity" : 20,
+		"deal_amount" : 6611.45
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.457",
+		"deal_quantity" : 10,
+		"deal_amount" : 6539.42
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.458",
+		"deal_quantity" : 575,
+		"deal_amount" : 6601.55
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.472",
+		"deal_quantity" : 294,
+		"deal_amount" : 6526.45
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.477",
+		"deal_quantity" : 2,
+		"deal_amount" : 6463.02
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.477",
+		"deal_quantity" : 2,
+		"deal_amount" : 6536.96
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.477",
+		"deal_quantity" : 14,
+		"deal_amount" : 6606.12
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.479",
+		"deal_quantity" : 7,
+		"deal_amount" : 6538.56
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.484",
+		"deal_quantity" : 348,
+		"deal_amount" : 6472.40
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.484",
+		"deal_quantity" : 7,
+		"deal_amount" : 6536.10
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.484",
+		"deal_quantity" : 184,
+		"deal_amount" : 6597.84
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.489",
+		"deal_quantity" : 14,
+		"deal_amount" : 6665.05
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.491",
+		"deal_quantity" : 138,
+		"deal_amount" : 6730.01
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.492",
+		"deal_quantity" : 6,
+		"deal_amount" : 6647.37
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.497",
+		"deal_quantity" : 3,
+		"deal_amount" : 6711.34
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.497",
+		"deal_quantity" : 860,
+		"deal_amount" : 6641.11
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.508",
+		"deal_quantity" : 19,
+		"deal_amount" : 6708.61
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.511",
+		"deal_quantity" : 315,
+		"deal_amount" : 6637.39
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.562",
+		"deal_quantity" : 21,
+		"deal_amount" : 6563.10
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.968",
+		"deal_quantity" : 3,
+		"deal_amount" : 6505.16
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.968",
+		"deal_quantity" : 274,
+		"deal_amount" : 6447.57
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.979",
+		"deal_quantity" : 7,
+		"deal_amount" : 6369.79
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:23.979",
+		"deal_quantity" : 459,
+		"deal_amount" : 6427.52
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.039",
+		"deal_quantity" : 2,
+		"deal_amount" : 6481.42
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.047",
+		"deal_quantity" : 74,
+		"deal_amount" : 6542.17
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.047",
+		"deal_quantity" : 7,
+		"deal_amount" : 6472.15
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.047",
+		"deal_quantity" : 38,
+		"deal_amount" : 6405.81
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.048",
+		"deal_quantity" : 221,
+		"deal_amount" : 6466.58
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.052",
+		"deal_quantity" : 224,
+		"deal_amount" : 6535.12
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.052",
+		"deal_quantity" : 26,
+		"deal_amount" : 6472.76
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.052",
+		"deal_quantity" : 19,
+		"deal_amount" : 6400.92
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.053",
+		"deal_quantity" : 53,
+		"deal_amount" : 6474.84
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.053",
+		"deal_quantity" : 4,
+		"deal_amount" : 6529.28
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.083",
+		"deal_quantity" : 2,
+		"deal_amount" : 6467.92
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.083",
+		"deal_quantity" : 58,
+		"deal_amount" : 6530.33
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.084",
+		"deal_quantity" : 618,
+		"deal_amount" : 6465.39
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.085",
+		"deal_quantity" : 10,
+		"deal_amount" : 6523.17
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.085",
+		"deal_quantity" : 109,
+		"deal_amount" : 6591.77
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.106",
+		"deal_quantity" : 6,
+		"deal_amount" : 6652.24
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.106",
+		"deal_quantity" : 2,
+		"deal_amount" : 6700.06
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.106",
+		"deal_quantity" : 2,
+		"deal_amount" : 6640.05
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.106",
+		"deal_quantity" : 88,
+		"deal_amount" : 6705.14
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.112",
+		"deal_quantity" : 690,
+		"deal_amount" : 6767.00
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.118",
+		"deal_quantity" : 4,
+		"deal_amount" : 6830.10
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.118",
+		"deal_quantity" : 116,
+		"deal_amount" : 6769.69
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.118",
+		"deal_quantity" : 499,
+		"deal_amount" : 6723.37
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.118",
+		"deal_quantity" : 1,
+		"deal_amount" : 6788.50
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.119",
+		"deal_quantity" : 382,
+		"deal_amount" : 6855.59
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.120",
+		"deal_quantity" : 1,
+		"deal_amount" : 6911.21
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.120",
+		"deal_quantity" : 1,
+		"deal_amount" : 6851.06
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.127",
+		"deal_quantity" : 661,
+		"deal_amount" : 6925.57
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.127",
+		"deal_quantity" : 812,
+		"deal_amount" : 6860.27
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.129",
+		"deal_quantity" : 50,
+		"deal_amount" : 6924.64
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.129",
+		"deal_quantity" : 71,
+		"deal_amount" : 6847.35
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.129",
+		"deal_quantity" : 20,
+		"deal_amount" : 6775.88
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.176",
+		"deal_quantity" : 14,
+		"deal_amount" : 6695.21
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.176",
+		"deal_quantity" : 2,
+		"deal_amount" : 6631.81
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:24.177",
+		"deal_quantity" : 8,
+		"deal_amount" : 6552.15
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.188",
+		"deal_quantity" : 3,
+		"deal_amount" : 6627.23
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.188",
+		"deal_quantity" : 139,
+		"deal_amount" : 6565.65
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.188",
+		"deal_quantity" : 15,
+		"deal_amount" : 6638.67
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.193",
+		"deal_quantity" : 278,
+		"deal_amount" : 6571.01
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.204",
+		"deal_quantity" : 14,
+		"deal_amount" : 6640.35
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.237",
+		"deal_quantity" : 4,
+		"deal_amount" : 6700.80
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.509",
+		"deal_quantity" : 358,
+		"deal_amount" : 6768.53
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.608",
+		"deal_quantity" : 1,
+		"deal_amount" : 6846.74
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.608",
+		"deal_quantity" : 436,
+		"deal_amount" : 6782.86
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.611",
+		"deal_quantity" : 6,
+		"deal_amount" : 6706.10
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.622",
+		"deal_quantity" : 2,
+		"deal_amount" : 6651.18
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.622",
+		"deal_quantity" : 2,
+		"deal_amount" : 6708.36
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.641",
+		"deal_quantity" : 324,
+		"deal_amount" : 6772.42
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.641",
+		"deal_quantity" : 515,
+		"deal_amount" : 6704.01
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.656",
+		"deal_quantity" : 103,
+		"deal_amount" : 6639.95
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.733",
+		"deal_quantity" : 19,
+		"deal_amount" : 6706.86
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.763",
+		"deal_quantity" : 256,
+		"deal_amount" : 6635.74
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.790",
+		"deal_quantity" : 330,
+		"deal_amount" : 6568.82
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.906",
+		"deal_quantity" : 12,
+		"deal_amount" : 6504.45
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.916",
+		"deal_quantity" : 23,
+		"deal_amount" : 6431.93
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.919",
+		"deal_quantity" : 4,
+		"deal_amount" : 6504.24
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.919",
+		"deal_quantity" : 311,
+		"deal_amount" : 6443.28
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.919",
+		"deal_quantity" : 170,
+		"deal_amount" : 6510.90
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.923",
+		"deal_quantity" : 2,
+		"deal_amount" : 6569.74
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.923",
+		"deal_quantity" : 6,
+		"deal_amount" : 6510.63
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.997",
+		"deal_quantity" : 95,
+		"deal_amount" : 6443.56
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:26.997",
+		"deal_quantity" : 1,
+		"deal_amount" : 6365.66
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:27.034",
+		"deal_quantity" : 3,
+		"deal_amount" : 6425.17
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:27.034",
+		"deal_quantity" : 57,
+		"deal_amount" : 6366.31
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:27.038",
+		"deal_quantity" : 11,
+		"deal_amount" : 6432.95
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:27.039",
+		"deal_quantity" : 8,
+		"deal_amount" : 6354.61
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:27.039",
+		"deal_quantity" : 22,
+		"deal_amount" : 6295.42
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:27.804",
+		"deal_quantity" : 225,
+		"deal_amount" : 6359.38
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:27.804",
+		"deal_quantity" : 68,
+		"deal_amount" : 6423.24
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:27.868",
+		"deal_quantity" : 79,
+		"deal_amount" : 6493.50
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:27.868",
+		"deal_quantity" : 266,
+		"deal_amount" : 6425.24
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:27.872",
+		"deal_quantity" : 13,
+		"deal_amount" : 6498.86
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:27.872",
+		"deal_quantity" : 123,
+		"deal_amount" : 6438.63
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:27.872",
+		"deal_quantity" : 1,
+		"deal_amount" : 6381.33
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:27.872",
+		"deal_quantity" : 29,
+		"deal_amount" : 6309.46
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:27.882",
+		"deal_quantity" : 243,
+		"deal_amount" : 6246.72
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:27.892",
+		"deal_quantity" : 922,
+		"deal_amount" : 6303.13
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:27.892",
+		"deal_quantity" : 5,
+		"deal_amount" : 6377.33
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:27.915",
+		"deal_quantity" : 2,
+		"deal_amount" : 6436.37
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.133",
+		"deal_quantity" : 742,
+		"deal_amount" : 6493.51
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.133",
+		"deal_quantity" : 568,
+		"deal_amount" : 6555.34
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.160",
+		"deal_quantity" : 15,
+		"deal_amount" : 6621.68
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.161",
+		"deal_quantity" : 4,
+		"deal_amount" : 6555.30
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.162",
+		"deal_quantity" : 99,
+		"deal_amount" : 6503.21
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.188",
+		"deal_quantity" : 142,
+		"deal_amount" : 6565.30
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.190",
+		"deal_quantity" : 280,
+		"deal_amount" : 6491.67
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.190",
+		"deal_quantity" : 6,
+		"deal_amount" : 6427.90
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.191",
+		"deal_quantity" : 8,
+		"deal_amount" : 6367.42
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.191",
+		"deal_quantity" : 1,
+		"deal_amount" : 6315.54
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.191",
+		"deal_quantity" : 17,
+		"deal_amount" : 6368.79
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.204",
+		"deal_quantity" : 18,
+		"deal_amount" : 6294.42
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.204",
+		"deal_quantity" : 251,
+		"deal_amount" : 6254.12
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.205",
+		"deal_quantity" : 930,
+		"deal_amount" : 6193.97
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.237",
+		"deal_quantity" : 1,
+		"deal_amount" : 6131.20
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.239",
+		"deal_quantity" : 45,
+		"deal_amount" : 6066.81
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.272",
+		"deal_quantity" : 355,
+		"deal_amount" : 6007.22
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.272",
+		"deal_quantity" : 604,
+		"deal_amount" : 6064.68
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.275",
+		"deal_quantity" : 5,
+		"deal_amount" : 6002.26
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.323",
+		"deal_quantity" : 9,
+		"deal_amount" : 6055.85
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.323",
+		"deal_quantity" : 1,
+		"deal_amount" : 5994.61
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.330",
+		"deal_quantity" : 122,
+		"deal_amount" : 5934.14
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.330",
+		"deal_quantity" : 184,
+		"deal_amount" : 5988.44
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.330",
+		"deal_quantity" : 1,
+		"deal_amount" : 5935.92
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.330",
+		"deal_quantity" : 30,
+		"deal_amount" : 5890.13
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.331",
+		"deal_quantity" : 2,
+		"deal_amount" : 5952.64
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.333",
+		"deal_quantity" : 1,
+		"deal_amount" : 6011.96
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.333",
+		"deal_quantity" : 172,
+		"deal_amount" : 6074.43
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.333",
+		"deal_quantity" : 18,
+		"deal_amount" : 6014.76
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.382",
+		"deal_quantity" : 7,
+		"deal_amount" : 5950.66
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.382",
+		"deal_quantity" : 671,
+		"deal_amount" : 6005.18
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.382",
+		"deal_quantity" : 88,
+		"deal_amount" : 5944.36
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.382",
+		"deal_quantity" : 1,
+		"deal_amount" : 5893.57
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.385",
+		"deal_quantity" : 11,
+		"deal_amount" : 5831.86
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.385",
+		"deal_quantity" : 845,
+		"deal_amount" : 5889.78
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.397",
+		"deal_quantity" : 265,
+		"deal_amount" : 5832.07
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.430",
+		"deal_quantity" : 12,
+		"deal_amount" : 5888.23
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.432",
+		"deal_quantity" : 46,
+		"deal_amount" : 5957.85
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.438",
+		"deal_quantity" : 1,
+		"deal_amount" : 6014.84
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.896",
+		"deal_quantity" : 2,
+		"deal_amount" : 5949.59
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.896",
+		"deal_quantity" : 6,
+		"deal_amount" : 5889.75
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.898",
+		"deal_quantity" : 55,
+		"deal_amount" : 5951.20
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.898",
+		"deal_quantity" : 769,
+		"deal_amount" : 6013.30
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.899",
+		"deal_quantity" : 80,
+		"deal_amount" : 6077.31
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.917",
+		"deal_quantity" : 3,
+		"deal_amount" : 6016.91
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.919",
+		"deal_quantity" : 20,
+		"deal_amount" : 5961.00
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.919",
+		"deal_quantity" : 14,
+		"deal_amount" : 5907.83
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.920",
+		"deal_quantity" : 737,
+		"deal_amount" : 5973.34
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.920",
+		"deal_quantity" : 321,
+		"deal_amount" : 5908.53
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.920",
+		"deal_quantity" : 6,
+		"deal_amount" : 5836.86
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.930",
+		"deal_quantity" : 1,
+		"deal_amount" : 5771.08
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.935",
+		"deal_quantity" : 356,
+		"deal_amount" : 5835.46
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:28.935",
+		"deal_quantity" : 138,
+		"deal_amount" : 5896.24
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.231",
+		"deal_quantity" : 410,
+		"deal_amount" : 5832.13
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.232",
+		"deal_quantity" : 25,
+		"deal_amount" : 5767.48
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.235",
+		"deal_quantity" : 1,
+		"deal_amount" : 5828.60
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.236",
+		"deal_quantity" : 106,
+		"deal_amount" : 5768.46
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.240",
+		"deal_quantity" : 84,
+		"deal_amount" : 5840.50
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.240",
+		"deal_quantity" : 13,
+		"deal_amount" : 5780.77
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.240",
+		"deal_quantity" : 128,
+		"deal_amount" : 5733.02
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.248",
+		"deal_quantity" : 10,
+		"deal_amount" : 5680.04
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.249",
+		"deal_quantity" : 3,
+		"deal_amount" : 5620.43
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.249",
+		"deal_quantity" : 9,
+		"deal_amount" : 5685.61
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.249",
+		"deal_quantity" : 5,
+		"deal_amount" : 5752.56
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.303",
+		"deal_quantity" : 129,
+		"deal_amount" : 5817.84
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.307",
+		"deal_quantity" : 45,
+		"deal_amount" : 5873.54
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.318",
+		"deal_quantity" : 2,
+		"deal_amount" : 5803.84
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.515",
+		"deal_quantity" : 14,
+		"deal_amount" : 5730.45
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.521",
+		"deal_quantity" : 12,
+		"deal_amount" : 5779.84
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.556",
+		"deal_quantity" : 530,
+		"deal_amount" : 5830.03
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.563",
+		"deal_quantity" : 18,
+		"deal_amount" : 5889.22
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.577",
+		"deal_quantity" : 14,
+		"deal_amount" : 5945.78
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.579",
+		"deal_quantity" : 581,
+		"deal_amount" : 5878.86
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.596",
+		"deal_quantity" : 47,
+		"deal_amount" : 5942.84
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.596",
+		"deal_quantity" : 164,
+		"deal_amount" : 5880.97
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.605",
+		"deal_quantity" : 1,
+		"deal_amount" : 5812.10
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.606",
+		"deal_quantity" : 334,
+		"deal_amount" : 5875.94
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.763",
+		"deal_quantity" : 17,
+		"deal_amount" : 5810.29
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:29.763",
+		"deal_quantity" : 74,
+		"deal_amount" : 5742.50
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:30.110",
+		"deal_quantity" : 19,
+		"deal_amount" : 5795.01
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:30.117",
+		"deal_quantity" : 375,
+		"deal_amount" : 5842.66
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:30.143",
+		"deal_quantity" : 213,
+		"deal_amount" : 5897.64
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:30.144",
+		"deal_quantity" : 4,
+		"deal_amount" : 5834.96
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:30.191",
+		"deal_quantity" : 991,
+		"deal_amount" : 5786.22
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:30.204",
+		"deal_quantity" : 373,
+		"deal_amount" : 5842.73
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:30.212",
+		"deal_quantity" : 1,
+		"deal_amount" : 5899.19
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:30.217",
+		"deal_quantity" : 13,
+		"deal_amount" : 5838.36
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:30.217",
+		"deal_quantity" : 201,
+		"deal_amount" : 5895.22
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:30.217",
+		"deal_quantity" : 121,
+		"deal_amount" : 5949.70
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:30.224",
+		"deal_quantity" : 10,
+		"deal_amount" : 6008.78
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:30.224",
+		"deal_quantity" : 11,
+		"deal_amount" : 6060.38
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:30.224",
+		"deal_quantity" : 745,
+		"deal_amount" : 6116.95
+	},
+	{
+		"deal_time" : "2017-07-28T17:07:30.225",
+		"deal_quantity" : 193,
+		"deal_amount" : 6165.86
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:02.949",
+		"deal_quantity" : 1,
+		"deal_amount" : 6218.69
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:02.949",
+		"deal_quantity" : 42,
+		"deal_amount" : 6159.63
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:02.949",
+		"deal_quantity" : 1,
+		"deal_amount" : 6219.98
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:02.968",
+		"deal_quantity" : 18,
+		"deal_amount" : 6282.54
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:02.969",
+		"deal_quantity" : 3,
+		"deal_amount" : 6220.48
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:02.969",
+		"deal_quantity" : 114,
+		"deal_amount" : 6161.27
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:02.970",
+		"deal_quantity" : 167,
+		"deal_amount" : 6234.91
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:02.973",
+		"deal_quantity" : 182,
+		"deal_amount" : 6167.64
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.196",
+		"deal_quantity" : 55,
+		"deal_amount" : 6252.02
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.198",
+		"deal_quantity" : 5,
+		"deal_amount" : 6184.95
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.198",
+		"deal_quantity" : 148,
+		"deal_amount" : 6229.82
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.198",
+		"deal_quantity" : 9,
+		"deal_amount" : 6291.73
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.198",
+		"deal_quantity" : 886,
+		"deal_amount" : 6349.31
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.201",
+		"deal_quantity" : 10,
+		"deal_amount" : 6280.61
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.201",
+		"deal_quantity" : 2,
+		"deal_amount" : 6356.50
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.202",
+		"deal_quantity" : 46,
+		"deal_amount" : 6423.31
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.206",
+		"deal_quantity" : 960,
+		"deal_amount" : 6488.17
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.207",
+		"deal_quantity" : 37,
+		"deal_amount" : 6547.80
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.232",
+		"deal_quantity" : 120,
+		"deal_amount" : 6482.13
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.235",
+		"deal_quantity" : 2,
+		"deal_amount" : 6406.70
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.235",
+		"deal_quantity" : 66,
+		"deal_amount" : 6345.82
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.242",
+		"deal_quantity" : 920,
+		"deal_amount" : 6414.76
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.242",
+		"deal_quantity" : 14,
+		"deal_amount" : 6484.86
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.242",
+		"deal_quantity" : 590,
+		"deal_amount" : 6545.49
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.302",
+		"deal_quantity" : 383,
+		"deal_amount" : 6609.74
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.302",
+		"deal_quantity" : 107,
+		"deal_amount" : 6545.52
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.302",
+		"deal_quantity" : 1,
+		"deal_amount" : 6605.76
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.302",
+		"deal_quantity" : 1,
+		"deal_amount" : 6549.69
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.421",
+		"deal_quantity" : 2,
+		"deal_amount" : 6613.14
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.425",
+		"deal_quantity" : 249,
+		"deal_amount" : 6678.69
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.426",
+		"deal_quantity" : 259,
+		"deal_amount" : 6745.00
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.426",
+		"deal_quantity" : 94,
+		"deal_amount" : 6684.29
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.435",
+		"deal_quantity" : 406,
+		"deal_amount" : 6618.60
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.440",
+		"deal_quantity" : 135,
+		"deal_amount" : 6548.85
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.462",
+		"deal_quantity" : 114,
+		"deal_amount" : 6487.44
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.463",
+		"deal_quantity" : 126,
+		"deal_amount" : 6413.12
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.859",
+		"deal_quantity" : 1,
+		"deal_amount" : 6483.24
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.859",
+		"deal_quantity" : 363,
+		"deal_amount" : 6544.70
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.864",
+		"deal_quantity" : 39,
+		"deal_amount" : 6471.71
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.864",
+		"deal_quantity" : 1,
+		"deal_amount" : 6403.40
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.873",
+		"deal_quantity" : 18,
+		"deal_amount" : 6479.19
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.873",
+		"deal_quantity" : 24,
+		"deal_amount" : 6540.31
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.890",
+		"deal_quantity" : 26,
+		"deal_amount" : 6480.45
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.891",
+		"deal_quantity" : 130,
+		"deal_amount" : 6411.19
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.895",
+		"deal_quantity" : 100,
+		"deal_amount" : 6481.86
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:03.896",
+		"deal_quantity" : 235,
+		"deal_amount" : 6549.13
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:04.023",
+		"deal_quantity" : 2,
+		"deal_amount" : 6616.38
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:04.024",
+		"deal_quantity" : 265,
+		"deal_amount" : 6673.48
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:04.025",
+		"deal_quantity" : 343,
+		"deal_amount" : 6750.46
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:04.105",
+		"deal_quantity" : 129,
+		"deal_amount" : 6817.86
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:04.110",
+		"deal_quantity" : 89,
+		"deal_amount" : 6887.01
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:04.111",
+		"deal_quantity" : 1,
+		"deal_amount" : 6970.72
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:04.111",
+		"deal_quantity" : 350,
+		"deal_amount" : 6906.91
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:04.118",
+		"deal_quantity" : 27,
+		"deal_amount" : 6966.80
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:04.139",
+		"deal_quantity" : 98,
+		"deal_amount" : 7043.99
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:04.139",
+		"deal_quantity" : 39,
+		"deal_amount" : 7130.00
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:04.145",
+		"deal_quantity" : 318,
+		"deal_amount" : 7204.47
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:04.167",
+		"deal_quantity" : 7,
+		"deal_amount" : 7276.43
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:04.219",
+		"deal_quantity" : 4,
+		"deal_amount" : 7345.36
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:12.920",
+		"deal_quantity" : 2,
+		"deal_amount" : 7410.39
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.024",
+		"deal_quantity" : 324,
+		"deal_amount" : 7324.55
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.028",
+		"deal_quantity" : 6,
+		"deal_amount" : 7254.08
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.033",
+		"deal_quantity" : 34,
+		"deal_amount" : 7192.06
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.033",
+		"deal_quantity" : 37,
+		"deal_amount" : 7112.29
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.033",
+		"deal_quantity" : 12,
+		"deal_amount" : 7190.63
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.034",
+		"deal_quantity" : 23,
+		"deal_amount" : 7119.61
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.043",
+		"deal_quantity" : 69,
+		"deal_amount" : 7039.91
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.043",
+		"deal_quantity" : 8,
+		"deal_amount" : 6967.56
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.075",
+		"deal_quantity" : 24,
+		"deal_amount" : 6906.91
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.075",
+		"deal_quantity" : 111,
+		"deal_amount" : 6967.91
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.075",
+		"deal_quantity" : 300,
+		"deal_amount" : 6899.58
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.075",
+		"deal_quantity" : 37,
+		"deal_amount" : 6815.54
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.075",
+		"deal_quantity" : 160,
+		"deal_amount" : 6886.82
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.075",
+		"deal_quantity" : 163,
+		"deal_amount" : 6824.48
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.075",
+		"deal_quantity" : 5,
+		"deal_amount" : 6891.65
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.076",
+		"deal_quantity" : 68,
+		"deal_amount" : 6955.04
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.076",
+		"deal_quantity" : 422,
+		"deal_amount" : 7021.57
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.076",
+		"deal_quantity" : 44,
+		"deal_amount" : 6948.89
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.085",
+		"deal_quantity" : 9,
+		"deal_amount" : 6866.10
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.090",
+		"deal_quantity" : 5,
+		"deal_amount" : 6936.51
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.096",
+		"deal_quantity" : 200,
+		"deal_amount" : 6858.61
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.098",
+		"deal_quantity" : 962,
+		"deal_amount" : 6783.81
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.351",
+		"deal_quantity" : 3,
+		"deal_amount" : 6844.13
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.364",
+		"deal_quantity" : 867,
+		"deal_amount" : 6912.46
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.365",
+		"deal_quantity" : 109,
+		"deal_amount" : 6837.11
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.370",
+		"deal_quantity" : 11,
+		"deal_amount" : 6770.67
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.384",
+		"deal_quantity" : 20,
+		"deal_amount" : 6834.91
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.384",
+		"deal_quantity" : 3,
+		"deal_amount" : 6897.07
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.385",
+		"deal_quantity" : 45,
+		"deal_amount" : 6964.61
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.385",
+		"deal_quantity" : 764,
+		"deal_amount" : 6904.61
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.386",
+		"deal_quantity" : 1,
+		"deal_amount" : 6833.29
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.387",
+		"deal_quantity" : 881,
+		"deal_amount" : 6912.99
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.387",
+		"deal_quantity" : 754,
+		"deal_amount" : 6982.83
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.387",
+		"deal_quantity" : 12,
+		"deal_amount" : 7056.23
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.392",
+		"deal_quantity" : 233,
+		"deal_amount" : 6982.50
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.392",
+		"deal_quantity" : 54,
+		"deal_amount" : 7047.50
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.468",
+		"deal_quantity" : 172,
+		"deal_amount" : 6964.80
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.468",
+		"deal_quantity" : 4,
+		"deal_amount" : 6883.31
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.488",
+		"deal_quantity" : 256,
+		"deal_amount" : 6963.56
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.488",
+		"deal_quantity" : 14,
+		"deal_amount" : 6894.71
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.488",
+		"deal_quantity" : 197,
+		"deal_amount" : 6972.10
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.489",
+		"deal_quantity" : 3,
+		"deal_amount" : 7032.31
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.647",
+		"deal_quantity" : 583,
+		"deal_amount" : 7099.86
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.650",
+		"deal_quantity" : 2,
+		"deal_amount" : 7034.27
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.650",
+		"deal_quantity" : 252,
+		"deal_amount" : 6969.64
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.650",
+		"deal_quantity" : 8,
+		"deal_amount" : 6907.06
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.651",
+		"deal_quantity" : 110,
+		"deal_amount" : 6831.26
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.651",
+		"deal_quantity" : 23,
+		"deal_amount" : 6756.75
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.651",
+		"deal_quantity" : 94,
+		"deal_amount" : 6814.18
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.654",
+		"deal_quantity" : 40,
+		"deal_amount" : 6747.29
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.677",
+		"deal_quantity" : 2,
+		"deal_amount" : 6807.59
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.717",
+		"deal_quantity" : 10,
+		"deal_amount" : 6856.85
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.718",
+		"deal_quantity" : 793,
+		"deal_amount" : 6765.36
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.767",
+		"deal_quantity" : 20,
+		"deal_amount" : 6842.09
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.774",
+		"deal_quantity" : 4,
+		"deal_amount" : 6912.45
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.781",
+		"deal_quantity" : 29,
+		"deal_amount" : 6832.66
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.782",
+		"deal_quantity" : 2,
+		"deal_amount" : 6767.66
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.782",
+		"deal_quantity" : 1,
+		"deal_amount" : 6686.06
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.782",
+		"deal_quantity" : 609,
+		"deal_amount" : 6614.73
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.784",
+		"deal_quantity" : 47,
+		"deal_amount" : 6565.17
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.785",
+		"deal_quantity" : 32,
+		"deal_amount" : 6626.04
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.785",
+		"deal_quantity" : 9,
+		"deal_amount" : 6570.16
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.789",
+		"deal_quantity" : 139,
+		"deal_amount" : 6506.87
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.889",
+		"deal_quantity" : 248,
+		"deal_amount" : 6436.42
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.890",
+		"deal_quantity" : 863,
+		"deal_amount" : 6503.60
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.912",
+		"deal_quantity" : 3,
+		"deal_amount" : 6571.77
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.916",
+		"deal_quantity" : 13,
+		"deal_amount" : 6626.97
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.928",
+		"deal_quantity" : 96,
+		"deal_amount" : 6698.73
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.931",
+		"deal_quantity" : 54,
+		"deal_amount" : 6642.37
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.931",
+		"deal_quantity" : 305,
+		"deal_amount" : 6718.97
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.932",
+		"deal_quantity" : 48,
+		"deal_amount" : 6655.23
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:13.933",
+		"deal_quantity" : 213,
+		"deal_amount" : 6582.32
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:14.017",
+		"deal_quantity" : 511,
+		"deal_amount" : 6649.38
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:14.017",
+		"deal_quantity" : 9,
+		"deal_amount" : 6719.02
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:14.056",
+		"deal_quantity" : 8,
+		"deal_amount" : 6655.92
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:14.056",
+		"deal_quantity" : 5,
+		"deal_amount" : 6599.66
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:14.056",
+		"deal_quantity" : 24,
+		"deal_amount" : 6659.17
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:14.057",
+		"deal_quantity" : 13,
+		"deal_amount" : 6599.35
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:14.072",
+		"deal_quantity" : 324,
+		"deal_amount" : 6656.58
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.206",
+		"deal_quantity" : 1,
+		"deal_amount" : 6583.27
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.206",
+		"deal_quantity" : 13,
+		"deal_amount" : 6648.27
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.360",
+		"deal_quantity" : 59,
+		"deal_amount" : 6577.61
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.360",
+		"deal_quantity" : 3,
+		"deal_amount" : 6515.01
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.360",
+		"deal_quantity" : 2,
+		"deal_amount" : 6452.02
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.364",
+		"deal_quantity" : 82,
+		"deal_amount" : 6386.75
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.364",
+		"deal_quantity" : 81,
+		"deal_amount" : 6325.31
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.364",
+		"deal_quantity" : 244,
+		"deal_amount" : 6250.93
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.364",
+		"deal_quantity" : 482,
+		"deal_amount" : 6309.08
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.364",
+		"deal_quantity" : 2,
+		"deal_amount" : 6373.45
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.365",
+		"deal_quantity" : 349,
+		"deal_amount" : 6439.19
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.365",
+		"deal_quantity" : 93,
+		"deal_amount" : 6515.52
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.374",
+		"deal_quantity" : 92,
+		"deal_amount" : 6566.77
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.374",
+		"deal_quantity" : 5,
+		"deal_amount" : 6629.82
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.399",
+		"deal_quantity" : 123,
+		"deal_amount" : 6714.16
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.400",
+		"deal_quantity" : 8,
+		"deal_amount" : 6779.99
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.400",
+		"deal_quantity" : 357,
+		"deal_amount" : 6843.75
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.401",
+		"deal_quantity" : 126,
+		"deal_amount" : 6769.77
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.403",
+		"deal_quantity" : 1,
+		"deal_amount" : 6704.30
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.431",
+		"deal_quantity" : 47,
+		"deal_amount" : 6767.85
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.434",
+		"deal_quantity" : 139,
+		"deal_amount" : 6697.88
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.434",
+		"deal_quantity" : 1,
+		"deal_amount" : 6757.53
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.434",
+		"deal_quantity" : 2,
+		"deal_amount" : 6822.82
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.434",
+		"deal_quantity" : 1,
+		"deal_amount" : 6757.77
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.541",
+		"deal_quantity" : 129,
+		"deal_amount" : 6692.92
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.552",
+		"deal_quantity" : 26,
+		"deal_amount" : 6617.96
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.561",
+		"deal_quantity" : 3,
+		"deal_amount" : 6683.48
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.561",
+		"deal_quantity" : 427,
+		"deal_amount" : 6757.29
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.562",
+		"deal_quantity" : 139,
+		"deal_amount" : 6685.36
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.563",
+		"deal_quantity" : 17,
+		"deal_amount" : 6749.42
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.563",
+		"deal_quantity" : 14,
+		"deal_amount" : 6811.26
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.565",
+		"deal_quantity" : 1,
+		"deal_amount" : 6880.36
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.582",
+		"deal_quantity" : 7,
+		"deal_amount" : 6955.83
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.583",
+		"deal_quantity" : 10,
+		"deal_amount" : 7031.51
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.583",
+		"deal_quantity" : 346,
+		"deal_amount" : 7095.68
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.590",
+		"deal_quantity" : 594,
+		"deal_amount" : 7020.66
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.590",
+		"deal_quantity" : 48,
+		"deal_amount" : 7102.52
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.624",
+		"deal_quantity" : 7,
+		"deal_amount" : 7172.83
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.626",
+		"deal_quantity" : 708,
+		"deal_amount" : 7103.89
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.629",
+		"deal_quantity" : 2,
+		"deal_amount" : 7169.89
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.631",
+		"deal_quantity" : 197,
+		"deal_amount" : 7238.07
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.856",
+		"deal_quantity" : 3,
+		"deal_amount" : 7156.56
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.858",
+		"deal_quantity" : 180,
+		"deal_amount" : 7092.23
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.858",
+		"deal_quantity" : 366,
+		"deal_amount" : 7161.56
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.861",
+		"deal_quantity" : 39,
+		"deal_amount" : 7089.44
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.862",
+		"deal_quantity" : 14,
+		"deal_amount" : 7016.71
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.863",
+		"deal_quantity" : 4,
+		"deal_amount" : 7084.94
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.868",
+		"deal_quantity" : 76,
+		"deal_amount" : 7156.67
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.890",
+		"deal_quantity" : 623,
+		"deal_amount" : 7231.77
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.891",
+		"deal_quantity" : 5,
+		"deal_amount" : 7289.36
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.891",
+		"deal_quantity" : 2,
+		"deal_amount" : 7366.58
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:17.893",
+		"deal_quantity" : 70,
+		"deal_amount" : 7451.86
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:19.191",
+		"deal_quantity" : 384,
+		"deal_amount" : 7393.70
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:19.201",
+		"deal_quantity" : 457,
+		"deal_amount" : 7328.94
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:19.223",
+		"deal_quantity" : 2,
+		"deal_amount" : 7251.91
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:19.223",
+		"deal_quantity" : 27,
+		"deal_amount" : 7180.75
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:19.223",
+		"deal_quantity" : 48,
+		"deal_amount" : 7102.44
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:19.261",
+		"deal_quantity" : 4,
+		"deal_amount" : 7026.12
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:19.282",
+		"deal_quantity" : 8,
+		"deal_amount" : 6956.35
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:19.286",
+		"deal_quantity" : 76,
+		"deal_amount" : 7036.27
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:19.331",
+		"deal_quantity" : 15,
+		"deal_amount" : 6966.98
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:19.331",
+		"deal_quantity" : 446,
+		"deal_amount" : 6900.03
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.829",
+		"deal_quantity" : 1,
+		"deal_amount" : 6970.29
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.830",
+		"deal_quantity" : 78,
+		"deal_amount" : 7033.84
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.830",
+		"deal_quantity" : 6,
+		"deal_amount" : 7115.20
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.835",
+		"deal_quantity" : 2,
+		"deal_amount" : 7044.02
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.836",
+		"deal_quantity" : 17,
+		"deal_amount" : 6969.32
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.836",
+		"deal_quantity" : 90,
+		"deal_amount" : 6902.58
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.836",
+		"deal_quantity" : 65,
+		"deal_amount" : 6833.73
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.836",
+		"deal_quantity" : 577,
+		"deal_amount" : 6901.25
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.836",
+		"deal_quantity" : 716,
+		"deal_amount" : 6831.69
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.875",
+		"deal_quantity" : 451,
+		"deal_amount" : 6754.47
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.875",
+		"deal_quantity" : 599,
+		"deal_amount" : 6687.19
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.898",
+		"deal_quantity" : 858,
+		"deal_amount" : 6624.55
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.905",
+		"deal_quantity" : 31,
+		"deal_amount" : 6552.83
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.914",
+		"deal_quantity" : 7,
+		"deal_amount" : 6617.77
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.914",
+		"deal_quantity" : 5,
+		"deal_amount" : 6547.32
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.914",
+		"deal_quantity" : 206,
+		"deal_amount" : 6610.64
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.916",
+		"deal_quantity" : 4,
+		"deal_amount" : 6551.26
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.916",
+		"deal_quantity" : 898,
+		"deal_amount" : 6619.97
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.916",
+		"deal_quantity" : 132,
+		"deal_amount" : 6543.15
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.917",
+		"deal_quantity" : 1,
+		"deal_amount" : 6608.31
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.980",
+		"deal_quantity" : 1,
+		"deal_amount" : 6544.54
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.980",
+		"deal_quantity" : 1,
+		"deal_amount" : 6618.66
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.980",
+		"deal_quantity" : 534,
+		"deal_amount" : 6558.14
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.980",
+		"deal_quantity" : 72,
+		"deal_amount" : 6624.81
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:23.981",
+		"deal_quantity" : 15,
+		"deal_amount" : 6692.70
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:24.032",
+		"deal_quantity" : 63,
+		"deal_amount" : 6621.70
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:24.582",
+		"deal_quantity" : 208,
+		"deal_amount" : 6693.29
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:24.582",
+		"deal_quantity" : 2,
+		"deal_amount" : 6759.47
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:24.583",
+		"deal_quantity" : 5,
+		"deal_amount" : 6840.58
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:24.583",
+		"deal_quantity" : 12,
+		"deal_amount" : 6913.15
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:24.586",
+		"deal_quantity" : 2,
+		"deal_amount" : 6988.80
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:24.587",
+		"deal_quantity" : 288,
+		"deal_amount" : 6925.38
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:24.587",
+		"deal_quantity" : 21,
+		"deal_amount" : 6855.98
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:24.595",
+		"deal_quantity" : 101,
+		"deal_amount" : 6780.22
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:24.595",
+		"deal_quantity" : 766,
+		"deal_amount" : 6706.97
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:24.595",
+		"deal_quantity" : 4,
+		"deal_amount" : 6643.52
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:24.725",
+		"deal_quantity" : 1,
+		"deal_amount" : 6563.28
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:24.726",
+		"deal_quantity" : 7,
+		"deal_amount" : 6624.66
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:24.728",
+		"deal_quantity" : 12,
+		"deal_amount" : 6554.73
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:26.716",
+		"deal_quantity" : 968,
+		"deal_amount" : 6615.10
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:26.718",
+		"deal_quantity" : 103,
+		"deal_amount" : 6548.79
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:26.718",
+		"deal_quantity" : 226,
+		"deal_amount" : 6624.50
+	},
+	{
+		"deal_time" : "2017-07-28T17:12:26.718",
+		"deal_quantity" : 416,
+		"deal_amount" : 6699.84
+	}
+]
+}
