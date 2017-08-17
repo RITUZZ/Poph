@@ -14,6 +14,8 @@ import javax.servlet.http.HttpSession;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+
+import DatabaseTier.DatabaseManagerOriginal;
 import DatabaseTier.DatabaseManagerSecure;
 
 import model.User;
@@ -23,6 +25,7 @@ import model.User;
  */
 public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	public static DatabaseManagerOriginal db = new DatabaseManagerOriginal();
 
 	/**
 	 * @see HttpServlet#HttpServlet()

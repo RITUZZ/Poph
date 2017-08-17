@@ -37,7 +37,7 @@ public class AveragePrice extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		DatabaseManagerOriginal db = new DatabaseManagerOriginal();
+		DatabaseManagerOriginal db = Login.db;
 		ObjectMapper mapper = new ObjectMapper();
 		PrintWriter out = response.getWriter();
 		
