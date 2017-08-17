@@ -80,6 +80,7 @@ public class Login extends HttpServlet {
 		System.out.println(jsonInString);
 		//send JSON in response
 		out.println(jsonInString);
+		connector.disconnectDatabase();
 		out.close();
 
 
