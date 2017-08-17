@@ -27,23 +27,10 @@ public class DatabaseConnectorTest extends ColumnFixture {
 
 	@Test
 	public void testChecklogin() {
-		setLoginName("test");
-		Login login = new Login();
 		DatabaseManagerSecure connector = new DatabaseManagerSecure();
-		User validUser = connector.checklogin(sLoginName);
 		//login success
-		assertTrue(login.verifyLogin(validUser,sLoginName));
+		assertEquals("tPL+/JAKJH5M0lLmeiibqbxd5/+sGwJQXkMlpm9LxDs=", connector.checklogin("test").getSalt());
 		
-	}
-
-	@Test
-	public void testRegisterUser() {
-		fail("not implemented");
-		setLoginName("test123");
-		DatabaseManagerSecure connector = new DatabaseManagerSecure();
-		boolean value = connector.registerUser(sLoginName,"123");
-		value = value&&connector.deleteUser(sLoginName);
-		assertFalse(value);
 	}
 
 	public boolean testConnectionUser() {

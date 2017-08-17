@@ -388,12 +388,7 @@ public class DatabaseManagerOriginal {
 				String dealer = rs.getString(3);				
 				String dealType = rs.getString(1);
 				BigDecimal quantity = new BigDecimal(rs.getInt(4));
-<<<<<<< HEAD
 
-=======
-//System.out.println(rs.getBigDecimal(5).divide(quantity, 2));
-				
->>>>>>> 52e8b0e9a6d6225d1f272791bc627631aa8779ff
 				if (dealType.equalsIgnoreCase("b")) {
 					BigDecimal lastTradePrice = null;
 					while(rsTime.next()) {
@@ -449,28 +444,6 @@ public class DatabaseManagerOriginal {
 		return null;
 	}
 
-	public void getEffectiveProfitLoss() {
-		try {
-
-			Statement statement = connection.createStatement();
-			ResultSet rs = statement.executeQuery("select deal_time, "+
-					"instrument.instrument_name, "+
-					"counterparty.counterparty_name "+
-					"from deal "+
-					"inner join instrument on deal.deal_instrument_id = instrument.instrument_id "+
-					"inner join counterparty on deal.deal_counterparty_id = counterparty.counterparty_id "+
-					"order by deal.deal_time desc;");
-
-			ArrayList<RealisedProfitLoss> results = new ArrayList<RealisedProfitLoss>();
-
-			while (rs.next()) {
-
-			}
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-
-	}
 
 	public Counterparty searchCounterparty(String counterparty) {
 		try {
