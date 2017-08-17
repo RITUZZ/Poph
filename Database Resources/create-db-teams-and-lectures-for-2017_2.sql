@@ -1,0 +1,13 @@
+use db_grad_cs_1917_2;
+CREATE USER 'test-user'@'%' IDENTIFIED BY 'test-user';
+CREATE USER 'test-user'@'localhost' IDENTIFIED BY 'test-user';
+GRANT USAGE ON *.* TO 'mysql.sys'@'localhost';
+GRANT TRIGGER ON `sys`.* TO 'mysql.sys'@'localhost';
+GRANT SELECT ON `sys`.`sys_config` TO 'mysql.sys'@'localhost';
+flush privileges;
+GRANT ALL PRIVILEGES ON *.* TO 'test-user'@'localhost' WITH GRANT OPTION;
+GRANT PROXY ON ''@'' TO 'test-user'@'localhost' WITH GRANT OPTION;
+flush privileges;
+GRANT ALL PRIVILEGES ON *.* TO 'test-user'@'%' WITH GRANT OPTION;
+GRANT PROXY ON ''@'' TO 'test-user'@'%' WITH GRANT OPTION;
+flush privileges;
