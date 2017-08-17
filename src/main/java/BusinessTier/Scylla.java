@@ -43,6 +43,9 @@ public class Scylla extends HttpServlet {
 		DatabaseManagerOriginal db = Login.db;
 		ObjectMapper mapper = new ObjectMapper();
 		PrintWriter out = response.getWriter();
+	
+		String name = request.getParameter("id");
+		String dealType = request.getParameter("type");
 		
 //HttpHelper helper = new HttpHelper();
 //		
@@ -53,32 +56,32 @@ public class Scylla extends HttpServlet {
 		ArrayList<Deal> instrumentDetailList = new ArrayList<Deal>();
 		List<ObjectNode> answerList = new ArrayList<ObjectNode>();
 //		instrumentDetailList = db.getInstumentDetails((String)map.get("instrument"), (String)map.get("dealType"));
-		instrumentDetailList = db.getInstumentDetails("Eclipse", "B");
+		//instrumentDetailList = db.getInstumentDetails("Eclipse", "B");
+		instrumentDetailList = db.getInstrumentDetails(name,dealType);
 		Deal deal;
-		
-		for(int i=0; i<instrumentDetailList.size(); i++){
-			deal = instrumentDetailList.get(i);
-	
-				ObjectNode node = JsonNodeFactory.instance.objectNode();
-				node.put("instrumentName", deal.getInstrumentName());
-				node.put("dealTime", deal.getTime().toString());
-				node.put("dealQuantity", deal.getQuantity());
-				node.put("dealAmount", deal.getAmount());
-				
-	
-				answerList.add(node);
-			
-		}
-		mapper.writeValueAsString(answerList);
 		ObjectNode responseNode = JsonNodeFactory.instance.objectNode();
 		
 		//hardcoded true for now
 		responseNode.put("status", true);
+		responseNode.put("instrument", name);
+		
+		for(int i=0; i<instrumentDetailList.size(); i++){
+			deal = instrumentDetailList.get(i);
+				ObjectNode node = JsonNodeFactory.instance.objectNode();
+				node.put("deal_time", deal.getTime().toString());
+				node.put("deal_quantity", deal.getQuantity());
+				node.put("deal_amount", deal.getAmount());
+				
+				answerList.add(node);
+			
+		}
+		mapper.writeValueAsString(answerList);
 		
 		ArrayNode array = mapper.valueToTree(answerList);
-		responseNode.put("answer", array);
+		responseNode.put("deals", array);
 		String jsonInString = mapper.writeValueAsString(responseNode);
-		out.println(jsonInString); 
+		out.println(jsonInString);
+		System.out.println(jsonInString);
 	}
 
 	/**

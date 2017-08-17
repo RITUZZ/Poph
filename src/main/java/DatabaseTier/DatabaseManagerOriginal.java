@@ -322,7 +322,7 @@ public class DatabaseManagerOriginal {
 
 	}
 
-	public ArrayList<Deal> getInstumentDetails(String instrument, String dealType) {
+	public ArrayList<Deal> getInstrumentDetails(String instrument, String dealType) {
 		//time, quant, price, type
 		try {
 			PreparedStatement ps = connection.prepareStatement("SELECT instrument.instrument_name, "+
