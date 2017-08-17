@@ -41,7 +41,7 @@ app.controller("main-controller",function($scope,$http){
 
 	$scope.View={};
 	$scope.View.subUrl="HTML/dash-tradeoverview.html";
-	$scope.View.url="HTML/dashboard.html ";
+	$scope.View.url="HTML/login.html ";
 	
 	
 	$scope.navoptions=function(obj){
@@ -62,7 +62,6 @@ app.controller("main-controller",function($scope,$http){
 		}
 		 $(obj.target.parentNode).addClass('active');
 	};
-	/*
 	$http({
 		  url: 'Tables/Deal?offset=0&limit=1500',
 		  method: 'GET',
@@ -107,5 +106,4 @@ app.controller("main-controller",function($scope,$http){
 		},function error(data){
 			console.log("error");
 		});
-		*/
 });
