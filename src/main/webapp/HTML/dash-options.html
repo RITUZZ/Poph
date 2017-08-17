@@ -87,7 +87,12 @@
 		}
 		$('#myTableAverage').dataTable();
 		
-		
+		data=rprofit.answer;
+		for(i in data)
+		{
+			$('#myTableReal>tbody').append('<tr><td>'+data[i].instrument_name+'</td><td>'+data[i].counterparty_name+'</td><td>'+data[i].profit+'</td></tr>');
+		}
+		$('#myTableReal').dataTable();
 		
 		data=eprofit.answer;
 		for(i in data)
