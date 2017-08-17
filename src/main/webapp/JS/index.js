@@ -35,7 +35,7 @@ app.controller('SubmitController',function($scope,$http,$rootScope){
 	});
 
 
-var deal,instruments,counterParty,endingPosition;
+var deal,instruments,counterParty,endingPosition,average;
 
 app.controller("main-controller",function($scope,$http){
 
@@ -103,6 +103,17 @@ app.controller("main-controller",function($scope,$http){
 		})
 		.then(function success(data){
 			endingPosition=data.data;
+		},function error(data){
+			console.log("error");
+		});
+	
+	$http({
+		  url: 'Tables/AveragePrice',
+		  method: 'GET',
+		  datatype:'JSON'
+		})
+		.then(function success(data){
+			average=data.data;
 		},function error(data){
 			console.log("error");
 		});
