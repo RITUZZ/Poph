@@ -87,8 +87,10 @@ function getData($http)
 		},function error(data){
 			console.log("error");
 		});
+}
+function getInstrumentPrice($http,id){
 	$http({
-		  url: 'Data/InstrumentPrice',
+		  url: 'Data/InstrumentPrice?id='+id,
 		  method: 'GET',
 		  datatype:'JSON'
 		})
