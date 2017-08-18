@@ -65,7 +65,6 @@ public class EffectiveProfitLossTable extends HttpServlet {
 		responseNode.put("answer", array);
 		String jsonInString = mapper.writeValueAsString(responseNode);
 		out.println(jsonInString);
-		System.out.println(jsonInString);
 		out.close();
 	}
 

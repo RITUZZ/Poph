@@ -32,6 +32,7 @@ app.controller('SubmitController',function($scope,$http,$rootScope){
 var deal,instruments,counterParty,endingPosition,average,instrumentPrice,selectedInst="Astronomica",type="B",rprofit,eprofit;
 function getData($http)
 {
+	getInstrumentPrice($http,selectedInst,type);
 	$http({
 		  url: 'Tables/Deal?offset=0&limit=1000',
 		  method: 'GET',

@@ -40,14 +40,14 @@ public class Login extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("hello from post");
+		
 		response.setContentType("application/json");
 		PrintWriter out = response.getWriter();
 		ObjectMapper mapper = new ObjectMapper();
 		HttpHelper helper = new HttpHelper();
 		
 		String responseString = helper.getResponseString(request);
-		System.out.println("response is "+responseString);
+		
 		Map<String,Object> map = mapper.readValue(responseString, Map.class);
 		String username = (String) map.get("username");
 		String password = (String) map.get("password");
@@ -63,7 +63,6 @@ public class Login extends HttpServlet {
 		
 		if (user != null) {
 			if (verifyLogin(user, password)) {
-				System.out.println("LOGIN SUCCESSFUL");
 				connector.disconnectDatabase();
 				connector = null;
 				status = true;
@@ -72,18 +71,18 @@ public class Login extends HttpServlet {
 //		        session.setAttribute(username,username);  
 			} else {
 				
-				System.out.println("LOGIN FAILED - INVALID USER");
+				
 			}
 			
 		} else {
-			System.out.println("LOGIN FAILED - USER NOT FOUND");
+			
 		}
 		
 		node.put("status", status); // building JSON object
 		node.put("username", username);
 		
 		String jsonInString = mapper.writeValueAsString(node);
-		System.out.println(jsonInString);
+		
 		//send JSON in response
 		out.println(jsonInString);
 		
